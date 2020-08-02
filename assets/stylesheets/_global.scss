@@ -1,0 +1,34 @@
+/*---------------------------------------------
+           Global
+---------------------------------------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html {
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.flex{
+    display: flex;
+    
+}
+
+
+.grid{
+    display: grid;
+   
+}

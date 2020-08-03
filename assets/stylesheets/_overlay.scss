@@ -1,0 +1,51 @@
+.overlay-list {
+    text-align: center;
+    max-width: 28rem;
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    background: lighten($cl-black, 80%);
+    border-radius: 2rem;
+    a {
+        color: $cl-blue;
+    }
+    li {
+        background: #fff;
+        padding: 1rem 1.5rem;
+        margin: 1.2rem 0.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+        i {
+            font-size: 2rem;
+            color: $cl-blue;
+        }
+        .fa-facebook-square {
+            color: #0674E8;
+        }
+        .fa-instagram-square {
+            background: linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-emphasis-color: transparent;
+        }
+        .fa-linkedin {
+            color: #0076B4;
+        }
+        .fa-github-square {
+            color: #24292E;
+        }
+        .fa-twitter-square {
+            color: #1DA1F2;
+        }
+        i:not(.fa-check-circle){
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: block;
+            }
+        }
+    }
+    .overlay-btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+    }
+}

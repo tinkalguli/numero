@@ -1,34 +1,52 @@
 /*---------------------------------------------
            Global
 ---------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
-.flex{
-    display: flex;
-    
+.flex {
+  display: flex;
 }
 
+.grid {
+  display: grid;
+}
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .grid{
     display: grid;
-   
+
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-end-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }

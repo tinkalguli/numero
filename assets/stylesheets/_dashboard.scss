@@ -1,0 +1,45 @@
+.dashboard-description {
+    text-align: center;
+}
+
+.dashboard-card {
+    background: #aaa;
+    border-radius: 10px;
+    width: 45%;
+    padding: 1rem;
+    .dashboard-icon-sec {
+        margin-bottom: 2rem;
+    }
+    .dashboard-icon-sec {
+        i {
+            align-self: flex-start;
+        }
+        .fa-minus-circle {
+            font-size: 1.7rem;
+            color: $cl-red;
+        }
+    }
+    // .text-label {
+    //     // font-size: 1.2rem;
+    // }
+    .num-label {
+        font-size: 2.5rem;
+        line-height: 0.9;
+        // font-weight: 700;
+    }
+    i {
+        font-size: 2.5rem;
+        display: inline-block;
+        margin-left: 0.5rem;
+    }
+    .fa-sort-up,
+    .fa-sort-down {
+        font-size: 1.5rem;
+    }
+    .fa-sort-down {
+        height: 1.6rem;
+    }
+    .fa-sort-up {
+        height: 1.2rem;
+    }
+}

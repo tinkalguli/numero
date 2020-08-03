@@ -1,186 +1,49 @@
-/*---------------------------------------------
-           Variables
----------------------------------------------*/
-/*====  css reset  ====*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+Error: Invalid CSS after "@import "addView"": expected "{", was ";"
+        on line 6 of main.scss
+
+1: @import "variable";
+2: @import "reset";
+3: @import "global";
+4: @import "typography";
+5: <<<<<<< HEAD
+6: @import "addView";
+7: =======
+8: @import "header";
+9: @import "overlay";
+10: @import "dashboard";
+11: >>>>>>> 3563283b35587619d9e2b0762858dceac5e4cc1c
+
+Backtrace:
+main.scss:6
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:665:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/*---------------------------------------------
-           Global
----------------------------------------------*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-html {
-  font-size: 16px; }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem; }
-
-.flex {
-  display: flex; }
-
-.grid {
-  display: grid; }
-
-/*---------------------------------------------
-           Typography
----------------------------------------------*/
-body {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.5; }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 700; }
-
-h1 {
-  font-size: 2.5rem; }
-
-h2 {
-  font-size: 2.0rem; }
-
-h3 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 1rem; }
-
-h5 {
-  font-size: .5rem; }
-
-a {
-  text-decoration: none; }
-
-.add-view {
-  display: grid;
-  align-items: center;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("/assets/media/add_view/bg3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.add-con {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  width: 14rem;
-  height: 14rem;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5); }
-
-.fb-con {
-  background: #6622cc; }
-
-.twt-con {
-  background: #3f88c5; }
-
-.lkdn-con {
-  background: #1b2f33; }
-
-.insta-con {
-  background: #b594b6; }
-
-.github-con {
-  background: black; }
-
-.hstg-con {
-  background: rgba(0, 0, 255, 0.9); }
-
-.btns {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  font-size: 1rem; }
-
-.btn {
-  padding: .5rem .8rem;
-  margin-top: 1rem; }
-
-.atn {
-  background-color: #DA2C38;
-  color: white; }
-
-.overlay {
-  background-color: #1B2F33;
-  color: white; }
-
-.add-con img {
-  box-shadow: 1px 1px 20px 0  lightgray; }
-
-#click {
-  display: none; }
-
-@media screen and (min-width: 768px) {
-  .add-view {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 2rem;
-    padding: 2rem 0;
-    background-position: center; }
-
-  .cm-con {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem; } }
-
-/*# sourceMappingURL=main.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@import \"addView\"\": expected \"{\", was \";\"\A         on line 6 of main.scss\A \A 1: @import \"variable\";\A 2: @import \"reset\";\A 3: @import \"global\";\A 4: @import \"typography\";\A 5: <<<<<<< HEAD\A 6: @import \"addView\";\A 7: =======\A 8: @import \"header\";\A 9: @import \"overlay\";\A 10: @import \"dashboard\";\A 11: >>>>>>> 3563283b35587619d9e2b0762858dceac5e4cc1c"; }

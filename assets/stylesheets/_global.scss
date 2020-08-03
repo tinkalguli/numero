@@ -32,3 +32,15 @@ html {
     display: grid;
    
 }
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-end-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

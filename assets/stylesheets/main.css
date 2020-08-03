@@ -1,374 +1,49 @@
-/*---------------------------------------------
-           Variables
----------------------------------------------*/
-/*====  css reset  ====*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+Error: Invalid CSS after "@import "addView"": expected "{", was ";"
+        on line 6 of main.scss
+
+1: @import "variable";
+2: @import "reset";
+3: @import "global";
+4: @import "typography";
+5: <<<<<<< HEAD
+6: @import "addView";
+7: =======
+8: @import "header";
+9: @import "overlay";
+10: @import "dashboard";
+11: >>>>>>> 3563283b35587619d9e2b0762858dceac5e4cc1c
+
+Backtrace:
+main.scss:6
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:665:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
+/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
 */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*---------------------------------------------
-           Global
----------------------------------------------*/
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.grid {
-  display: -ms-grid;
-  display: grid;
-}
-
-.flex-between {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.flex-end-align {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-/*---------------------------------------------
-           Typography
----------------------------------------------*/
-body {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2.0rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-h5 {
-  font-size: .5rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header {
-  padding: 0.5rem 0;
-}
-
-.header a:not(.logo) {
-  color: #FFFFFA;
-}
-
-.header a:not(.logo):hover {
-  color: #6622CC;
-}
-
-@media screen and (min-width: 768px) {
-  .header a:not(.logo) {
-    color: #6622CC;
-  }
-  .header a:not(.logo):hover {
-    color: #DA2C38;
-  }
-}
-
-#check {
-  display: none;
-}
-
-.logo span {
-  font-size: 2.5rem;
-}
-
-.logo svg,
-.logo span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.check-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  z-index: 999;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 2rem;
-  height: 3px;
-  border-radius: 1px;
-  background: #DA2C38;
-  margin: 3px 0;
-}
-
-.navbar li {
-  text-align: center;
-  margin: 5vh 0;
-}
-
-.navbar {
-  display: none;
-  padding-top: 2rem;
-  background: rgba(27, 47, 51, 0.995);
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 70vh;
-  border-radius: 10px;
-}
-
-#check:checked ~ .navbar {
-  display: block;
-}
-
-#check:checked ~ .check-btn > .bar {
-  position: absolute;
-  right: 0;
-}
-
-#check:checked ~ .check-btn > .bar-1 {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-#check:checked ~ .check-btn > .bar-2 {
-  display: none;
-}
-
-#check:checked ~ .check-btn > .bar-3 {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.overlay-list {
-  text-align: center;
-  max-width: 28rem;
-  padding: 2rem 1rem;
-  font-size: 1.5rem;
-  background: #eff5f7;
-  border-radius: 2rem;
-}
-
-.overlay-list a {
-  color: #6622CC;
-}
-
-.overlay-list li {
-  background: #fff;
-  padding: 1rem 1.5rem;
-  margin: 1.2rem 0.5rem;
-  border-radius: 1.5rem;
-  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
-          box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
-}
-
-.overlay-list li i {
-  font-size: 2rem;
-  color: #6622CC;
-}
-
-.overlay-list li .fa-facebook-square {
-  color: #0674E8;
-}
-
-.overlay-list li .fa-instagram-square {
-  background: linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-emphasis-color: transparent;
-          text-emphasis-color: transparent;
-}
-
-.overlay-list li .fa-linkedin {
-  color: #0076B4;
-}
-
-.overlay-list li .fa-github-square {
-  color: #24292E;
-}
-
-.overlay-list li .fa-twitter-square {
-  color: #1DA1F2;
-}
-
-.overlay-list li i:not(.fa-check-circle) {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .overlay-list li i:not(.fa-check-circle) {
-    display: block;
-  }
-}
-
-.overlay-list .overlay-btn {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-}
-
-.dashboard-description {
-  text-align: center;
-}
-
-.dashboard-card {
-  background: #aaa;
-  border-radius: 10px;
-  width: 45%;
-  padding: 1rem;
-}
-
-.dashboard-card .dashboard-icon-sec {
-  margin-bottom: 2rem;
-}
-
-.dashboard-card .dashboard-icon-sec i {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-.dashboard-card .dashboard-icon-sec .fa-minus-circle {
-  font-size: 1.7rem;
-  color: #DA2C38;
-}
-
-.dashboard-card .num-label {
-  font-size: 2.5rem;
-  line-height: 0.9;
-}
-
-.dashboard-card i {
-  font-size: 2.5rem;
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-
-.dashboard-card .fa-sort-up,
-.dashboard-card .fa-sort-down {
-  font-size: 1.5rem;
-}
-
-.dashboard-card .fa-sort-down {
-  height: 1.6rem;
-}
-
-.dashboard-card .fa-sort-up {
-  height: 1.2rem;
-}
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@import \"addView\"\": expected \"{\", was \";\"\A         on line 6 of main.scss\A \A 1: @import \"variable\";\A 2: @import \"reset\";\A 3: @import \"global\";\A 4: @import \"typography\";\A 5: <<<<<<< HEAD\A 6: @import \"addView\";\A 7: =======\A 8: @import \"header\";\A 9: @import \"overlay\";\A 10: @import \"dashboard\";\A 11: >>>>>>> 3563283b35587619d9e2b0762858dceac5e4cc1c"; }

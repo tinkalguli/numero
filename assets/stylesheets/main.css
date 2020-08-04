@@ -1,49 +1,634 @@
-/*
-Error: Invalid CSS after "@import "addView"": expected "{", was ";"
-        on line 6 of main.scss
-
-1: @import "variable";
-2: @import "reset";
-3: @import "global";
-4: @import "typography";
-5: <<<<<<< HEAD
-6: @import "addView";
-7: =======
-8: @import "header";
-9: @import "overlay";
-10: @import "dashboard";
-11: >>>>>>> 3563283b35587619d9e2b0762858dceac5e4cc1c
-
-Backtrace:
-main.scss:6
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:665:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
-/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
+/*---------------------------------------------
+           Variables
+---------------------------------------------*/
+/*====  css reset  ====*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@import \"addView\"\": expected \"{\", was \";\"\A         on line 6 of main.scss\A \A 1: @import \"variable\";\A 2: @import \"reset\";\A 3: @import \"global\";\A 4: @import \"typography\";\A 5: <<<<<<< HEAD\A 6: @import \"addView\";\A 7: =======\A 8: @import \"header\";\A 9: @import \"overlay\";\A 10: @import \"dashboard\";\A 11: >>>>>>> 3563283b35587619d9e2b0762858dceac5e4cc1c"; }
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.14.0/css/all.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*---------------------------------------------
+           Global
+---------------------------------------------*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-1 {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-end-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/*---------------------------------------------
+           Typography
+---------------------------------------------*/
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.0rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: .5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.add-view {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url("/assets/media/add_view/bg3.jpg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("/assets/media/add_view/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-con {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  width: 14rem;
+  height: 14rem;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fb-con {
+  background: #6622cc;
+}
+
+.twt-con {
+  background: #3f88c5;
+}
+
+.lkdn-con {
+  background: #1b2f33;
+}
+
+.insta-con {
+  background: #b594b6;
+}
+
+.github-con {
+  background: black;
+}
+
+.hstg-con {
+  background: rgba(0, 0, 255, 0.9);
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: .5rem .8rem;
+  margin-top: 1rem;
+}
+
+.atn {
+  background-color: #DA2C38;
+  color: white;
+}
+
+.overlay {
+  background-color: #1B2F33;
+  color: white;
+}
+
+.add-con img {
+  -webkit-box-shadow: 1px 1px 20px 0  lightgray;
+          box-shadow: 1px 1px 20px 0  lightgray;
+}
+
+#click {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .add-view {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem 0;
+    background-position: center;
+  }
+  .cm-con {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+.header {
+  padding: 0.5rem 0;
+  background: #ffffe1;
+}
+
+.header a:not(.logo) {
+  color: #FFFFFA;
+}
+
+.header a:not(.logo):hover {
+  color: #6622CC;
+}
+
+@media screen and (min-width: 768px) {
+  .header a:not(.logo) {
+    color: #DA2C38;
+  }
+}
+
+#check {
+  display: none;
+}
+
+.logo span {
+  font-size: 2.5rem;
+  color: #c9232f;
+}
+
+.logo img,
+.logo span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.check-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 2rem;
+  height: 3px;
+  border-radius: 1px;
+  background: #FFFFFA;
+  margin: 3px 0;
+}
+
+.navbar li {
+  text-align: center;
+  margin: 5vh 0;
+  font-weight: 700;
+}
+
+.navbar {
+  display: none;
+  padding-top: 2rem;
+  background: rgba(27, 47, 51, 0.995);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 70vh;
+  border-radius: 0 0 10px 10px;
+}
+
+#check:checked ~ .navbar {
+  display: block;
+}
+
+#check:checked ~ .check-btn > .bar {
+  position: absolute;
+  right: 0;
+}
+
+#check:checked ~ .check-btn > .bar-1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#check:checked ~ .check-btn > .bar-2 {
+  display: none;
+}
+
+#check:checked ~ .check-btn > .bar-3 {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+@media screen and (min-width: 768px) {
+  .header .check-btn {
+    display: none;
+  }
+  .header .header {
+    background: #fff;
+  }
+  .header .navbar {
+    display: block;
+    position: static;
+    height: auto;
+    padding-top: 0;
+    background: transparent;
+  }
+  .header .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .navbar li {
+    margin: 0 0 0 1rem;
+    width: 6.5rem;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: #ffffd6;
+}
+
+.overlay-list {
+  text-align: center;
+  max-width: 28rem;
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+  background: #eff5f7;
+  border-radius: 2rem;
+}
+
+.overlay-list a {
+  color: #6622CC;
+}
+
+.overlay-list li {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  margin: 1.2rem 0.5rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+          box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+}
+
+.overlay-list li i {
+  font-size: 2rem;
+}
+
+.overlay-list li i:not(.fab) {
+  color: #6622CC;
+}
+
+.overlay-list li i:not(.fa-check-circle) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay-list li i:not(.fa-check-circle) {
+    display: block;
+  }
+}
+
+.overlay-list .overlay-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+}
+
+.fa-facebook-square {
+  color: #0674E8;
+}
+
+.fa-instagram-square {
+  background: linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-emphasis-color: transparent;
+          text-emphasis-color: transparent;
+}
+
+.fa-linkedin {
+  color: #0076B4;
+}
+
+.fa-github-square {
+  color: #24292E;
+}
+
+.fa-twitter-square {
+  color: #1DA1F2;
+}
+
+.main-dashboard {
+  background: #e9e0ea;
+  padding: 4rem 0;
+}
+
+.main-dashboard .add-view-btn {
+  color: #6622CC;
+  font-size: 2rem;
+  position: fixed;
+  padding: 0.5rem 1rem;
+  bottom: 4%;
+  right: 5%;
+  border-radius: 10px;
+  background: #f1aeb3;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+          box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+}
+
+@media screen and (min-width: 768px) {
+  .main-dashboard .add-view-btn {
+    font-size: 1.5rem;
+  }
+}
+
+.main-dashboard .add-view-btn span {
+  margin-left: 0.5rem;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-dashboard .add-view-btn span {
+    display: inline-block;
+    line-height: 1;
+  }
+}
+
+.dashboard-description {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(360px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(360px, 1fr));
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+
+.facebook-dashboard-card {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0674E8), to(#0674E8)) no-repeat;
+  background: linear-gradient(#0674E8, #0674E8) no-repeat;
+}
+
+.instagram-dashboard-card {
+  background: linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc) no-repeat;
+}
+
+.linkedin-dashboard-card {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0076B4), to(#0076B4)) no-repeat;
+  background: linear-gradient(#0076B4, #0076B4) no-repeat;
+}
+
+.github-dashboard-card {
+  background: -webkit-gradient(linear, left top, left bottom, from(#24292E), to(#24292E)) no-repeat;
+  background: linear-gradient(#24292E, #24292E) no-repeat;
+}
+
+.twitter-dashboard-card {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1DA1F2), to(#1DA1F2)) no-repeat;
+  background: linear-gradient(#1DA1F2, #1DA1F2) no-repeat;
+}
+
+.dashboard-card {
+  background-size: 2% 100%;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+          box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+  border-radius: 1.5rem;
+  padding: 1rem 1rem 0 1rem;
+  margin: 1rem 0;
+}
+
+.dashboard-card .dashboard-num-sec {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dashboard-card .dashboard-num-sec div {
+  margin-bottom: 1rem;
+  padding: 0 0.2rem;
+}
+
+.dashboard-card .dashboard-icon-sec {
+  margin-bottom: 2rem;
+}
+
+.dashboard-card .dashboard-icon-sec i {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.dashboard-card .dashboard-icon-sec .fa-minus-circle {
+  font-size: 1.7rem;
+  color: #DA2C38;
+}
+
+.dashboard-card .dashboard-icon-sec h3 {
+  line-height: 1.9;
+}
+
+.dashboard-card .num-label {
+  font-size: 2.4rem;
+  line-height: 0.9;
+}
+
+.dashboard-card i {
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.dashboard-card .fa-sort-up,
+.dashboard-card .fa-sort-down {
+  font-size: 1.5rem;
+}
+
+.dashboard-card .fa-sort-down {
+  height: 1.8rem;
+  color: #DA2C38;
+}
+
+.dashboard-card .fa-sort-up {
+  height: 1.2rem;
+  color: #6622CC;
+}
+
+.dashboard-card .red {
+  color: #DA2C38;
+}
+
+.dashboard-card .blue {
+  color: #6622CC;
+}

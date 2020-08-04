@@ -3,6 +3,8 @@
 ---------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
 
+@import url("https://pro.fontawesome.com/releases/v5.14.0/css/all.css");
+
 *,
 *::before,
 *::after {
@@ -17,8 +19,14 @@ html {
 
 .container {
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 0 2rem;
+}
+
+.container-1 {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .flex {
@@ -33,10 +41,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.grid{
-    display: grid;
-
 }
 
 .flex-between {

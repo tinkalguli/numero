@@ -1,0 +1,35 @@
+/*---------------------------------------------
+View Details
+---------------------------------------------*/
+
+.view-details {
+  .hero {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .hero h3 {
+    flex-basis: 350px;
+  }
+  h3 {
+    margin: 2rem 0;
+  }
+}
+.view-details__icon {
+  width: 50px;
+  img {
+    width: 100%;
+  }
+}
+
+.view-details__charts__area-graph,
+.view-details__charts__pie-chart,
+.view-details__charts__bar-graph {
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.view-details__charts__pie-chart {
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-gap: 70px;
+  text-align: center;
+}

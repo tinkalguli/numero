@@ -1,23 +1,28 @@
 .add-view{
    
-    background:linear-gradient(to bottom,rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)),url('../assets/media/add_view/bg3.jpg') ;
+    background:linear-gradient(to bottom,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)),url('/assets/images/add_view/bg3.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
     align-items: center;
+    display: grid;
   
 
 }
 
-.text{
-    padding-top: 2rem;
-    margin: 0 auto;
+.fa-github, .fa-linkedin-in{
+    text-shadow: 5px 5px 2px  black;
 }
 
-.text h3{
+.text{
+    padding:3rem
+    
+}
+
+.text h2{
     color: $cl-blue;
 }
-.text h4{
+.text h3{
     color: $cl-red;
 }
 
@@ -39,7 +44,6 @@
     align-items: center;
     justify-content: center;
 }
-
 
 
 //common style for all boxes
@@ -76,7 +80,7 @@
 //linkedin box 
 
 .lkdn-con{
-    background: rgba(27, 47, 51, 1);
+    background: rgb(15, 38, 241);
 }
 
 // insta box
@@ -129,9 +133,7 @@
     text-shadow: 5px 5px 2px  black;
 }
 
-.add-con img{
-    text-shadow: 1px 1px 20px   lightgray;
-}
+
 
 
 // authentication completed action

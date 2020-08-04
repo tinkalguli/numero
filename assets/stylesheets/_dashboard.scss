@@ -1,16 +1,78 @@
+.main-dashboard {
+    background: lighten($cl-violet, 25%);
+    padding: 4rem 0;
+    .add-view-btn {
+        @media screen and (min-width: 768px) {
+            font-size: 1.5rem;
+        }
+        color: $cl-blue;
+        font-size: 2rem;
+        position: fixed;
+        padding: 0.5rem 1rem;
+        bottom: 4%;
+        right: 5%;
+        border-radius: 10px;
+        background: lighten($cl-red, 30%);
+        box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+        span {
+            margin-left: 0.5rem;
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+                line-height: 1;
+            }
+        }
+    }
+}
+
 .dashboard-description {
     text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.dashboard {
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat( 2, minmax(360px, 1fr));
+        column-gap: 2rem;
+    }
+}
+
+.facebook-dashboard-card {
+    background: linear-gradient(#0674E8, #0674E8) no-repeat;
+}
+
+.instagram-dashboard-card {
+    background: linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc) no-repeat;
+}
+
+.linkedin-dashboard-card {
+    background: linear-gradient(#0076B4, #0076B4) no-repeat;
+}
+
+.github-dashboard-card {
+    background: linear-gradient(#24292E, #24292E) no-repeat;
+}
+
+.twitter-dashboard-card {
+    background: linear-gradient(#1DA1F2, #1DA1F2) no-repeat;
 }
 
 .dashboard-card {
-    background: #aaa;
-    border-radius: 10px;
-    width: 45%;
-    padding: 1rem;
-    .dashboard-icon-sec {
-        margin-bottom: 2rem;
+    background-size: 2% 100%;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+    border-radius: 1.5rem;
+    padding: 1rem 1rem 0 1rem;
+    margin: 1rem 0;
+    .dashboard-num-sec {
+        flex-wrap: wrap;
+        div {
+            margin-bottom: 1rem;
+            padding: 0 0.2rem;
+        }
     }
     .dashboard-icon-sec {
+        margin-bottom: 2rem;
         i {
             align-self: flex-start;
         }
@@ -18,14 +80,13 @@
             font-size: 1.7rem;
             color: $cl-red;
         }
+        h3 {
+            line-height: 1.9;
+        }
     }
-    // .text-label {
-    //     // font-size: 1.2rem;
-    // }
     .num-label {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         line-height: 0.9;
-        // font-weight: 700;
     }
     i {
         font-size: 2.5rem;
@@ -37,9 +98,18 @@
         font-size: 1.5rem;
     }
     .fa-sort-down {
-        height: 1.6rem;
+        height: 1.8rem;
+        color: $cl-red;
     }
     .fa-sort-up {
         height: 1.2rem;
+        color: $cl-blue;
+    }
+    .red {
+        color: $cl-red;
+    }
+    .blue {
+        color: $cl-blue;
     }
 }
+

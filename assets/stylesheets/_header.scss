@@ -1,15 +1,13 @@
 .header {
     padding: 0.5rem 0;
+    background: darken($cl-white, 5%);
     a:not(.logo) {
         color: $cl-white;
         &:hover{
             color: $cl-blue;
         }
         @media screen and (min-width: 768px) {
-            color: $cl-blue;
-            &:hover{
-                color: $cl-red;
-            }
+            color: $cl-red;
         }
     }
 }
@@ -21,8 +19,9 @@
 .logo {
     span{
         font-size: 2.5rem;
+        color: darken($cl-red, 5%);
     }
-    svg,
+    img,
     span {
         display: inline-block;
         vertical-align: middle;
@@ -42,13 +41,14 @@
     width: 2rem;
     height: 3px;
     border-radius: 1px;
-    background: $cl-red;
+    background: $cl-white;
     margin: 3px 0;
 }
 
 .navbar li {
     text-align: center;
     margin: 5vh 0;
+    font-weight: 700;
 }
 
 .navbar {
@@ -60,7 +60,7 @@
     top: 0;
     right: 0;
     height: 70vh;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 #check:checked ~ .navbar {
@@ -84,27 +84,30 @@
     transform: rotate(135deg);
 }
 
-// @media screen and (min-width: 768px) {
-//     .check-btn {
-//         display: none;
-//     }
-    
-//     .header {
-//         background: #fff;
+.header {
+    @media screen and (min-width: 768px) {
+        .check-btn {
+            display: none;
+        }
         
-//         .navbar {
-//             display: flex;
-//             position: static;
-//             height: auto;
-//             ul {
-//                 display: flex;
-//             }
-//             li {
-//                 margin: 0 0 0 1rem;
-//                 width: 6.5rem;
-//             }
-//         }
+        .header {
+            background: #fff;
+        }
+
+        .navbar {
+            display: block;
+            position: static;
+            height: auto;
+            padding-top: 0;
+            background: transparent;
+            ul {
+                display: flex;
+            }
+            li {
+                margin: 0 0 0 1rem;
+                width: 6.5rem;
+            }
+        }
         
-//     } 
-    
-// }
+    }
+}

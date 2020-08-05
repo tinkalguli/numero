@@ -32,46 +32,21 @@
 
 .dashboard {
     @media screen and (min-width: 768px) {
-        display: grid;
-        grid-template-columns: repeat( 2, minmax(360px, 1fr));
+        @include grid-autofit(2, 330px, 1fr);
         column-gap: 2rem;
     }
 }
 
-.facebook-dashboard-card {
-    background: #fff linear-gradient(#0674E8, #0674E8) no-repeat;
-}
-
-.instagram-dashboard-card {
-    background: #fff linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc) no-repeat;
-}
-
-.linkedin-dashboard-card {
-    background: #fff linear-gradient(#0076B4, #0076B4) no-repeat;
-}
-
-.github-dashboard-card {
-    background: #fff linear-gradient(#24292E, #24292E) no-repeat;
-}
-
-.twitter-dashboard-card {
-    background: #fff linear-gradient(#1DA1F2, #1DA1F2) no-repeat;
-}
-
-.hashtag-dashboard-card {
-    background: #fff linear-gradient(#1DA1F2, #DD2A7B) no-repeat;
-}
-
 .dashboard-card {
     background-size: 2% 100%;
-    box-shadow: 0.5rem 0.5rem 1rem #c9c9c6, -0.5rem -0.5rem 1rem rgba(255, 255, 255, 0.938);
+    @extend .card-box-shadow;
     border-radius: 1.5rem;
     padding: 1rem 1rem 0 1rem;
     margin: 1rem 0;
     color: $cl-black;
     display: block;
     &:hover {
-    box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem rgba(255, 255, 255, 0.938);
+        @extend .card-hover-effect;
     }
     .dashboard-num-sec {
         flex-wrap: wrap;

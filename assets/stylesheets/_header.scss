@@ -6,9 +6,8 @@
     width: 100%;
     a:not(.logo) {
         color: $cl-white;
-        &:hover{
-            color: $cl-blue;
-        }
+        border-radius: 0.5rem;
+        @extend .link-hover-effect;
         @media screen and (min-width: 768px) {
             color: $cl-black;
         }

@@ -1,6 +1,6 @@
 .add-view {
     background: $cl-white;
-    .add-btn-wrapper {
+    .add-card-wrapper {
         @media screen and (min-width:1024px){
             @include grid-repeat(2, 300px, 1fr);
                 column-gap: 2rem;
@@ -11,16 +11,26 @@
         }
     }
     .add-view-card {
-        padding: 1rem;
+        padding: 1.5rem 2rem;
         margin: 1rem 0;
         border-radius: 1.5rem;
         @extend .card-box-shadow;
         &:hover {
             @extend .card-hover-effect;
         }
+        .add-btn-wraper {
+            text-align: center;
+        }
     }
     .add-view-icon {
-        justify-content: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4.5rem;
+        height: 4.5rem;
+        svg {
+            width: 3rem;
+        }
     }
     .add-option-wrapper {
         margin: 1rem 0;

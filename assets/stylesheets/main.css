@@ -143,12 +143,12 @@ html {
           box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
 }
 
-.btn-box-shadow, .overlay-list li {
+.btn-box-shadow, .btn, .overlay-list li {
   -webkit-box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
           box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
 }
 
-.btn-box-shadow:hover, .overlay-list li:hover {
+.btn-box-shadow:hover, .btn:hover, .overlay-list li:hover {
   -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
           box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
 }
@@ -156,7 +156,28 @@ html {
 .link-hover-effect, .header a:not(.logo) {
   -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
           box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
-  padding: 0.5rem 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: #31344b;
+}
+
+.icons-neu-effect, .view-details__icon {
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+          box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*---------------------------------------------
@@ -207,7 +228,7 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .add-view .add-btn-wrapper {
+  .add-view .add-card-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(300px, 1fr))[2];
@@ -218,7 +239,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .add-view .add-btn-wrapper {
+  .add-view .add-card-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(300px, 1fr))[3];
@@ -229,15 +250,26 @@ a {
 }
 
 .add-view .add-view-card {
-  padding: 1rem;
+  padding: 1.5rem 2rem;
   margin: 1rem 0;
   border-radius: 1.5rem;
 }
 
+.add-view .add-view-card .add-btn-wraper {
+  text-align: center;
+}
+
 .add-view .add-view-icon {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.add-view .add-view-icon svg {
+  width: 3rem;
 }
 
 .add-view .add-option-wrapper {
@@ -740,11 +772,12 @@ View Details
 }
 
 .view-details__icon {
-  width: 50px;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
-.view-details__icon img {
-  width: 100%;
+.view-details__icon svg {
+  width: 3rem;
 }
 
 .view-details__charts__area-graph,

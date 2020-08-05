@@ -1,7 +1,7 @@
 .add-hastag{
     padding: 2rem;
     text-align: center;
-    background: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../images/hashtag/bg1.jpg');
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('/assets/images/add_view/bg3.jpg') ;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -24,12 +24,12 @@
 
 .hashtag .fa-search{
     font-size: 1.4rem;
-    color: gray;
+    color: black;
     padding: 0;
 }
 
 .hashtag i{
-    color: white;
+    color: black;
     font-size: 3rem;
     padding: 2rem;
 }
@@ -44,7 +44,8 @@
     width:70%;
     height:35px;
     border-radius: 27px;
-    border:none
+    border:2px solid lightgray;
+    box-shadow: 10x 10px 20px 10px black;
 }
 
 
@@ -53,9 +54,9 @@
     padding: 1rem;
 }
 .box{
-    // background-color:$cl-blue;
-    background:linear-gradient(to right,rgba(169, 169, 177, 0.7),rgba(20, 20, 24, 0.7));
+     background-color:white;
     margin-top: 1rem;
+    box-shadow: 5px 5px 10px 3px black;
 }
 
 .hashtag button{

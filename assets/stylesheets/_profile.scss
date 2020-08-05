@@ -2,72 +2,68 @@
 Profile View Page
 ---------------------------------------------*/
 
-.edit-profile {
-  background-color: $cl-white;
+.profile {
+  background-color: #fffffa;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  .edit-profile__image {
-    width: 100px;
+
+  .profile__image {
+    width: calc(100px);
     margin-bottom: 3rem;
-    img {
+  }
+  
+  .profile__image img {
+    width: 100%;
+    display: block;
+  }
+  
+  .profile__text__hr {
+    border: none;
+    border-bottom: 2px solid #1b2f33;
+    width: 95%;
+    margin: auto;
+  }
+  
+  .profile__text__name > *,
+  .profile__text__email > *,
+  .profile__text__password > * {
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+    margin: 1rem 0;
+  }
+  
+  .profile__text__name__value,
+  .profile__text__email__value,
+  .profile__text__password__value {
+    color: grey;
+  }
+  
+  .profile__actions {
+    margin: 10rem auto;
+  }
+  
+  .btn {
+    border: none;
+    color: #fffffa;
+    display: block;
+    width: 200px;
+    max-width: 300px;
+    background-color: #da2c38;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    -webkit-box-shadow: 2px 2px 2px #1b2f33;
+    box-shadow: 2px 2px 2px #1b2f33;
+    text-align: center;
+  }
+  
+  @media all and (min-width: 768px) {
+    .profile__image {
+      width: calc(250px);
+    }
+    .profile__image img {
       width: 100%;
       display: block;
     }
   }
-
-  .edit-profile__text__hr {
-    border: none;
-    border-bottom: 2px solid $cl-black;
-    width: 95%;
-    margin: auto;
-  }
-
-  .edit-profile__text__name {
-  }
-
-  .edit-profile__text__name > *,
-  .edit-profile__text__email > *,
-  .edit-profile__text__password > * {
-    flex-basis: 200px;
-    margin: 1rem 0;
-  }
-
-  .edit-profile__text__name__header,
-  .edit-profile__text__email__header,
-  .edit-profile__text__password__header {
-    //
-  }
-
-  .edit-profile__text__name__value,
-  .edit-profile__text__email__value,
-  .edit-profile__text__password__value {
-    // TODO: create a grey variable
-    color: grey;
-  }
-
-  .edit-profile__actions {
-    margin: 10rem auto;
-  }
-
-  .btn {
-    border: none;
-    color: $cl-white;
-    display: block;
-    width: 200px;
-    max-width: 300px;
-    background-color: $cl-red;
-    padding: 1rem 2rem;
-    margin: 2rem 0;
-    box-shadow: 2px 2px 2px $cl-black;
-  }
-
-  // Media Query
-  @media all and (min-width: 768px) {
-    .edit-profile__image {
-      width: 250px;
-      img {
-        width: 100%;
-        display: block;
-      }
-    }
-  }
 }
+
+

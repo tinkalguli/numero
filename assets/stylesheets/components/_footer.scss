@@ -1,0 +1,22 @@
+.numero-footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: $cl-white;
+  color: $cl-black;
+  &__nav {
+  }
+  &__nav-items {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  &__nav-item {
+    a {
+      text-decoration: none;
+      color: $cl-black;
+      font-weight: 700;
+    }
+    img {
+      width: 30px;
+    }
+  }
+}

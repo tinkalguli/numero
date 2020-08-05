@@ -13,10 +13,6 @@
   padding: 0;
 }
 
-html {
-  font-size: 16px;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -24,9 +20,9 @@ html {
 }
 
 .container-1 {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .flex {
@@ -43,14 +39,8 @@ html {
   align-items: center;
 }
 
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .flex-end-align {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }

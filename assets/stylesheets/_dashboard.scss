@@ -1,6 +1,6 @@
 .main-dashboard {
-    background: lighten($cl-violet, 25%);
-    padding: 4rem 0;
+    background: $cl-white;
+    padding: 10rem 0 4rem 0;
     .add-view-btn {
         @media screen and (min-width: 768px) {
             font-size: 1.5rem;
@@ -39,31 +39,40 @@
 }
 
 .facebook-dashboard-card {
-    background: linear-gradient(#0674E8, #0674E8) no-repeat;
+    background: #fff linear-gradient(#0674E8, #0674E8) no-repeat;
 }
 
 .instagram-dashboard-card {
-    background: linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc) no-repeat;
+    background: #fff linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc) no-repeat;
 }
 
 .linkedin-dashboard-card {
-    background: linear-gradient(#0076B4, #0076B4) no-repeat;
+    background: #fff linear-gradient(#0076B4, #0076B4) no-repeat;
 }
 
 .github-dashboard-card {
-    background: linear-gradient(#24292E, #24292E) no-repeat;
+    background: #fff linear-gradient(#24292E, #24292E) no-repeat;
 }
 
 .twitter-dashboard-card {
-    background: linear-gradient(#1DA1F2, #1DA1F2) no-repeat;
+    background: #fff linear-gradient(#1DA1F2, #1DA1F2) no-repeat;
+}
+
+.hashtag-dashboard-card {
+    background: #fff linear-gradient(#1DA1F2, #DD2A7B) no-repeat;
 }
 
 .dashboard-card {
     background-size: 2% 100%;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+    box-shadow: 0.5rem 0.5rem 1rem #c9c9c6, -0.5rem -0.5rem 1rem rgba(255, 255, 255, 0.938);
     border-radius: 1.5rem;
     padding: 1rem 1rem 0 1rem;
     margin: 1rem 0;
+    color: $cl-black;
+    display: block;
+    &:hover {
+    box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem rgba(255, 255, 255, 0.938);
+    }
     .dashboard-num-sec {
         flex-wrap: wrap;
         div {
@@ -73,12 +82,16 @@
     }
     .dashboard-icon-sec {
         margin-bottom: 2rem;
-        i {
+        label {
             align-self: flex-start;
+            cursor: pointer;
         }
         .fa-minus-circle {
             font-size: 1.7rem;
             color: $cl-red;
+            &:hover {
+                color: $cl-black;
+            }
         }
         h3 {
             line-height: 1.9;
@@ -103,13 +116,28 @@
     }
     .fa-sort-up {
         height: 1.2rem;
-        color: $cl-blue;
-    }
-    .red {
-        color: $cl-red;
-    }
-    .blue {
-        color: $cl-blue;
+        color: $cl-green;
     }
 }
 
+.fa-slack-hash {
+    color: $cl-blue;
+}
+
+#facebook-remove,
+#instagram-remove,
+#linkedin-remove,
+#github-remove,
+#twitter-remove,
+#hashtag-remove {
+    display: none;
+}
+
+#facebook-remove:checked ~ .facebook-dashboard-card,
+#instagram-remove:checked ~ .instagram-dashboard-card,
+#linkedin-remove:checked ~ .linkedin-dashboard-card,
+#github-remove:checked ~ .github-dashboard-card,
+#twitter-remove:checked ~ .twitter-dashboard-card,
+#hashtag-remove:checked ~ .hashtag-dashboard-card {
+    display: none;
+}

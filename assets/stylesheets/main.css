@@ -133,9 +133,14 @@ html {
           align-items: flex-end;
 }
 
-.card-box-shadow, .dashboard-card {
+.card-box-shadow, .add-view .add-view-card, .dashboard-card {
   -webkit-box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
           box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+}
+
+.card-hover-effect, .add-view .add-view-card:hover, .dashboard-card:hover {
+  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
+          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
 }
 
 .btn-box-shadow, .overlay-list li {
@@ -152,11 +157,6 @@ html {
   -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
           box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
   padding: 0.5rem 1rem;
-}
-
-.card-hover-effect, .dashboard-card:hover {
-  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
-          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
 }
 
 /*---------------------------------------------
@@ -206,25 +206,50 @@ a {
   background: #e6e7ee;
 }
 
+@media screen and (min-width: 1024px) {
+  .add-view .add-btn-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .add-view .add-btn-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(300px, 1fr))[3];
         grid-template-columns: repeat(3, minmax(300px, 1fr));
-    -webkit-column-gap: 1rem;
-            column-gap: 1rem;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
   }
 }
 
-.add-con {
-  margin-top: 1rem;
-  padding: 2rem;
+.add-view .add-view-card {
+  padding: 1rem;
+  margin: 1rem 0;
   border-radius: 1.5rem;
-  background: #000;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 300px;
+}
+
+.add-view .add-view-icon {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.add-view .add-option-wrapper {
+  margin: 1rem 0;
+}
+
+.add-view .add-option-wrapper div {
+  margin: 0.5rem 0;
+}
+
+.add-view .add-option-wrapper input {
+  margin-left: 1rem;
 }
 
 .header {

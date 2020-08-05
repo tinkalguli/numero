@@ -1,5 +1,5 @@
 /*---------------------------------------------
-           Variables
+Variables
 ---------------------------------------------*/
 /*====  css reset  ====*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -140,19 +140,20 @@ a {
   margin: 0 auto; }
 
 .text h3 {
-  color: #6622CC; }
+  color: #6622cc; }
 
 .text h4 {
-  color: #DA2C38; }
+  color: #da2c38; }
 
-.text h3, h4 {
+.text h3,
+h4 {
   padding-bottom: 1rem; }
 
 .text ul {
   list-style: circle; }
 
 .text li {
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
   color: gray; }
 
 .add-media {
@@ -199,24 +200,24 @@ a {
   font-size: 1rem; }
 
 .btn {
-  padding: .5rem .8rem;
+  padding: 0.5rem 0.8rem;
   margin-top: 1rem; }
 
 .atn {
-  background-color: #DA2C38;
+  background-color: #da2c38;
   color: white; }
 
 .overlay {
-  background-color: #1B2F33;
+  background-color: #1b2f33;
   color: white; }
 
 .add-con i {
   font-size: 3.5rem;
   color: white;
-  text-shadow: 5px 5px 2px  black; }
+  text-shadow: 5px 5px 2px black; }
 
 .add-con img {
-  text-shadow: 1px 1px 20px   lightgray; }
+  text-shadow: 1px 1px 20px lightgray; }
 
 #click {
   display: none; }
@@ -243,12 +244,12 @@ a {
   padding: 0.5rem 0;
   background: #ffffe1; }
   .header a:not(.logo) {
-    color: #FFFFFA; }
+    color: #fffffa; }
     .header a:not(.logo):hover {
-      color: #6622CC; }
+      color: #6622cc; }
     @media screen and (min-width: 768px) {
       .header a:not(.logo) {
-        color: #DA2C38; } }
+        color: #da2c38; } }
 
 #check {
   display: none; }
@@ -273,7 +274,7 @@ a {
   width: 2rem;
   height: 3px;
   border-radius: 1px;
-  background: #FFFFFA;
+  background: #fffffa;
   margin: 3px 0; }
 
 .navbar li {
@@ -338,7 +339,7 @@ a {
   background: #eff5f7;
   border-radius: 2rem; }
   .overlay-list a {
-    color: #6622CC; }
+    color: #6622cc; }
   .overlay-list li {
     background: #fff;
     padding: 1rem 1.5rem;
@@ -348,7 +349,7 @@ a {
     .overlay-list li i {
       font-size: 2rem; }
     .overlay-list li i:not(.fab) {
-      color: #6622CC; }
+      color: #6622cc; }
     .overlay-list li i:not(.fa-check-circle) {
       display: none; }
       @media screen and (min-width: 768px) {
@@ -381,7 +382,7 @@ a {
   background: #e9e0ea;
   padding: 4rem 0; }
   .main-dashboard .add-view-btn {
-    color: #6622CC;
+    color: #6622cc;
     font-size: 2rem;
     position: fixed;
     padding: 0.5rem 1rem;
@@ -443,7 +444,7 @@ a {
       align-self: flex-start; }
     .dashboard-card .dashboard-icon-sec .fa-minus-circle {
       font-size: 1.7rem;
-      color: #DA2C38; }
+      color: #da2c38; }
     .dashboard-card .dashboard-icon-sec h3 {
       line-height: 1.9; }
   .dashboard-card .num-label {
@@ -458,14 +459,14 @@ a {
     font-size: 1.5rem; }
   .dashboard-card .fa-sort-down {
     height: 1.8rem;
-    color: #DA2C38; }
+    color: #da2c38; }
   .dashboard-card .fa-sort-up {
     height: 1.2rem;
-    color: #6622CC; }
+    color: #6622cc; }
   .dashboard-card .red {
-    color: #DA2C38; }
+    color: #da2c38; }
   .dashboard-card .blue {
-    color: #6622CC; }
+    color: #6622cc; }
 
 .add-hastag {
   padding: 2rem;
@@ -525,7 +526,7 @@ a {
 .add-db {
   border: none;
   font-size: 1rem;
-  color: #1B2F33;
+  color: #1b2f33;
   padding: 1rem 1.5rem;
   border-radius: 27px;
   margin-top: 1rem;
@@ -570,61 +571,53 @@ Profile View Page
   background-color: #fffffa;
   -ms-grid-columns: minmax(350px, 1fr) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
-
-.profile__image {
-  width: calc(100px);
-  margin-bottom: 3rem; }
-
-.profile__image img {
-  width: 100%;
-  display: block; }
-
-.profile__text__hr {
-  border: none;
-  border-bottom: 2px solid #1b2f33;
-  width: 95%;
-  margin: auto; }
-
-.profile__text__name > *,
-.profile__text__email > *,
-.profile__text__password > * {
-  -ms-flex-preferred-size: 200px;
-  flex-basis: 200px;
-  margin: 1rem 0; }
-
-.profile__text__name__value,
-.profile__text__email__value,
-.profile__text__password__value {
-  color: grey; }
-
-.profile__actions {
-  margin: 10rem auto; }
-
-.btn {
-  border: none;
-  color: #fffffa;
-  display: block;
-  width: 200px;
-  max-width: 300px;
-  background-color: #da2c38;
-  padding: 1rem 2rem;
-  margin: 2rem 0;
-  -webkit-box-shadow: 2px 2px 2px #1b2f33;
-  box-shadow: 2px 2px 2px #1b2f33;
-  text-align: center; }
-
-@media all and (min-width: 768px) {
-  .profile__image {
-    width: calc(250px); }
-
-  .profile__image img {
+  .profile .profile__image {
+    width: calc(100px);
+    margin-bottom: 3rem; }
+  .profile .profile__image img {
     width: 100%;
-    display: block; } }
+    display: block; }
+  .profile .profile__text__hr {
+    border: none;
+    border-bottom: 2px solid #1b2f33;
+    width: 95%;
+    margin: auto; }
+  .profile .profile__text__name > *,
+  .profile .profile__text__email > *,
+  .profile .profile__text__password > * {
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+    margin: 1rem 0; }
+  .profile .profile__text__name__value,
+  .profile .profile__text__email__value,
+  .profile .profile__text__password__value {
+    color: grey; }
+  .profile .profile__actions {
+    margin: 10rem auto; }
+  .profile .btn {
+    border: none;
+    color: #fffffa;
+    display: block;
+    width: 200px;
+    max-width: 300px;
+    background-color: #da2c38;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    -webkit-box-shadow: 2px 2px 2px #1b2f33;
+    box-shadow: 2px 2px 2px #1b2f33;
+    text-align: center; }
+  @media all and (min-width: 768px) {
+    .profile .profile__image {
+      width: calc(250px); }
+    .profile .profile__image img {
+      width: 100%;
+      display: block; } }
+
 /*---------------------------------------------
 Edit Profile
 ---------------------------------------------*/
 .edit-profile {
-  background-color: #FFFFFA;
+  background-color: #fffffa;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
   .edit-profile .edit-profile__image {
     width: calc(100px);
@@ -634,7 +627,7 @@ Edit Profile
       display: block; }
   .edit-profile .edit-profile__text__hr {
     border: none;
-    border-bottom: 2px solid #1B2F33;
+    border-bottom: 2px solid #1b2f33;
     width: 95%;
     margin: auto; }
   .edit-profile .edit-profile__text__name > *,
@@ -650,11 +643,11 @@ Edit Profile
     margin: 10rem auto; }
   .edit-profile .btn {
     border: none;
-    color: #FFFFFA;
+    color: #fffffa;
     display: block;
     width: 200px;
     max-width: 300px;
-    background-color: #DA2C38;
+    background-color: #da2c38;
     padding: 1rem 2rem;
     margin: 2rem 0;
     cursor: pointer;

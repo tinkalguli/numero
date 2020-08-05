@@ -99,7 +99,7 @@ html {
            Typography
 ---------------------------------------------*/
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   line-height: 1.5; }
 
@@ -108,7 +108,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif; }
 
 h1 {
   font-size: 2.5rem; }
@@ -204,21 +205,24 @@ a {
     grid-gap: 2rem; } }
 .header {
   padding: 0.5rem 0;
-  background: #ffffe1; }
+  box-shadow: 0.5rem 0.5rem 1rem #c9c9c6, -0.5rem -0.5rem 1rem rgba(255, 255, 255, 0.938);
+  position: absolute;
+  width: 100%; }
   .header a:not(.logo) {
     color: #FFFFFA; }
     .header a:not(.logo):hover {
       color: #6622CC; }
     @media screen and (min-width: 768px) {
       .header a:not(.logo) {
-        color: #DA2C38; } }
+        color: #1B2F33; } }
 
 #check {
   display: none; }
 
 .logo span {
   font-size: 2.5rem;
-  color: #c9232f; }
+  color: #1B2F33;
+  font-family: "Josefin Sans", sans-serif; }
 .logo img,
 .logo span {
   display: inline-block;
@@ -236,7 +240,7 @@ a {
   width: 2rem;
   height: 3px;
   border-radius: 1px;
-  background: #FFFFFA;
+  background: #DA2C38;
   margin: 3px 0; }
 
 .navbar li {
@@ -246,18 +250,23 @@ a {
 
 .navbar {
   display: none;
-  padding-top: 2rem;
-  background: rgba(27, 47, 51, 0.995);
+  background: rgba(27, 47, 51, 0.9);
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 70vh;
-  border-radius: 0 0 10px 10px; }
+  top: 13%;
+  right: -100%;
+  width: 70%;
+  border-radius: 10px 0 0 10px; }
 
 #check:checked ~ .navbar {
-  display: block; }
+  display: block;
+  right: 0;
+  animation: right 0.5s ease-in; }
 
+@keyframes right {
+  from {
+    right: -100%; }
+  to {
+    right: 0; } }
 #check:checked ~ .check-btn > .bar {
   position: absolute;
   right: 0; }
@@ -281,7 +290,8 @@ a {
     position: static;
     height: auto;
     padding-top: 0;
-    background: transparent; }
+    background: transparent;
+    width: auto; }
     .header .navbar ul {
       display: flex; }
     .header .navbar li {
@@ -341,8 +351,8 @@ a {
   color: #1DA1F2; }
 
 .main-dashboard {
-  background: #e9e0ea;
-  padding: 4rem 0; }
+  background: #FFFFFA;
+  padding: 10rem 0 4rem 0; }
   .main-dashboard .add-view-btn {
     color: #6622CC;
     font-size: 2rem;
@@ -375,26 +385,33 @@ a {
     column-gap: 2rem; } }
 
 .facebook-dashboard-card {
-  background: linear-gradient(#0674E8, #0674E8) no-repeat; }
+  background: #fff linear-gradient(#0674E8, #0674E8) no-repeat; }
 
 .instagram-dashboard-card {
-  background: linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc) no-repeat; }
+  background: #fff linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc) no-repeat; }
 
 .linkedin-dashboard-card {
-  background: linear-gradient(#0076B4, #0076B4) no-repeat; }
+  background: #fff linear-gradient(#0076B4, #0076B4) no-repeat; }
 
 .github-dashboard-card {
-  background: linear-gradient(#24292E, #24292E) no-repeat; }
+  background: #fff linear-gradient(#24292E, #24292E) no-repeat; }
 
 .twitter-dashboard-card {
-  background: linear-gradient(#1DA1F2, #1DA1F2) no-repeat; }
+  background: #fff linear-gradient(#1DA1F2, #1DA1F2) no-repeat; }
+
+.hashtag-dashboard-card {
+  background: #fff linear-gradient(#1DA1F2, #DD2A7B) no-repeat; }
 
 .dashboard-card {
   background-size: 2% 100%;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+  box-shadow: 0.5rem 0.5rem 1rem #c9c9c6, -0.5rem -0.5rem 1rem rgba(255, 255, 255, 0.938);
   border-radius: 1.5rem;
   padding: 1rem 1rem 0 1rem;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  color: #1B2F33;
+  display: block; }
+  .dashboard-card:hover {
+    box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem rgba(255, 255, 255, 0.938); }
   .dashboard-card .dashboard-num-sec {
     flex-wrap: wrap; }
     .dashboard-card .dashboard-num-sec div {
@@ -402,11 +419,14 @@ a {
       padding: 0 0.2rem; }
   .dashboard-card .dashboard-icon-sec {
     margin-bottom: 2rem; }
-    .dashboard-card .dashboard-icon-sec i {
-      align-self: flex-start; }
+    .dashboard-card .dashboard-icon-sec label {
+      align-self: flex-start;
+      cursor: pointer; }
     .dashboard-card .dashboard-icon-sec .fa-minus-circle {
       font-size: 1.7rem;
       color: #DA2C38; }
+      .dashboard-card .dashboard-icon-sec .fa-minus-circle:hover {
+        color: #1B2F33; }
     .dashboard-card .dashboard-icon-sec h3 {
       line-height: 1.9; }
   .dashboard-card .num-label {
@@ -424,11 +444,26 @@ a {
     color: #DA2C38; }
   .dashboard-card .fa-sort-up {
     height: 1.2rem;
-    color: #6622CC; }
-  .dashboard-card .red {
-    color: #DA2C38; }
-  .dashboard-card .blue {
-    color: #6622CC; }
+    color: #2ecc40; }
+
+.fa-slack-hash {
+  color: #6622CC; }
+
+#facebook-remove,
+#instagram-remove,
+#linkedin-remove,
+#github-remove,
+#twitter-remove,
+#hashtag-remove {
+  display: none; }
+
+#facebook-remove:checked ~ .facebook-dashboard-card,
+#instagram-remove:checked ~ .instagram-dashboard-card,
+#linkedin-remove:checked ~ .linkedin-dashboard-card,
+#github-remove:checked ~ .github-dashboard-card,
+#twitter-remove:checked ~ .twitter-dashboard-card,
+#hashtag-remove:checked ~ .hashtag-dashboard-card {
+  display: none; }
 
 .add-hastag {
   padding: 2rem;

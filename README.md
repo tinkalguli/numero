@@ -47,6 +47,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 [ack]: #acknowledgements-❤️ "Inspirations, and code gifts"
 
-- Icon credits: Flaticons and Fontawesome
+- Icon credits: [Flaticon](https://www.flaticon.com/) and [Fontawesome](https://fontawesome.com/) and [Vitaly Gorbachev](https://www.flaticon.com/authors/vitaly-gorbachev)
 
 **[ Go back to the top][d]**

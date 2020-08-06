@@ -1,21 +1,25 @@
 /*---------------------------------------------
 The page - authenticate confirmation
 ---------------------------------------------*/
-.overlay-list {
+.overlay-list-card {
     text-align: center;
-    max-width: 30rem;
-    margin: 0.5rem auto;
-    padding: 2rem;
-    font-size: 1.5rem;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 7rem 1rem 2rem 1rem;
     background: $cl-white;
     border-radius: 2rem;
-    flex-direction: column;
+    animation: overlay-animate 0.5s ease-in forwards;
+    h3 {
+        padding-bottom: 1rem;
+    }
     a {
         color: $cl-blue;
     }
-    li {
+    label {
         padding: 0.8rem 1.5rem;
-        margin: 1rem 0.5rem;
+        margin:1rem;
         border-radius: 1.5rem;
         cursor: pointer;
         @extend .btn-box-shadow;
@@ -28,13 +32,11 @@ The page - authenticate confirmation
         }
         .fa-check-circle {
             padding-left: 1rem;
+            display: none;
         }
     }
-    .overlay-btn {
-        display: inline-block;
-        width: 8rem;
-        margin: 0.5rem auto;
-        padding: 1rem 1.5rem;
+    .overlay-btn-wrapper {
+        margin-top: 2rem;
     }
 }
 
@@ -69,16 +71,17 @@ The page - authenticate confirmation
 .overlay-wrapper {
     display: none;
     position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    label {
-        font-size: 5rem;
-        display: block;
-        color: $cl-red;
-        position: fixed;
-        right: 0;
-    }
+    padding: 0 3rem;
+    left: 0;
+    top: 0;
+    // transform: translate(-50%, -50%);
+    // label {
+    //     font-size: 5rem;
+    //     display: block;
+    //     color: $cl-red;
+    //     position: fixed;
+    //     right: 0;
+    // }
 }
 
 #overlay:checked ~ .overlay-unchecked > .overlay-wrapper {
@@ -88,10 +91,30 @@ The page - authenticate confirmation
     width: 100%;
 }
 
-// #facebook-checked {
-//     display: none;
-// }
 
-// #facebook-checked:checked ~ .facebook-checked {
-//     display: block;
-// }
+@keyframes overlay-animate {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+#tick-instagram,
+#tick-github,
+#tick-twitter {
+    display: none;
+}
+
+#tick-instagram:checked ~ .loged-in-instagram > .tick-mark {
+ display: block;
+}
+
+#tick-github:checked ~ .loged-in-github > .tick-mark {
+    display: block;
+}
+
+#tick-twitter:checked ~ .loged-in-twitter > .tick-mark {
+    display: block;
+}

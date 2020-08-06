@@ -33,15 +33,12 @@
     </header>
     <main>
       <section class="add-view">
-
-        <div class="">
-          <h2>Add your social media into dashboard</h2>
-          <h3>Follow the below steps to add your social media and hastag</h3>
-          <ul>
-            <li>Do the authentication for your social media ny entering your login dateils .</li>
-            <li>After the authentication completed you can add that into dashboard.</li>
-            <li>Add your hashtag by clicking add hastag after authentication</li>
-          </ul>
+        <div class="add-view-info">
+          <h2>Add your data points in the dashboard</h2>
+          <h3>Follow the steps below to add your data sources</h3>
+          <p>Choose the type of data point you would want to add for the respective source.
+            Click 'Add to Dashboard'. Choose the authentication for the source. This will take you to the source website's login page. Authenticate over there and you'll be routed back to this page.</p>
+          <p>Now press the 'Add to dashboard' button to add the data-point to your dashboard.</p>
         </div>
 
         <div class="container-1 add-card-wrapper">
@@ -157,41 +154,43 @@
                 <label for="choice-1">Shares<input type="checkbox" id="choice-1"></label>
               </div>
             </fieldset>
+
+            <!-- This is the button that opens the overlay. Using JS we will create the same effects on all cards -->
             <div class="add-btn-wraper">
               <label for="overlay" class="btn">Add to dashboard</label>
             </div>
+
             <input type="checkbox" id="overlay">
             
             <label for="overlay" class="overlay-unchecked">
               <div class="overlay-wrapper">
-                <ul class="overlay-list flex">
-                  <li class="flex-between">
-                    <i class="fab fa-facebook-square"></i>
-                    <a href="#">Log in to Facebook</a>
-                    <i class="fas fa-check-circle"></i>
-                  </li>
-                  <li class="flex-between">
-                    <i class="fab fa-instagram-square"></i>
-                    <a href="#">Log in to Instagram</a>
-                    <i class="fas fa-check-circle"></i>
-                  </li>
-                  <li class="flex-between">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="#">Log in to LinkedIn</a>
-                    <i class="fas fa-check-circle"></i>
-                  </li>
-                  <li class="flex-between">
-                    <i class="fab fa-github-square"></i>
-                    <a href="#">Log in to Github</a>
-                    <i class="fas fa-check-circle"></i>
-                  </li>
-                  <li class="flex-between">
-                    <i class="fab fa-twitter-square"></i>
-                    <a href="#">Log in to Twitter</a>
-                    <i class="fas fa-check-circle"></i>
-                  </li>
-                  <li class="overlay-btn card-box-shadow"><a href="dashboard.html">Add</a></li>
-                </ul>
+                  <div class="overlay-list-card">
+                    <h3>Log in</h3>
+                    <div class="overlay-list">
+                      <input type="checkbox" id="tick-instagram">
+                      <label for="tick-instagram" class="flex-between loged-in-instagram">
+                        <i class="fab fa-instagram-square"></i>
+                        <span>Instagram</span>
+                        <i class="tick-mark fas fa-check-circle"></i>
+                      </label>
+                      <input type="checkbox" id="tick-github">
+                      <label for="tick-github" class="flex-between loged-in-github">
+                        <i class="fab fa-github-square"></i>
+                        <span>Github</span>
+                        <i class="tick-mark fas fa-check-circle"></i>
+                      </label>
+                      <input type="checkbox" id="tick-twitter">
+                      <label for="tick-twitter" class="flex-between loged-in-twitter">
+                        <i class="fab fa-twitter-square"></i>
+                        <span>Twitter</span>
+                        <i class="tick-mark fas fa-check-circle"></i>
+                      </label>
+                    </div>
+                    <div class="overlay-btn-wrapper">
+                      <a class="btn" href="dashboard.html">Add your account</a>
+                    </div>
+                  </div>
+                
               </div>
             </label>
 

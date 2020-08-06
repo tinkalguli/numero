@@ -1,3 +1,6 @@
+/*---------------------------------------------
+Component - Footer
+---------------------------------------------*/
 .numero-footer {
   text-align: center;
   padding: 2rem 0;
@@ -6,8 +9,9 @@
   &__nav {
   }
   &__nav-items {
-    max-width: 360px;
+    max-width: 22rem;
     margin: 0 auto;
+    padding: 1rem 0;
   }
   &__nav-item {
     a {
@@ -16,7 +20,7 @@
       font-weight: 700;
     }
     img {
-      width: 30px;
+      width: 2rem;
     }
   }
 }

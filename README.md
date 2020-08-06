@@ -8,16 +8,17 @@
 
 > That which can be measured, can be improved. -- **Multiple sources**
 
-## Built With ⛏️
+## Built With
 
-[s]: #built-with-⛏️ "S/w stack"
+[s]: #built-with "S/w stack"
 
-- This is a pure HTML and CSS venture. We take pride in our handiwork and are sure that the outcome would be pleasing to our users.
+⛏️ This is a pure HTML and CSS venture. We take pride in our handiwork and are sure that the outcome would be pleasing to our users.
 
-## Contributing 🎅
+## Contributing
 
-[c]: #Contributing-🎅 "Guidelines for contribution"
+[c]: #Contributing "Guidelines for contribution"
 
+🎅
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
@@ -26,9 +27,11 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 
 We use [SemVer](http://semver.org/) for versioning. Currently, the project is in a beta stage and this part of the readme will be updated when the first version is made live.
 
-## Authors 🦹
+## Authors
 
-[a]: #Authors-🦹 "All the authors"
+[a]: #Authors "All the authors"
+
+🦹
 
 - **Narapureddy Gangadhar Reddy** - _Grunt Worker_ [@ngreddy13](https://twitter.com/NGReddy13)
 - **Sushant Sareen** - _Grunt Worker_ @rish0229 [](https://twitter.com/@rish0229)
@@ -43,10 +46,10 @@ We use [SemVer](http://semver.org/) for versioning. Currently, the project is in
 (The license.md file is being updated)
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgements ❤️
+## Acknowledgements
 
-[ack]: #acknowledgements-❤️ "Inspirations, and code gifts"
+[ack]: #acknowledgements "Inspirations, and code gifts"
+
+❤️
 
 - Icon credits: [Flaticon](https://www.flaticon.com/) and [Fontawesome](https://fontawesome.com/) and [Vitaly Gorbachev](https://www.flaticon.com/authors/vitaly-gorbachev)
-
-**[ Go back to the top][d]**

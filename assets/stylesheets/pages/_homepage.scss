@@ -1,332 +1,230 @@
-.home-pg-header{
-    
-    .header-btn a{
-       
-       background-color: white;
-       color: black;
-       padding: .6rem .8rem;
+.numero-home {
+  header {
+    background-color: transparentize($color: #fff, $amount: 0.5);
+  }
+  h2 {
+    // font-size: rem;
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: $cl-black;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.numero-home__banner {
+  background: url("/assets/images/background/Flat-Mountains.svg");
+  background-color: $cl-white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $cl-black;
+  padding-top: 10rem;
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .info {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // color: white;
+
+    .subtext {
+      font-weight: 700;
+      font-size: 1.5rem;
     }
 
-    .header-signup-btn a{
+    p {
+      padding-bottom: 1rem;
+      color: $cl-black;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // margin: 5rem 0;
+    padding: 1rem;
+    margin-top: 1rem;
+    // background: linear-gradient(to right, #e29587, #d66d75);
+    background-color: transparent;
+
+    padding-top: 2rem;
+
+    form {
+      // display: flex;
+      // flex-direction: column;
+      text-align: center;
+    }
+
+    form input {
+      border: none;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $cl-black;
+      width: 80%;
+      padding: 0.5rem;
+      background: none;
+    }
+
+    ::placeholder {
+      padding: 1rem 0rem 2rem 0.5rem;
+      font-size: 1rem;
+    }
+
+    .login-btn {
+      margin-top: 0.4rem;
+      border: none;
+      padding: 1rem 6rem;
+      background-color: $cl-blue;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .signup-part {
+      margin-top: 2rem;
+      text-align: center;
+
+      .signup-btn {
+        display: inline-block;
         background-color: $cl-red;
         color: white;
-    }
-    
-
-    
-}
-
-.banner{
-    
-    color: white;
-    background: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/assets/images/img4.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    .container{
-        margin: 0 auto;
-    }
-    
-    .info{
-        margin-top: 2rem;
-        padding: 1rem 1.5rem;
-       display: flex;
-       flex-direction: column;
-      
-       justify-content: center;
-       color: white;
-
-     p{
-         padding-bottom: 1rem;
-         color: $cl-violet;
-     }
-    }
-    h1{
-        font-size: 1.9rem;
-        color: $cl-white;
-        padding-bottom: .5rem;
-    }
-    h2{
         font-size: 1rem;
-        color:$cl-white;
-        padding-bottom: .5rem;
+        padding: 1rem 5.5rem;
+      }
     }
+  }
 
-    .form{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        // margin: 5rem 0;
-        padding: 1rem;
-        margin-top: 1rem;  
-        background: linear-gradient(to right, #E29587, #D66D75); 
-
-        
-        
-       
-        padding-top: 2rem;
-
-        form{
-            // display: flex;
-            // flex-direction: column;
-            text-align: center;
-        }
-   
-        form input{
-            border: none;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid white;
-            width: 80%;
-            padding: .5rem;
-            background: none;
-            color: white;
-        }
-
-        ::placeholder{
-            padding:1rem 0rem 2rem .5rem;
-            font-size: 1rem;
-            color: white;
-            
-        }
-
-        .login-btn{
-            margin-top: .4rem;
-            border:none;
-            padding: 1rem 6rem;
-            background-color: $cl-blue;
-            color: white;
-            font-size: 1rem;
-            
-        }
-
-        .signup-part{
-            margin-top: 2rem;
-            text-align: center;
-
-            h4{
-                color: white;
-            }
-
-            .signup-btn{
-                display: inline-block;
-                background-color: $cl-red;
-                color:white;
-                font-size: 1rem;
-                padding: 1rem 5.5rem;
-
-            }
-        }
-    }
-
-    .icon-dashboard{
-        display: none;
-    }
+  .icon-dashboard {
+    display: none;
+  }
 }
 
-
-.about{
-    display: flex;
-    text-align: center;
+.numero-home__about {
+  background-color: $cl-white;
+  background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+  display: flex;
+  //   text-align: center;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background-color: $cl-blue;
-  color: white;
+  color: $cl-black;
 
-  .about-image {
-
-     img{
-      width: 100%;
-     }
+  &__image {
+    img {
+      width: 80%;
+    }
   }
 
   .about-info {
-      p{
-        padding-top: 1rem;
-      }
+    p {
+      padding-top: 1rem;
+    }
   }
-  
 }
 
-.features{
-    // display: grid;
-    // grid-template-rows: repeat(4,1fr);
-    // align-items: center;
-    // justify-content: center;
-    text-align: center;
-    h3{
-         font-size: 1.2rem;
-         color: $cl-red;
-         padding-bottom: .5rem;
-    }
-    i{
-        font-size: 2rem;
-        color: $cl-blue;
-        padding-bottom: 1rem;;
-    }
-    .feature{
-        margin: 2rem;
-        padding: 2.5rem;
-        background-color: white;
-        color: black;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.5);
-    }
+.features {
+  background-color: $cl-white;
+  //   background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+  // display: grid;
+  // grid-template-rows: repeat(4,1fr);
+  // align-items: center;
+  // justify-content: center;
+  text-align: center;
+  h3 {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+  }
+  i {
+    font-size: 2rem;
+    color: $cl-blue;
+    padding-bottom: 1rem;
+  }
+  .feature {
+    margin: 2rem;
+    padding: 2.5rem;
+    background-color: white;
+    color: black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+  }
 }
 
-.importance{
-    img{
-        width: 100%;
-    }
+.importance {
+  img {
+    width: 100%;
+    background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+  }
 
-    .imp-info{
-        padding: 1rem;
-        text-align: center;
-        background-color: $cl-black;
-        color: white;
+  .imp-info {
+    padding: 1rem;
+    // text-align: center;
+    background-color: $cl-white;
+    color: $cl-black;
+    background-image: url(/assets/images/background/Dalmatian-Spots.svg);
 
+    h3 {
+      padding: 2rem 0;
+      font-size: 2rem;
+    }
+    p {
+      padding-top: 1rem;
+    }
+  }
 
-        h3{
-            padding:2rem 0 ;
-            font-size: 2rem;
-        }
-        h3 strong{
-            color: $cl-red;
-        }
-        p{
-            padding-top: 1rem;
-        }
-    }
-    
-    .img-container{
-        font-size: 0;
-    }
-  
+  .img-container {
+    font-size: 0;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // desktop view
 
-@media screen and (min-width:768px){
-
-    .header{
-        background: none;
-        
-    }
-    .banner{
-
-        position: relative;
-        top: -100px;
-        height: 680px;
-        z-index: -1;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        .grid-col{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            
-        }
-
-        form{
-            display: inline-block;
-        }
-
-        .banner-container{
-            position: relative;
-            top: 200px;
-            
-        }
-
-        
+@media screen and (min-width: 768px) {
+  .numero-home__banner {
+    .grid-col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    
-    
-
-    .about{
-        position: relative;
-        top: -100px;
-        .grid-col-2{
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-
-        }
-
-        .about-info{
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-        }
+    form {
+      display: inline-block;
     }
-    
-    .grid-col-4{
-            display: grid;
-         grid-template-columns: repeat(4,1fr);
+
+    .banner-container {
+      //   position: relative;
+      //   top: 200px;
     }
-    
-    .importance-container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+  }
+
+  .numero-home__about {
+    // position: relative;
+    // top: -100px;
+    .grid-col-2 {
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
+
+    .about-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .grid-col-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .importance-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

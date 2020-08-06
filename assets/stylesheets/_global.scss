@@ -44,3 +44,62 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+
+.flex-end-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-box-shadow {
+  box-shadow: 1rem 1rem 1rem #dadada,
+              -0.1rem -0.1rem 0.1rem #f3f3f3,
+              inset 1rem 1rem 1rem #e4e4e4;
+}
+
+.card-hover-effect  {
+  box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+              inset -0.5rem -0.5rem 1rem #ffffffef;
+}
+
+.btn-box-shadow {
+  box-shadow: 0.5rem 0.5rem 0.5rem #dadada,
+              -0.1rem -0.1rem 0.1rem #f3f3f3,
+              inset 1rem 1rem 1rem #e4e4e4;
+  &:hover {
+    box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+    inset -0.5rem -0.5rem 1rem #ffffffef;
+  }
+}
+
+.link-hover-effect {
+  box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+  inset -0.5rem -0.5rem 1rem #ffffffef;
+  // padding: 0.5rem 1rem;
+} 
+// Links should have same padding
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  @extend .btn-box-shadow;
+  color: $cl-black;
+}
+
+// make sure that the style of the icons should be in the parent
+// and parent should have same height and width (icon-width + 1.5rem)
+
+.icons-neu-effect {
+  box-shadow: 0.5rem 0.5rem 0.5rem #dadada,
+              -0.1rem -0.1rem 0.1rem #f3f3f3,
+              inset 1rem 1rem 1rem #e4e4e4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-icon--black {
+  // TODO: Make the svg icons $cl-black
+  color: $cl-black;
+}

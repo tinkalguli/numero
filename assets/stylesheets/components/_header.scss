@@ -53,7 +53,7 @@ Component - Header
     width: 2rem;
     height: 3px;
     border-radius: 1px;
-    background: $cl-red;
+    background: $cl-black;
     margin: 3px 0;
   }
 
@@ -72,7 +72,6 @@ Component - Header
     right: -100%;
     width: 70%;
     border-radius: 10px 0 0 10px;
-    
   }
 
   #check:checked ~ &__navbar {

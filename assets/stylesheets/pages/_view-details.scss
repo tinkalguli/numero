@@ -42,5 +42,8 @@ View Details
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 70px;
     text-align: center;
+    @media (min-width: 768px) {
+      width: 80%;
+    }
   }
 }

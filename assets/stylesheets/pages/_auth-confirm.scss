@@ -38,30 +38,6 @@ Page - Authentication confirmation
   }
 }
 
-.fa-facebook-square {
-  color: #0674e8;
-}
-
-.fa-instagram-square {
-  background: linear-gradient(45deg, #f0a028, #dd2a7b, #6945cc);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-emphasis-color: transparent;
-}
-
-.fa-linkedin {
-  color: #0076b4;
-}
-
-.fa-github-square {
-  color: #24292e;
-}
-
-.fa-twitter-square {
-  color: #1da1f2;
-}
-
 #overlay {
   display: none;
 }
@@ -87,11 +63,3 @@ Page - Authentication confirmation
   height: 100%;
   width: 100%;
 }
-
-// #facebook-checked {
-//     display: none;
-// }
-
-// #facebook-checked:checked ~ .facebook-checked {
-//     display: block;
-// }

@@ -34,10 +34,10 @@ We use [SemVer](http://semver.org/) for versioning. Currently, the project is in
 🦹
 
 - **Narapureddy Gangadhar Reddy** - _Grunt Worker_ [@ngreddy13](https://twitter.com/NGReddy13)
-- **Sushant Sareen** - _Grunt Worker_ @rish0229 [](https://twitter.com/@rish0229)
-- **Tinkal Deka** - _Grunt Worker_ @tinkal_deka [](https://twitter.com/tinkal_deka)
-- **Bharat Patodi** - _Grunt Worker_ @bharatpatodi [](https://twitter.com/@bharatpatodi)
-- **Suraj** - _Reviewer_ @suraj_122 [](https://twitter.com/@suraj_122)
+- **Sushant Sareen** - _Grunt Worker_ [@rish0229](https://twitter.com/@rish0229)
+- **Tinkal Deka** - _Grunt Worker_ [@tinkal_deka](https://twitter.com/tinkal_deka)
+- **Bharat Patodi** - _Grunt Worker_ [@bharatpatodi](https://twitter.com/@bharatpatodi)
+- **Suraj** - _Reviewer_ [@suraj_122](https://twitter.com/@suraj_122)
 
 ## License
 

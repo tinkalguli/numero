@@ -135,7 +135,8 @@ Component - Header
   top: 0;
   left: 0;
   right: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 30; }
   .numero-header a:not(.logo) {
     color: #31344b; }
     .numero-header a:not(.logo):hover {

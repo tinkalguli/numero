@@ -7,29 +7,31 @@ Home Page
   }
   h2 {
     // font-size: rem;
+    line-height: 1.3;
     font-weight: 300;
     font-size: 3.5rem;
     color: $cl-black;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.8rem;
   }
 }
 
 .numero-home__banner {
-  background: url("/assets/images/background/Flat-Mountains.svg");
+  background: url("../../assets/images/background/Flat-Mountains.svg");
   background-color: $cl-white;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: $cl-black;
-  padding-top: 10rem;
-
+  // height: 100vh;
+  padding: 8rem 0 4rem 0;
+  align-items: center;
   .container {
     margin: 0 auto;
   }
 
   .info {
-    margin-top: 2rem;
-    padding: 1rem 1.5rem;
+    // margin-top: 2rem;
+    // padding: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,12 +53,10 @@ Home Page
     flex-direction: column;
     justify-content: space-between;
     // margin: 5rem 0;
-    padding: 1rem;
-    margin-top: 1rem;
+    // padding: 1rem;
+    // margin-top: 1rem;
     // background: linear-gradient(to right, #e29587, #d66d75);
     background-color: transparent;
-
-    padding-top: 2rem;
 
     form {
       // display: flex;
@@ -67,10 +67,12 @@ Home Page
     form input {
       border: none;
       margin-bottom: 1rem;
-      border-bottom: 1px solid $cl-black;
-      width: 80%;
-      padding: 0.5rem;
+      width: 70%;
+      padding: 0.8rem;
       background: none;
+      @extend .link-hover-effect;
+      border-radius: 10px;
+      background: $cl-white;
     }
 
     ::placeholder {
@@ -81,22 +83,16 @@ Home Page
     .login-btn {
       margin-top: 0.4rem;
       border: none;
-      padding: 1rem 6rem;
-      background-color: $cl-blue;
-      color: white;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     .signup-part {
-      margin-top: 2rem;
+      margin-top: 1rem;
       text-align: center;
-
       .signup-btn {
-        display: inline-block;
-        background-color: $cl-red;
-        color: white;
-        font-size: 1rem;
-        padding: 1rem 5.5rem;
+        font-size: 1.1rem;
+        margin-top: 0.2rem;
+        background: $cl-white;
       }
     }
   }
@@ -108,12 +104,12 @@ Home Page
 
 .numero-home__about {
   background-color: $cl-white;
-  background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+  background-image: url(../../assets/images/background/Dalmatian-Spots.svg);
   display: flex;
   //   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  // padding: 1rem;
   color: $cl-black;
 
   &__image {
@@ -137,6 +133,16 @@ Home Page
   // align-items: center;
   // justify-content: center;
   text-align: center;
+  .grid-col-4 {
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
   h3 {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
@@ -149,27 +155,24 @@ Home Page
   .feature {
     margin: 2rem;
     padding: 2.5rem;
-    background-color: white;
-    color: black;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+    // background-color: white;
+    border-radius: 1rem;
+    @extend .card-box-shadow;
   }
 }
 
 .importance {
+  background-image: url(../../assets/images/background/Dalmatian-Spots.svg);
   img {
     width: 100%;
-    background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+    background-image: url(../../assets/images/background/Dalmatian-Spots.svg);
   }
 
   .imp-info {
     padding: 1rem;
     // text-align: center;
-    background-color: $cl-white;
-    color: $cl-black;
-    background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+    // background-color: $cl-white;
+    // color: $cl-black;
 
     h3 {
       padding: 2rem 0;
@@ -185,49 +188,54 @@ Home Page
   }
 }
 
+
+
 // desktop view
 
-@media screen and (min-width: 768px) {
-  .numero-home__banner {
-    .grid-col {
+.main-index {
+  @media screen and (min-width: 768px) {
+    .order-1 {
+      order: 1;
+    }
+    .numero-home__banner {
+      height: 100vh;
+      .grid-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      form {
+        display: inline-block;
+      }
+  
+      .banner-container {
+        //   position: relative;
+        //   top: 200px;
+      }
+    }
+  
+    .numero-home__about {
+      // position: relative;
+      // top: -100px;
+      .grid-col-2 {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      .about-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  
+    .container-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
-
-    form {
-      display: inline-block;
-    }
-
-    .banner-container {
-      //   position: relative;
-      //   top: 200px;
-    }
   }
-
-  .numero-home__about {
-    // position: relative;
-    // top: -100px;
-    .grid-col-2 {
-      text-align: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  .grid-col-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .importance-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 }
+

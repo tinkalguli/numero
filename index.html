@@ -10,7 +10,7 @@
     <header class="numero-header">
       <div class="container flex-between">
         <a href="#" class="numero-header__logo">
-          <img src="../assets/images/logo.svg" alt="logo" />
+          <img src="assets/images/logo.svg" alt="logo"/>
           <span>umero</span>
         </a>
         <input type="checkbox" id="check" />
@@ -23,29 +23,17 @@
           <ul class="numero-header__navbar__ul">
             <li><a href="pages/dashboard.html">Dashboard</a></li>
             <li><a href="https://github.com/AltCampus/numero">Github</a></li>
-            <li><a href="pages/team.html">Team</a></li>
+            <li><a href="pages/dashboard.html">Log In</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section class="numero-home__banner">
-        <div class="banner-container container-1 grid-col-2">
+    <main class="main-index">
+      <section class="numero-home__banner flex">
+        <div class="container-1 grid-col-2">
           <div class="grid-col">
-            <div class="form">
-              <form>
-                <input type="email" name="Email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Password" />
-                <button type="submit" class="login-btn" name="submit">
-                  Login
-                </button>
-              </form>
-              <div class="signup-part">
-                <h4>Don't have an account?</h4>
-                <a href="#" class="signup-btn">Sign Up</a>
-              </div>
-            </div>
-            <div class="info">
+            
+            <div class="info order-1 text-center padding-bottom">
               <h2 class="head">
                 Track that data hard!
               </h2>
@@ -55,18 +43,28 @@
                 it, you might end up improving it. We really can't tell.
               </p>
             </div>
-            <div class="icon-dashboard">
-              <img src="assets/images/dashboard.svg" />
+            <div class="form">
+              <form>
+                <input type="email" name="Email" placeholder="Email" /><br>
+                <input type="password" name="password" placeholder="Password" /><br>
+                <button type="submit" class="login-btn btn" name="submit">
+                  Login
+                </button>
+              </form>
+              <div class="signup-part">
+                <h4>Don't have an account?</h4>
+                <a href="pages/dashboard.html" class="signup-btn btn">Sign Up</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="numero-home__about">
-        <div class="grid-col-2">
-          <div class="numero-home__about__image">
-            <img src="/assets/images/data_trends.svg" />
+      <section class="numero-home__about padding">
+        <div class="grid-col-2 container">
+          <div class="numero-home__about__image padding-bottom">
+            <img src="assets/images/data_trends.svg" />
           </div>
-          <div class="about-info">
+          <div class="about-info text-center">
             <h2>numero keeps you focused</h2>
             <p>
               Throughout your day, you generate multiple data points using
@@ -77,45 +75,47 @@
           </div>
         </div>
       </section>
-      <section class="features grid-col-4">
-        <div class="feature feature-1">
-          <i class="fas fa-chart-line"></i>
-          <h3>numero sets you free!</h3>
-          <p>
-            With numero's cutting-edge technology, you can control the data that
-            you share with an application. Numero puts the control of your
-            datapoints back in your hands.
-          </p>
-        </div>
-        <div class="feature feature-2">
-          <i class="fab fa-draft2digital"></i>
-          <h3>Minimal Dashboard</h3>
-          <p>
-            Minimalism is built in the design of numero. We try to cut every
-            redundant information out of your view.
-          </p>
-        </div>
-        <div class="feature feature-3">
-          <i class="fas fa-hashtag"></i>
-          <h3>Hashtag monitoring</h3>
-          <p>
-            If you desire to track a particular trend, now you don't have to
-            open google trends. You can do it right inside of numero.
-          </p>
-        </div>
-        <div class="feature feature-4">
-          <i class="fas fa-users"></i>
-          <h3>Free for basic usage</h3>
-          <p>
-            In the beta phase, numero is providing a basic plan that allows you
-            to add up to 10 data sources to your dashboard completely free of
-            charge!
-          </p>
+      <section class="features padding">
+        <div class="container-1 grid-col-4">
+          <div class="feature feature-1">
+            <i class="fas fa-chart-line"></i>
+            <h3>numero sets you free!</h3>
+            <p>
+              With numero's cutting-edge technology, you can control the data that
+              you share with an application. Numero puts the control of your
+              datapoints back in your hands.
+            </p>
+          </div>
+          <div class="feature feature-2">
+            <i class="fab fa-draft2digital"></i>
+            <h3>Minimal Dashboard</h3>
+            <p>
+              Minimalism is built in the design of numero. We try to cut every
+              redundant information out of your view.
+            </p>
+          </div>
+          <div class="feature feature-3">
+            <i class="fas fa-hashtag"></i>
+            <h3>Hashtag monitoring</h3>
+            <p>
+              If you desire to track a particular trend, now you don't have to
+              open google trends. You can do it right inside of numero.
+            </p>
+          </div>
+          <div class="feature feature-4">
+            <i class="fas fa-users"></i>
+            <h3>Free for basic usage</h3>
+            <p>
+              In the beta phase, numero is providing a basic plan that allows you
+              to add up to 10 data sources to your dashboard completely free of
+              charge!
+            </p>
+          </div>
         </div>
       </section>
-      <section class="importance">
-        <div class="importance-container">
-          <div class="imp-info">
+      <section class="importance padding">
+        <div class="container-grid container">
+          <div class="imp-info text-center">
             <h2>You can trust us.🦑</h2>
             <p>
               Numero is a privacy-first company. We care about your choices
@@ -125,7 +125,7 @@
             </p>
           </div>
           <div class="img-container">
-            <img src="/assets/images/social_dashboard.svg" />
+            <img src="assets/images/social_dashboard.svg" />
           </div>
         </div>
       </section>
@@ -133,21 +133,20 @@
     <footer class="numero-footer">
       <nav class="numero-footer__nav">
         <ul class="numero-footer__nav-items flex-between">
-          <li class="numero-footer__nav-item"><a href="#">Team</a></li>
-          <li class="numero-footer__nav-item"><a href="#">Credits</a></li>
+          <li class="numero-footer__nav-item"><a target="_blank" href="https://github.com/AltCampus/numero">Credits</a></li>
           <li class="numero-footer__nav-item">
-            <a href="#">
-              <img src="../assets/images/twitter.svg" alt="Twitter" />
+            <a target="_blank" href="https://twitter.com/">
+              <img src="assets/images/twitter.svg" alt="Twitter" />
             </a>
           </li>
           <li class="numero-footer__nav-item">
-            <a href="#">
-              <img src="../assets/images/github.svg" alt="Github" />
+            <a target="_blank" href="https://github.com/AltCampus/numero">
+              <img src="assets/images/github.svg" alt="Github" />
             </a>
           </li>
           <li class="numero-footer__nav-item">
-            <a href="#">
-              <img src="../assets/images/instagram.svg" alt="Instagram" />
+            <a target="_blank" href="https://www.instragram.com/">
+              <img src="assets/images/instagram.svg" alt="Instagram" />
             </a>
           </li>
         </ul>

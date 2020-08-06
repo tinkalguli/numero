@@ -85,6 +85,13 @@ Global
   color: $cl-black;
 }
 
+.btn-no-shadow {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: $cl-black;
+}
+
 // make sure that the style of the icons should be in the parent
 // and parent should have same height and width (icon-width + 1.5rem)
 
@@ -99,4 +106,22 @@ Global
 .svg-icon--black {
   // TODO: Make the svg icons $cl-black
   color: $cl-black;
+}
+
+.padding {
+  padding: 4rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 8rem 0;
+  }
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
 }

@@ -1,158 +1,46 @@
 .add-view {
-  background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
-    url("../assets/media/add_view/bg3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-items: center;
-}
-
-.text {
-  padding-top: 2rem;
-  margin: 0 auto;
-}
-
-.text h3 {
-  color: $cl-blue;
-}
-.text h4 {
-  color: $cl-red;
-}
-
-.text h3,
-h4 {
-  padding-bottom: 1rem;
-}
-
-.text ul {
-  list-style: circle;
-}
-
-.text li {
-  padding-bottom: 0.4rem;
-  color: gray;
-}
-
-.add-media {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
-
-//common style for all boxes
-.add-con {
-  text-align: center;
-  display: flex;
-
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  //    Fixed width and height
-  width: 14rem;
-  height: 14rem;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
-}
-
-//facebook box
-.fb-con {
-  background: rgba(102, 34, 204, 1);
-}
-
-//twitter box
-.twt-con {
-  background: rgba(63, 136, 197, 1);
-}
-
-//linkedin box
-
-.lkdn-con {
-  background: rgba(27, 47, 51, 1);
-}
-
-// insta box
-
-.insta-con {
-  background: rgba(181, 148, 182, 1);
-}
-
-//github box
-
-.github-con {
-  background: black;
-}
-
-// hastag box
-.hstg-con {
-  background: rgba(0, 0, 255, 0.9);
-}
-
-.btns {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-
-  font-size: 1rem;
-}
-
-.btn {
-  padding: 0.5rem 0.8rem;
-  margin-top: 1rem;
-}
-
-.atn {
-  background-color: $cl-red;
-  color: white;
-}
-
-.overlay {
-  background-color: $cl-black;
-  color: white;
-}
-
-.add-con i {
-  font-size: 3.5rem;
-  color: white;
-  text-shadow: 5px 5px 2px black;
-}
-
-.add-con img {
-  text-shadow: 1px 1px 20px lightgray;
-}
-
-// authentication completed action
-
-#click {
-  display: none;
-}
-
-// desktop layout
-
-@media screen and (min-width: 768px) {
-  .add-media {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 2rem;
-    padding: 2rem 0;
-    background-position: center;
-    margin: 0 auto;
+  background: $cl-white;
+  padding: 20rem 0;
+  .add-card-wrapper {
+      @media screen and (min-width:1024px){
+          @include grid-repeat(2, 300px, 1fr);
+              column-gap: 2rem;
+      }
+      @media screen and (min-width:768px){
+          @include grid-repeat(3, 300px, 1fr);
+              column-gap: 2rem;
+      }
   }
-
-  .text {
-    display: grid;
-    align-items: center;
-    justify-content: center;
+  .btn-hashtag {
+      cursor: pointer;
   }
-  .cm-con {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+  .add-view-card {
+      padding: 1.5rem 2rem;
+      margin: 1rem 0;
+      border-radius: 1.5rem;
+      @extend .card-box-shadow;
+      .add-btn-wraper {
+          text-align: center;
+      }
+  }
+  .add-view-icon {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4.5rem;
+      height: 4.5rem;
+      @extend .icons-neu-effect;
+      svg {
+          width: 3rem;
+      }
+  }
+  .add-option-wrapper {
+      margin: 1rem 0;
+      div {
+          margin: 0.5rem 0;
+      }
+      input {
+          margin-left: 1rem;
+      }
   }
 }

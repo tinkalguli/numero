@@ -1,5 +1,5 @@
 /*---------------------------------------------
-The page - authenticate confirmation
+Page - Authentication confirmation
 ---------------------------------------------*/
 .overlay-list-card {
     text-align: center;
@@ -38,57 +38,64 @@ The page - authenticate confirmation
     .overlay-btn-wrapper {
         margin-top: 2rem;
     }
+  .overlay-btn {
+    display: inline-block;
+    width: 8rem;
+    margin: 0.5rem auto;
+    padding: 1rem 1.5rem;
+  }
 }
 
 .fa-facebook-square {
-    color: #0674E8;
+  color: #0674e8;
 }
 
 .fa-instagram-square {
-    background: linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-emphasis-color: transparent;
+  background: linear-gradient(45deg, #f0a028, #dd2a7b, #6945cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-emphasis-color: transparent;
 }
 
 .fa-linkedin {
-    color: #0076B4;
+  color: #0076b4;
 }
 
 .fa-github-square {
-    color: #24292E;
+  color: #24292e;
 }
 
 .fa-twitter-square {
-    color: #1DA1F2;
+  color: #1da1f2;
 }
 
 #overlay {
-    display: none;
+  display: none;
 }
 
 .overlay-wrapper {
-    display: none;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  label {
+    font-size: 5rem;
+    display: block;
+    color: $cl-red;
     position: fixed;
     padding: 0 3rem;
     left: 0;
     top: 0;
-    // transform: translate(-50%, -50%);
-    // label {
-    //     font-size: 5rem;
-    //     display: block;
-    //     color: $cl-red;
-    //     position: fixed;
-    //     right: 0;
-    // }
+  }
 }
 
 #overlay:checked ~ .overlay-unchecked > .overlay-wrapper {
-    display: block;
-    background: transparentize($cl-blue, 0.8);
-    height: 100%;
-    width: 100%;
+  display: block;
+  background: transparentize($cl-blue, 0.8);
+  height: 100%;
+  width: 100%;
 }
 
 

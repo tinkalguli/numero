@@ -1,4 +1,7 @@
 /*---------------------------------------------
+Main.scss
+---------------------------------------------*/
+/*---------------------------------------------
 Variables
 ---------------------------------------------*/
 /*====  css reset  ====*/
@@ -59,7 +62,7 @@ table {
 }
 
 /*---------------------------------------------
-           Global
+Global
 ---------------------------------------------*/
 *,
 *::before,
@@ -130,28 +133,38 @@ table {
 }
 
 .card-box-shadow, #check:checked ~ .numero-header__navbar, .add-view .add-view-card, .dashboard-card, .features .feature {
-  -webkit-box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
-          box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+  -webkit-box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3,
+ inset 1rem 1rem 1rem #e4e4e4;
+          box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3,
+ inset 1rem 1rem 1rem #e4e4e4;
 }
 
 .card-hover-effect, .dashboard-card:hover {
-  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
-          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
+  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+ inset -0.5rem -0.5rem 1rem #ffffffef;
+          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+ inset -0.5rem -0.5rem 1rem #ffffffef;
 }
 
 .btn-box-shadow, .btn, .overlay-list-card label {
-  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
-          box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3,
+ inset 1rem 1rem 1rem #e4e4e4;
+          box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3,
+ inset 1rem 1rem 1rem #e4e4e4;
 }
 
 .btn-box-shadow:hover, .btn:hover, .overlay-list-card label:hover {
-  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
-          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
+  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+ inset -0.5rem -0.5rem 1rem #ffffffef;
+          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+ inset -0.5rem -0.5rem 1rem #ffffffef;
 }
 
 .link-hover-effect, .numero-home__banner .form form input {
-  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
-          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
+  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+ inset -0.5rem -0.5rem 1rem #ffffffef;
+          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+ inset -0.5rem -0.5rem 1rem #ffffffef;
 }
 
 .btn {
@@ -169,8 +182,10 @@ table {
 }
 
 .icons-neu-effect, .add-view .add-view-icon, .view-details__icon {
-  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
-          box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3,
+ inset 1rem 1rem 1rem #e4e4e4;
+          box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3,
+ inset 1rem 1rem 1rem #e4e4e4;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,7 +227,10 @@ table {
 }
 
 /*---------------------------------------------
-           Typography
+Helper Code
+---------------------------------------------*/
+/*---------------------------------------------
+Typography
 ---------------------------------------------*/
 html {
   font-size: 16px;
@@ -439,7 +457,7 @@ Component - Footer
 }
 
 /*---------------------------------------------
- The page - addView
+Page - Add View
 ---------------------------------------------*/
 .add-view {
   background: #e6e7ee;
@@ -513,7 +531,7 @@ Component - Footer
 }
 
 /*---------------------------------------------
-The page - authenticate confirmation
+Page - Authentication confirmation
 ---------------------------------------------*/
 .overlay-list-card {
   text-align: center;
@@ -562,12 +580,19 @@ The page - authenticate confirmation
   margin-top: 2rem;
 }
 
+.overlay-list-card .overlay-btn {
+  display: inline-block;
+  width: 8rem;
+  margin: 0.5rem auto;
+  padding: 1rem 1.5rem;
+}
+
 .fa-facebook-square {
-  color: #0674E8;
+  color: #0674e8;
 }
 
 .fa-instagram-square {
-  background: linear-gradient(45deg, #f0a028, #DD2A7B, #6945cc);
+  background: linear-gradient(45deg, #f0a028, #dd2a7b, #6945cc);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -576,15 +601,15 @@ The page - authenticate confirmation
 }
 
 .fa-linkedin {
-  color: #0076B4;
+  color: #0076b4;
 }
 
 .fa-github-square {
-  color: #24292E;
+  color: #24292e;
 }
 
 .fa-twitter-square {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 #overlay {
@@ -593,6 +618,17 @@ The page - authenticate confirmation
 
 .overlay-wrapper {
   display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.overlay-wrapper label {
+  font-size: 5rem;
+  display: block;
+  color: #da2c38;
   position: fixed;
   padding: 0 3rem;
   left: 0;
@@ -643,7 +679,7 @@ The page - authenticate confirmation
 }
 
 /*---------------------------------------------
- Page - dashboard
+Page - dashboard
 ---------------------------------------------*/
 .main-dashboard {
   background: #e6e7ee;
@@ -690,7 +726,6 @@ The page - authenticate confirmation
   .dashboard {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(330px, 1fr))[2];
         grid-template-columns: repeat(2, minmax(330px, 1fr));
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
@@ -787,7 +822,7 @@ The page - authenticate confirmation
 }
 
 /*---------------------------------------------
-Edit Profile
+Page - Edit Profile
 ---------------------------------------------*/
 .edit-profile-main {
   background-color: #e6e7ee;
@@ -851,7 +886,7 @@ Edit Profile
 }
 
 /*---------------------------------------------
-The page - hashtag
+Page - hashtag
 ---------------------------------------------*/
 .add-hastag {
   padding: 2rem;
@@ -883,7 +918,7 @@ The page - hashtag
 }
 
 .hashtag form button {
-  font-size: .5rem;
+  font-size: 0.5rem;
   position: relative;
   left: -35px;
   background: none;
@@ -958,7 +993,6 @@ The page - hashtag
   .col {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
@@ -989,7 +1023,7 @@ The page - hashtag
 }
 
 /*---------------------------------------------
-Profile View Page
+Page - Profile
 ---------------------------------------------*/
 .profile-main {
   padding-top: 10rem;
@@ -1048,17 +1082,34 @@ Profile View Page
 /*---------------------------------------------
 Team
 ---------------------------------------------*/
+.team-info {
+  position: relative;
+  top: 100px;
+  z-index: -1;
+  padding-bottom: 6rem;
+}
+
+.team-info .card {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e5e5e5, #ffffff);
+  -webkit-box-shadow: 32px 32px 64px #969696, 
+ -32px -32px 64px #ffffff;
+          box-shadow: 32px 32px 64px #969696, 
+ -32px -32px 64px #ffffff;
+  margin-bottom: 2rem;
+  color: black;
+  text-align: center;
+}
+
 .team-info .card small {
   padding-bottom: .5rem;
   font-weight: bold;
   font-size: .7rem;
-  color: #da2c38;
 }
 
 .team-info .card h3 {
   font-size: 1.3rem;
   padding-bottom: .5rem;
-  color: #3f88c5;
 }
 
 .team-info .card p {
@@ -1069,13 +1120,6 @@ Team
   text-align: center;
 }
 
-.team-info .card {
-  -webkit-box-shadow: 5px 5px 10px 3px gray;
-          box-shadow: 5px 5px 10px 3px gray;
-  background-color: lightgray;
-  margin-bottom: 2rem;
-}
-
 .team-info .team-info-card {
   margin: 1rem 0;
 }
@@ -1084,17 +1128,27 @@ Team
   width: 100%;
   margin: auto;
   display: block;
+  border-radius: 50%;
+  padding: 2rem;
 }
 
 .team-info .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem 1rem;
 }
 
 .team-info .icons li {
-  padding-right: 1rem;
+  padding: 1rem;
+  border-radius: 27px;
+  background: linear-gradient(145deg, #c3b0b0, #e8d2d2);
+  -webkit-box-shadow: 12px 12px 25px #8d7f7f, 
+ -12px -12px 25px #ffffff;
+          box-shadow: 12px 12px 25px #8d7f7f, 
+ -12px -12px 25px #ffffff;
 }
 
 .team-info .icons a {
@@ -1103,12 +1157,14 @@ Team
 }
 
 @media screen and (min-width: 768px) {
+  .card {
+    text-align: start;
+  }
   .team-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
 }
 
@@ -1165,6 +1221,9 @@ View Details
   text-align: center;
 }
 
+/*---------------------------------------------
+Home Page
+---------------------------------------------*/
 .numero-home header {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -1318,7 +1377,6 @@ View Details
   .features .grid-col-4 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1327,7 +1385,6 @@ View Details
   .features .grid-col-4 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -1387,7 +1444,6 @@ View Details
   .main-index .numero-home__banner .grid-col {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   .main-index .numero-home__banner form {
@@ -1397,7 +1453,6 @@ View Details
     text-align: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   .main-index .numero-home__about .about-info {
@@ -1418,7 +1473,6 @@ View Details
   .main-index .container-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }

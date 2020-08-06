@@ -1,3 +1,92 @@
 /*---------------------------------------------
 Team
 ---------------------------------------------*/
+.team-info{
+
+    // position: relative;
+    // top: 100px;
+    // z-index: -1;
+        
+
+
+.card {
+   
+    small{
+        padding-bottom: .5rem;
+        font-weight: bold;
+        font-size: .7rem;
+        color: $cl-red;
+    }
+    h3{
+    font-size: 1.3rem;
+    padding-bottom: .5rem;
+    color: $cl-blue;
+    }
+    p{
+        padding-bottom: .5rem;
+    }
+}
+
+
+    .head{
+        text-align: center;
+    }
+   
+   .card{
+     
+       box-shadow: 5px 5px 10px 3px gray ;
+       background-color: lightgray;
+       margin-bottom: 2rem;
+   }
+   .team-info-card{
+       margin: 1rem 0;
+   }
+    .team-info-card img{
+        width: 100%;
+        margin:  auto;
+        display: block;
+    }
+
+    .icons {
+        display: flex;
+        padding-bottom: 0;
+         li{
+             padding-right: 1rem;
+         }
+
+         a{
+             font-size: 1.5rem;
+             color:$cl-black;
+         }
+        
+    }
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px){
+  
+
+   .team-grid{
+       display: grid;
+       grid-template-columns: repeat(5,1fr);
+       grid-gap: 2rem;
+   }
+
+}

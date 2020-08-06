@@ -124,6 +124,9 @@ h5 {
 a {
   text-decoration: none; }
 
+/*---------------------------------------------
+Component - Header
+---------------------------------------------*/
 .numero-header {
   padding: 0.5rem 0;
   box-shadow: 0px 0px 4px #31344b;
@@ -211,20 +214,24 @@ a {
         margin: 0 0 0 1rem;
         width: 6.5rem; } }
 
+/*---------------------------------------------
+Component - Footer
+---------------------------------------------*/
 .numero-footer {
   text-align: center;
   padding: 2rem 0;
   background-color: #e6e7ee;
   color: #31344b; }
   .numero-footer__nav-items {
-    max-width: 360px;
-    margin: 0 auto; }
+    max-width: 22rem;
+    margin: 0 auto;
+    padding: 1rem 0; }
   .numero-footer__nav-item a {
     text-decoration: none;
     color: #31344b;
     font-weight: 700; }
   .numero-footer__nav-item img {
-    width: 30px; }
+    width: 2rem; }
 
 .add-view {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../assets/media/add_view/bg3.jpg");
@@ -719,102 +726,94 @@ View Details
   grid-gap: 70px;
   text-align: center; }
 
-.home-pg-header .header-btn a {
-  background-color: white;
-  color: black;
-  padding: .6rem .8rem; }
-.home-pg-header .header-signup-btn a {
-  background-color: #da2c38;
-  color: white; }
+.numero-home header {
+  background-color: rgba(255, 255, 255, 0.5); }
+.numero-home h2 {
+  font-weight: 300;
+  font-size: 3.5rem;
+  color: #31344b;
+  padding-bottom: 0.5rem; }
 
-.banner {
-  color: white;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/img4.jpg");
+.numero-home__banner {
+  background: url("/assets/images/background/Flat-Mountains.svg");
+  background-color: #e6e7ee;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
-  .banner .container {
+  background-repeat: no-repeat;
+  color: #31344b;
+  padding-top: 10rem; }
+  .numero-home__banner .container {
     margin: 0 auto; }
-  .banner .info {
+  .numero-home__banner .info {
     margin-top: 2rem;
     padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    color: white; }
-    .banner .info p {
+    justify-content: center; }
+    .numero-home__banner .info .subtext {
+      font-weight: 700;
+      font-size: 1.5rem; }
+    .numero-home__banner .info p {
       padding-bottom: 1rem;
-      color: #b594b6; }
-  .banner h1 {
-    font-size: 1.9rem;
-    color: #e6e7ee;
-    padding-bottom: .5rem; }
-  .banner h2 {
-    font-size: 1rem;
-    color: #e6e7ee;
-    padding-bottom: .5rem; }
-  .banner .form {
+      color: #31344b; }
+  .numero-home__banner .form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
     margin-top: 1rem;
-    background: linear-gradient(to right, #E29587, #D66D75);
+    background-color: transparent;
     padding-top: 2rem; }
-    .banner .form form {
+    .numero-home__banner .form form {
       text-align: center; }
-    .banner .form form input {
+    .numero-home__banner .form form input {
       border: none;
       margin-bottom: 1rem;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #31344b;
       width: 80%;
-      padding: .5rem;
-      background: none;
-      color: white; }
-    .banner .form ::placeholder {
-      padding: 1rem 0rem 2rem .5rem;
-      font-size: 1rem;
-      color: white; }
-    .banner .form .login-btn {
-      margin-top: .4rem;
+      padding: 0.5rem;
+      background: none; }
+    .numero-home__banner .form ::placeholder {
+      padding: 1rem 0rem 2rem 0.5rem;
+      font-size: 1rem; }
+    .numero-home__banner .form .login-btn {
+      margin-top: 0.4rem;
       border: none;
       padding: 1rem 6rem;
       background-color: #3f88c5;
       color: white;
       font-size: 1rem; }
-    .banner .form .signup-part {
+    .numero-home__banner .form .signup-part {
       margin-top: 2rem;
       text-align: center; }
-      .banner .form .signup-part h4 {
-        color: white; }
-      .banner .form .signup-part .signup-btn {
+      .numero-home__banner .form .signup-part .signup-btn {
         display: inline-block;
         background-color: #da2c38;
         color: white;
         font-size: 1rem;
         padding: 1rem 5.5rem; }
-  .banner .icon-dashboard {
+  .numero-home__banner .icon-dashboard {
     display: none; }
 
-.about {
+.numero-home__about {
+  background-color: #e6e7ee;
+  background-image: url(/assets/images/background/Dalmatian-Spots.svg);
   display: flex;
-  text-align: center;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  background-color: #3f88c5;
-  color: white; }
-  .about .about-image img {
-    width: 100%; }
-  .about .about-info p {
+  color: #31344b; }
+  .numero-home__about__image img {
+    width: 80%; }
+  .numero-home__about .about-info p {
     padding-top: 1rem; }
 
 .features {
+  background-color: #e6e7ee;
   text-align: center; }
   .features h3 {
     font-size: 1.2rem;
-    color: #da2c38;
-    padding-bottom: .5rem; }
+    padding-bottom: 0.5rem; }
   .features i {
     font-size: 2rem;
     color: #3f88c5;
@@ -830,55 +829,37 @@ View Details
     box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5); }
 
 .importance img {
-  width: 100%; }
+  width: 100%;
+  background-image: url(/assets/images/background/Dalmatian-Spots.svg); }
 .importance .imp-info {
   padding: 1rem;
-  text-align: center;
-  background-color: #31344b;
-  color: white; }
+  background-color: #e6e7ee;
+  color: #31344b;
+  background-image: url(/assets/images/background/Dalmatian-Spots.svg); }
   .importance .imp-info h3 {
     padding: 2rem 0;
     font-size: 2rem; }
-  .importance .imp-info h3 strong {
-    color: #da2c38; }
   .importance .imp-info p {
     padding-top: 1rem; }
 .importance .img-container {
   font-size: 0; }
 
 @media screen and (min-width: 768px) {
-  .header {
-    background: none; }
+  .numero-home__banner .grid-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .numero-home__banner form {
+    display: inline-block; }
 
-  .banner {
-    position: relative;
-    top: -100px;
-    height: 680px;
-    z-index: -1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
-    .banner .grid-col {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); }
-    .banner form {
-      display: inline-block; }
-    .banner .banner-container {
-      position: relative;
-      top: 200px; }
-
-  .about {
-    position: relative;
-    top: -100px; }
-    .about .grid-col-2 {
-      text-align: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); }
-    .about .about-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
+  .numero-home__about .grid-col-2 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .numero-home__about .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
   .grid-col-4 {
     display: grid;

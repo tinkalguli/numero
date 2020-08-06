@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
@@ -7,9 +8,44 @@
     <link rel="stylesheet" href="../assets/stylesheets/main.css"/>
   </head>
   <body>
-    <header></header>
+    <header class="numero-header">
+      <div class="container flex-between">
+        <a href="#" class="numero-header__logo">
+          <img src="../assets/images/logo.svg" alt="logo" />
+          <span>umero</span>
+        </a>
+
+        <input type="checkbox" id="check" />
+        <label class="numero-header__check-btn" for="check">
+          <span class="numero-header__bar numero-header__bar-1"></span>
+          <span class="numero-header__bar numero-header__bar-2"></span>
+          <span class="numero-header__bar numero-header__bar-3"></span>
+        </label>
+
+        <nav class="numero-header__navbar">
+          <ul class="numero-header__navbar__ul">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="addView.html">Add a View</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="../index.html">Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="add-view">
+
+        <div class="">
+          <h2>Add your social media into dashboard</h2>
+          <h3>Follow the below steps to add your social media and hastag</h3>
+          <ul>
+            <li>Do the authentication for your social media ny entering your login dateils .</li>
+            <li>After the authentication completed you can add that into dashboard.</li>
+            <li>Add your hashtag by clicking add hastag after authentication</li>
+          </ul>
+        </div>
+
         <div class="container-1 add-card-wrapper">
           <div class="add-view-card">
             <div class="add-view-icon flex">
@@ -165,6 +201,31 @@
         </div>
       </section>
     </main>
-
+    <footer class="numero-footer">
+      <nav class="numero-footer__nav">
+        <ul class="numero-footer__nav-items flex-between">
+          <li class="numero-footer__nav-item"><a href="#">Team</a></li>
+          <li class="numero-footer__nav-item"><a href="#">Credits</a></li>
+          <li class="numero-footer__nav-item">
+            <a href="#">
+              <img src="../assets/images/twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="#">
+              <img src="../assets/images/github.svg" alt="Github" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="#">
+              <img src="../assets/images/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="numero-footer__copyright">
+        <small> &copy; numero 2020. All rights reserved.</small>
+      </p>
+    </footer>
   </body>
 </html>

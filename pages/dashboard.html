@@ -7,32 +7,36 @@
     <link rel="stylesheet" href="../assets/stylesheets/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="numero-header">
       <div class="container flex-between">
-        <a href="#" class="logo">
+        <a href="#" class="numero-header__logo">
           <img src="../assets/images/logo.svg" alt="logo" />
           <span>umero</span>
         </a>
+
         <input type="checkbox" id="check" />
-        <label class="check-btn" for="check">
-          <span class="bar bar-1"></span>
-          <span class="bar bar-2"></span>
-          <span class="bar bar-3"></span>
+        <label class="numero-header__check-btn" for="check">
+          <span class="numero-header__bar numero-header__bar-1"></span>
+          <span class="numero-header__bar numero-header__bar-2"></span>
+          <span class="numero-header__bar numero-header__bar-3"></span>
         </label>
-        <nav class="navbar">
-          <ul class="">
+
+        <nav class="numero-header__navbar">
+          <ul class="numero-header__navbar__ul">
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="profile.html">Profile</a></li>
-            <li><a href="addView.html">Add view</a></li>
+            <li><a href="addView.html">Add a View</a></li>
+            <li><a href="team.html">Team</a></li>
             <li><a href="../sushant-index.html">Log Out</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main class="main-dashboard">
         <section class="dashboard-description">
             <h2>Dashboard</h2>
-            <P>Find Your Numbers</P>
+            <P>Track your data</P>
         </section>
         <section class="dashboard container-1">
             <input type="checkbox" id="facebook-remove">
@@ -170,44 +174,71 @@
                 </div>
             </a>
 
-            <input type="checkbox" id="hashtag-remove">
-            <a href="#" class="dashboard-card hashtag-dashboard-card">
-                <div class="dashboard-icon-sec flex-end-align">
-                    <div class="flex">
-                        <h3>Hashtags</h3>
-                        <i class="fab fa-slack-hash"></i>
-                    </div>
-                    <label for="hashtag-remove"><i class="fas fa-minus-circle"></i></label>
-                </div>
-                <div class="dashboard-num-sec flex-end-align">
-                    <div class="flex-end-align">
-                        <label class="text-label">#DevWeb</label>
-                        <i class="fas fa-sort-up"></i>
-                        <label class="num-label">96</label>
-                    </div>
-                    <div class="flex-end-align">
-                        <label class="text-label">#AltCampus</label>
-                        <i class="fas fa-sort-up"></i>
-                        <label class="num-label">56</label>
-                    </div>
-                    <div class="flex-end-align">
-                        <label class="text-label">#code</label>
-                        <i class="fas fa-sort-down"></i>
-                        <label class="num-label">18</label>
-                    </div>
-                    <div class="flex-end-align">
-                        <label class="text-label">#CSS3</label>
-                        <i class="fas fa-sort-up"></i>
-                        <label class="num-label">27</label>
-                    </div>
-                </div>
-            </a>
-        </section>
-        <a href="addView.html" class="add-view-btn flex"><i class="fad fa-plus-circle"></i><Span>Add a View</Span></a>
+        <input type="checkbox" id="hashtag-remove" />
+        <a href="#" class="dashboard-card hashtag-dashboard-card">
+          <div class="dashboard-icon-sec flex-end-align">
+            <div class="flex">
+              <h3>Hashtags</h3>
+              <i class="fab fa-slack-hash"></i>
+            </div>
+            <label for="hashtag-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <div class="dashboard-num-sec flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">#DevWeb</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">96</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">#AltCampus</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">56</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">#code</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">18</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">#CSS3</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">27</label>
+            </div>
+          </div>
+        </a>
+      </section>
+      <a href="addView.html" class="add-view-btn flex"
+        ><i class="fad fa-plus-circle"></i><span>Add a View</span></a
+      >
     </main>
 
-    <footer class="footer">
-      <small>numero &copy; 2020 all rights reserved</small>
+    <footer class="numero-footer">
+      <nav class="numero-footer__nav">
+        <ul class="numero-footer__nav-items flex-between">
+          <li class="numero-footer__nav-item"><a href="#">Team</a></li>
+          <li class="numero-footer__nav-item"><a href="#">Credits</a></li>
+          <li class="numero-footer__nav-item">
+            <a href="#">
+              <img src="../assets/images/twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="#">
+              <img src="../assets/images/github.svg" alt="Github" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="#">
+              <img src="../assets/images/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="numero-footer__copyright">
+        <small> &copy; numero 2020. All rights reserved.</small>
+      </p>
     </footer>
   </body>
 </html>

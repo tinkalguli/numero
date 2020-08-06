@@ -1,0 +1,230 @@
+.numero-home {
+  header {
+    background-color: transparentize($color: #fff, $amount: 0.5);
+  }
+  h2 {
+    // font-size: rem;
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: $cl-black;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.numero-home__banner {
+  background: url("/assets/images/background/Flat-Mountains.svg");
+  background-color: $cl-white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $cl-black;
+  padding-top: 10rem;
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .info {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // color: white;
+
+    .subtext {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    p {
+      padding-bottom: 1rem;
+      color: $cl-black;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // margin: 5rem 0;
+    padding: 1rem;
+    margin-top: 1rem;
+    // background: linear-gradient(to right, #e29587, #d66d75);
+    background-color: transparent;
+
+    padding-top: 2rem;
+
+    form {
+      // display: flex;
+      // flex-direction: column;
+      text-align: center;
+    }
+
+    form input {
+      border: none;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid $cl-black;
+      width: 80%;
+      padding: 0.5rem;
+      background: none;
+    }
+
+    ::placeholder {
+      padding: 1rem 0rem 2rem 0.5rem;
+      font-size: 1rem;
+    }
+
+    .login-btn {
+      margin-top: 0.4rem;
+      border: none;
+      padding: 1rem 6rem;
+      background-color: $cl-blue;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .signup-part {
+      margin-top: 2rem;
+      text-align: center;
+
+      .signup-btn {
+        display: inline-block;
+        background-color: $cl-red;
+        color: white;
+        font-size: 1rem;
+        padding: 1rem 5.5rem;
+      }
+    }
+  }
+
+  .icon-dashboard {
+    display: none;
+  }
+}
+
+.numero-home__about {
+  background-color: $cl-white;
+  background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+  display: flex;
+  //   text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: $cl-black;
+
+  &__image {
+    img {
+      width: 80%;
+    }
+  }
+
+  .about-info {
+    p {
+      padding-top: 1rem;
+    }
+  }
+}
+
+.features {
+  background-color: $cl-white;
+  //   background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+  // display: grid;
+  // grid-template-rows: repeat(4,1fr);
+  // align-items: center;
+  // justify-content: center;
+  text-align: center;
+  h3 {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+  }
+  i {
+    font-size: 2rem;
+    color: $cl-blue;
+    padding-bottom: 1rem;
+  }
+  .feature {
+    margin: 2rem;
+    padding: 2.5rem;
+    background-color: white;
+    color: black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.importance {
+  img {
+    width: 100%;
+    background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+  }
+
+  .imp-info {
+    padding: 1rem;
+    // text-align: center;
+    background-color: $cl-white;
+    color: $cl-black;
+    background-image: url(/assets/images/background/Dalmatian-Spots.svg);
+
+    h3 {
+      padding: 2rem 0;
+      font-size: 2rem;
+    }
+    p {
+      padding-top: 1rem;
+    }
+  }
+
+  .img-container {
+    font-size: 0;
+  }
+}
+
+// desktop view
+
+@media screen and (min-width: 768px) {
+  .numero-home__banner {
+    .grid-col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+      display: inline-block;
+    }
+
+    .banner-container {
+      //   position: relative;
+      //   top: 200px;
+    }
+  }
+
+  .numero-home__about {
+    // position: relative;
+    // top: -100px;
+    .grid-col-2 {
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .grid-col-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .importance-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -15,9 +15,11 @@ View Details
   }
 }
 .view-details__icon {
-  width: 50px;
-  img {
-    width: 100%;
+  width: 4.5rem;
+  height: 4.5rem;
+  @extend .icons-neu-effect;
+  svg {
+    width: 3rem;
   }
 }
 

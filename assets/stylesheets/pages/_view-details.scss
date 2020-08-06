@@ -2,36 +2,45 @@
 View Details
 ---------------------------------------------*/
 
+.view-details__body {
+  background-color: $cl-white;
+}
+
 .view-details {
-  .hero {
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .hero h3 {
-    flex-basis: 350px;
-  }
+  margin-top: 10rem;
   h3 {
     margin: 2rem 0;
   }
-}
-.view-details__icon {
-  width: 4.5rem;
-  height: 4.5rem;
-  @extend .icons-neu-effect;
-  svg {
-    width: 3rem;
+  .hero {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    h2 {
+      flex-basis: 350px;
+      // margin-right: 200px;
+      text-align: center;
+      margin-top: 1rem;
+    }
   }
-}
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    @extend .icons-neu-effect;
+    svg {
+      width: 3rem;
+    }
+  }
 
-.view-details__charts__area-graph,
-.view-details__charts__pie-chart,
-.view-details__charts__bar-graph {
-  width: 80%;
-  margin: 5rem auto;
-}
+  &__charts__area-graph,
+  &__charts__pie-chart,
+  &__charts__bar-graph {
+    width: 100%;
+    margin: 5rem auto;
+  }
 
-.view-details__charts__pie-chart {
-  grid-template-columns: repeat(2, minmax(100px, 1fr));
-  grid-gap: 70px;
-  text-align: center;
+  &__charts__pie-chart {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 70px;
+    text-align: center;
+  }
 }

@@ -2,12 +2,11 @@
 Component - Footer
 ---------------------------------------------*/
 .numero-footer {
+  border-top: 1px solid #bbb;
   text-align: center;
   padding: 2rem 0;
   background-color: $cl-white;
   color: $cl-black;
-  &__nav {
-  }
   &__nav-items {
     max-width: 22rem;
     margin: 0 auto;

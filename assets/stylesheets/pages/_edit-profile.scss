@@ -2,71 +2,60 @@
 Edit Profile
 ---------------------------------------------*/
 
-.edit-profile {
+.edit-profile-main {
   background-color: $cl-white;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  .edit-profile__image {
-    width: calc(100px);
-    margin-bottom: 3rem;
+  padding-top: 10rem;
+  h1 {
+    text-align: center;
+    margin: 0 auto 3rem auto;
+    padding: 0 2rem;
+  }
+}
+
+.edit-profile {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  &__image {
+    width: 100px;
+    margin: 0 auto 3rem auto;
     img {
       width: 100%;
       display: block;
     }
   }
 
-  .edit-profile__text__hr {
-    border: none;
-    border-bottom: 2px solid $cl-black;
-    width: 95%;
-    margin: auto;
-  }
-
-  .edit-profile__text__name {
-  }
-
-  .edit-profile__text__name > *,
-  .edit-profile__text__email > *,
-  .edit-profile__text__password > * {
+  &__text__name > *,
+  &__text__email > *,
+  &__text__password > * {
     flex-basis: 200px;
     margin: 1rem 0;
   }
 
-  .edit-profile__text__name__label,
-  .edit-profile__text__email__label,
-  .edit-profile__text__password__label {
-    //
+  &__text__name label,
+  &__text__email label,
+  &__text__password label {
+    flex-basis: 100px;
+    font-family: $primary-font;
+    font-weight: 700;
+    // font-size: 2rem;
   }
 
-  .edit-profile__text__name__input,
-  .edit-profile__text__email__input,
-  .edit-profile__text__password__input {
+  &__text__name__input,
+  &__text__email__input,
+  &__text__password__input {
     // TODO: create a grey variable
     color: grey;
   }
 
-  .edit-profile__actions {
-    margin: 10rem auto;
-  }
-
-  .btn {
-    border: none;
-    color: $cl-white;
-    display: block;
-    width: 200px;
-    max-width: 300px;
-    background-color: $cl-red;
-    padding: 1rem 2rem;
-    margin: 2rem 0;
-    cursor: pointer;
-    text-align: center;
+  &__actions {
+    margin: 3rem auto;
   }
 
   // Media Query
   @media all and (min-width: 768px) {
-    .edit-profile__image {
-      width: calc(250px);
+    &__image {
+      width: 250px;
       img {
-        width: 100%;
+        width: 80%;
         display: block;
       }
     }

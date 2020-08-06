@@ -72,12 +72,14 @@ Component - Header
     right: -100%;
     width: 70%;
     border-radius: 10px 0 0 10px;
+    
   }
 
   #check:checked ~ &__navbar {
     display: block;
     right: 0;
     animation: move-to-right 0.5s ease-in;
+    @extend .card-box-shadow;
   }
 
   @keyframes move-to-right {

@@ -1,5 +1,6 @@
 .add-view {
     background: $cl-white;
+    padding: 20rem 0;
     .add-card-wrapper {
         @media screen and (min-width:1024px){
             @include grid-repeat(2, 300px, 1fr);
@@ -10,14 +11,14 @@
                 column-gap: 2rem;
         }
     }
+    .btn-hashtag {
+        cursor: pointer;
+    }
     .add-view-card {
         padding: 1.5rem 2rem;
         margin: 1rem 0;
         border-radius: 1.5rem;
         @extend .card-box-shadow;
-        &:hover {
-            @extend .card-hover-effect;
-        }
         .add-btn-wraper {
             text-align: center;
         }
@@ -28,6 +29,7 @@
         transform: translateX(-50%);
         width: 4.5rem;
         height: 4.5rem;
+        @extend .icons-neu-effect;
         svg {
             width: 3rem;
         }

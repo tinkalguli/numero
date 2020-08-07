@@ -1,0 +1,144 @@
+/*---------------------------------------------
+Global
+---------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
+
+@import url("https://pro.fontawesome.com/releases/v5.14.0/css/all.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-1 {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-end-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.flex-end-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-box-shadow {
+  box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3,
+    inset 1rem 1rem 1rem #e4e4e4;
+}
+
+.card-hover-effect {
+  box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+    inset -0.5rem -0.5rem 1rem #ffffffef;
+}
+
+.btn-box-shadow {
+  box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3,
+    inset 1rem 1rem 1rem #e4e4e4;
+  &:hover {
+    box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+      inset -0.5rem -0.5rem 1rem #ffffffef;
+  }
+}
+
+.link-hover-effect {
+  box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+    inset -0.5rem -0.5rem 1rem #ffffffef;
+  // padding: 0.5rem 1rem;
+}
+// Links should have same padding
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  @extend .btn-box-shadow;
+  color: $cl-black;
+}
+
+.btn-no-shadow {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: $cl-black;
+}
+
+// make sure that the style of the icons should be in the parent
+// and parent should have same height and width (icon-width + 1.5rem)
+
+.icons-neu-effect {
+  box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3,
+    inset 1rem 1rem 1rem #e4e4e4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-icon--black {
+  // TODO: Make the svg icons $cl-black
+  color: $cl-black;
+}
+
+.padding {
+  padding: 4rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 8rem 0;
+  }
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+// FontAwesome Styling
+.fa-linkedin,
+.fa-github-square,
+.fa-twitter-square,
+.fa-facebook-square,
+.fa-instagram-square {
+  color: $cl-black;
+}
+
+.fa-instagram-square:hover {
+  background: linear-gradient(45deg, #f0a028, #dd2a7b, #6945cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-emphasis-color: transparent;
+}

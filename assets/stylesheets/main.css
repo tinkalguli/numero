@@ -202,12 +202,6 @@ a {
   text-decoration: none; }
 
 /*---------------------------------------------
-Media Queries
----------------------------------------------*/
-/* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
-/*---------------------------------------------
 Component - Header
 ---------------------------------------------*/
 .numero-header {
@@ -712,58 +706,58 @@ Page - Profile
 /*---------------------------------------------
 Team
 ---------------------------------------------*/
-.team-info {
+.team__info {
   position: relative;
   top: 100px;
   z-index: -1;
   padding-bottom: 6rem; }
-  .team-info .card {
-    border-radius: 50px;
-    background: linear-gradient(145deg, #e5e5e5, #ffffff);
-    box-shadow: 32px 32px 64px #969696, -32px -32px 64px #ffffff;
-    margin-bottom: 2rem;
-    color: black;
-    text-align: center; }
-    .team-info .card small {
-      padding-bottom: .5rem;
-      font-weight: bold;
-      font-size: .7rem; }
-    .team-info .card h3 {
-      font-size: 1.3rem;
-      padding-bottom: .5rem; }
-    .team-info .card p {
-      padding-bottom: .5rem; }
-  .team-info .head {
-    text-align: center; }
-  .team-info .team-info-card {
+  .team__info__cards {
     margin: 1rem 0; }
-  .team-info .team-info-card img {
-    width: 100%;
-    margin: auto;
-    display: block;
-    border-radius: 50%;
-    padding: 2rem; }
-  .team-info .icons {
+    .team__info__cards img {
+      width: 100%;
+      display: block; }
+  .team__info__card {
     display: flex;
-    justify-content: space-around;
-    padding: 1rem 1rem; }
-    .team-info .icons li {
-      padding: 1rem;
-      border-radius: 27px;
-      background: linear-gradient(145deg, #c3b0b0, #e8d2d2);
-      box-shadow: 12px 12px 25px #8d7f7f, -12px -12px 25px #ffffff; }
-    .team-info .icons a {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    color: #31344b;
+    text-align: center;
+    border-radius: 2%; }
+    .team__info__card small {
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      font-size: 0.8rem; }
+    .team__info__card h3 {
       font-size: 1.5rem;
-      color: #31344b; }
+      padding-bottom: 0.5rem;
+      font-weight: 400; }
+    .team__info__card p {
+      padding-bottom: 0.5rem; }
+    .team__info__card .card__img {
+      background-color: #b594b6; }
+      .team__info__card .card__img img {
+        opacity: 0.6; }
+    .team__info__card .card__txt {
+      padding: 1.5rem; }
+    .team__info__card .card__icons {
+      display: flex;
+      justify-content: space-around; }
+      .team__info__card .card__icons a {
+        font-size: 1.5rem;
+        color: #31344b; }
+  .team__info__heading {
+    text-align: center;
+    margin: 2rem 0; }
 
 @media screen and (min-width: 768px) {
-  .card {
+  .team__info__card {
     text-align: start; }
-
-  .team-grid {
+  .team__grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 1rem; } }
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem; } }
 /*---------------------------------------------
 View Details
 ---------------------------------------------*/
@@ -813,8 +807,7 @@ Home Page
   color: #31344b; }
 
 .numero-home__banner {
-  background: url("../../assets/images/background/Flat-Mountains.svg");
-  background: url("../../assets/images/background/stars.svg");
+  background: url("../../assets/images/background/data-points.svg");
   background-color: #e6e7ee;
   background-position: center;
   background-size: contain;

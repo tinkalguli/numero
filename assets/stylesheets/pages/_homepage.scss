@@ -124,6 +124,10 @@ Home Page
     .grid-col-4 {
       @include grid-repeat(auto-fit, 300px, 1fr);
     }
+    .feature-container {
+      max-width: 80rem;
+      margin: 0 auto;
+    }
     h3 {
       font-size: 1.2rem;
       padding-bottom: 0.5rem;

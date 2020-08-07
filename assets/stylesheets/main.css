@@ -92,7 +92,7 @@ Global
   justify-content: space-between;
   align-items: flex-end; }
 
-.neumorph-inset, .btn:hover, .dashboard-card:hover, .numero-home__banner__login-form input {
+.neumorph-inset, .btn:hover, .dashboard-card:hover, .edit-profile__text__name__input, .edit-profile__text__email__input, .edit-profile__text__password__input, .numero-home__banner__login-form input {
   box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef; }
 
 .btn {
@@ -102,7 +102,7 @@ Global
   box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
   color: #31344b; }
 
-.icons-neu-effect, .add-view .add-view-icon {
+.icons-neu-effect, .add-view .add-view-icon, .view-details__icon {
   box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
   align-items: center;
   border-radius: 50%;
@@ -572,7 +572,10 @@ Page - Edit Profile
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700; }
   .edit-profile__text__name__input, .edit-profile__text__email__input, .edit-profile__text__password__input {
-    color: gray; }
+    color: gray;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0; }
   .edit-profile__actions {
     margin: 3rem auto; }
   @media all and (min-width: 768px) {
@@ -700,9 +703,8 @@ View Details
       margin-top: 1rem; }
   .view-details__icon {
     width: 4.5rem;
-    height: 4.5rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4; }
-    .view-details__icon svg {
+    height: 4.5rem; }
+    .view-details__icon img {
       width: 3rem; }
   .view-details__charts__area-graph, .view-details__charts__pie-chart, .view-details__charts__bar-graph {
     width: 100%;
@@ -801,6 +803,9 @@ Home Page
   .numero-home__all-features .grid-col-4 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .numero-home__all-features .feature-container {
+    max-width: 80rem;
+    margin: 0 auto; }
   .numero-home__all-features h3 {
     font-size: 1.2rem;
     padding-bottom: 0.5rem; }

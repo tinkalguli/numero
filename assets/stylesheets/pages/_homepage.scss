@@ -125,6 +125,10 @@ Home Page
   @media screen and (min-width: 768px) {
     padding: 6rem 0;
   }
+  .feature-container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
   .grid-col-4 {
     @include grid-repeat(auto-fit, 300px, 1fr);
   }

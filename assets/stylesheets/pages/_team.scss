@@ -1,14 +1,15 @@
 /*---------------------------------------------
 Team
 ---------------------------------------------*/
+.team {
+  background: $cl-white;
+}
+
 .team__info {
-  position: relative;
-  top: 100px;
-  z-index: -1;
-  padding-bottom: 6rem;
+  padding: 6rem 2rem 3rem 2rem;
   // All cards section
   &__cards {
-    margin: 1rem 0;
+    margin: 3rem 0;
     img {
       width: 100%;
       display: block;
@@ -17,13 +18,14 @@ Team
   // A single card
   &__card {
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     color: $cl-black;
-    text-align: center;
     border-radius: 2%;
+    @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
     small {
       margin-bottom: 0.5rem;
       font-weight: 700;
@@ -40,8 +42,10 @@ Team
     .card {
       &__img {
         background-color: $cl-violet;
+        border-radius: 2% 2% 0 0;
         img {
           opacity: 0.6;
+          border-radius: 2% 2% 0 0;
         }
       }
       &__txt {
@@ -50,9 +54,9 @@ Team
       &__icons {
         display: flex;
         justify-content: space-around;
-        a {
-          font-size: 1.5rem;
-          color: $cl-black;
+        img {
+          width: 2rem;
+          height: 2rem;
         }
       }
     }
@@ -66,12 +70,14 @@ Team
 // Media Query
 @media screen and (min-width: 768px) {
   .team {
+    &__info {
+      padding: 8rem 2rem 4rem 2rem;
+    }
     &__info__card {
-      text-align: start;
+      text-align: left;
     }
     &__grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      @include grid-repeat(auto-fit,300px,1fr);
       grid-gap: 3rem;
     }
   }

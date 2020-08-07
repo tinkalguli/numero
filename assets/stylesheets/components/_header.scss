@@ -78,7 +78,7 @@ Component - Header
     display: block;
     right: 0;
     animation: move-to-right 0.5s ease-in;
-    @extend .card-box-shadow;
+    @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
   }
 
   @keyframes move-to-right {

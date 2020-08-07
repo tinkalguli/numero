@@ -6,6 +6,16 @@ Helper Code
   grid-template-columns: repeat($column, minmax($min-value, $max-value));
 }
 
-@mixin neumorph($h1, $v1, $blur1, $color1, $h2, $v2, $blur2, $color2) {
-  box-shadow: $h1 $v1 $blur1 $color1, $h2 $v2 $blur2 $color2;
+@mixin grid-repeat-column($column, $value) {
+  display: grid;
+  grid-template-columns: repeat($column, $value);
 }
+
+@mixin neumorph-offset($offset1, $offset2 , $blur, $offset3) {
+  box-shadow: $offset1 $offset1 $offset1 #dadada,
+              $offset2 $offset2 $blur #f3f3f3,
+              inset $offset3 $offset3 $offset3 #e4e4e4;
+}
+// btn-box-shadow and icons-neu-effect = @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+// card-neu-effect = @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
+

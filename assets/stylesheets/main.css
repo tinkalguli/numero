@@ -136,10 +136,8 @@ Global
 }
 
 .nuemorph-inset, .btn:hover, .dashboard-card:hover, .numero-home__banner .login-form input {
-  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
- inset -0.5rem -0.5rem 1rem #ffffffef;
-          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
- inset -0.5rem -0.5rem 1rem #ffffffef;
+  -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
+          box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
 }
 
 .btn {
@@ -489,8 +487,9 @@ Page - Add View
   height: 4.5rem;
 }
 
-.add-view .add-view-icon svg {
+.add-view .add-view-icon img {
   width: 3rem;
+  height: 3rem;
 }
 
 .add-view .add-option-wrapper {
@@ -513,13 +512,29 @@ Page - Add View
 }
 
 .add-view .add-view-info h3 {
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  margin: 0 0 1rem 0;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .add-view .add-view-info h3 {
+    display: block;
+    padding: 0.4rem 0;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+  }
 }
 
 .add-view .add-view-info p {
-  padding: 0.2rem 0;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .add-view .add-view-info p {
+    display: block;
+    padding: 0.3rem 0;
+    line-height: 1.8;
+  }
 }
 
 /*---------------------------------------------
@@ -557,8 +572,10 @@ Page - Authentication confirmation
           box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
 }
 
-.overlay-list-card label i {
-  font-size: 2rem;
+.overlay-list-card label img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.7rem;
 }
 
 .overlay-list-card label .fab {
@@ -662,12 +679,14 @@ Page - dashboard
   }
 }
 
-.main-dashboard .add-view-btn i {
+.main-dashboard .add-view-btn img {
   display: inline-block;
+  width: 2rem;
+  height: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .main-dashboard .add-view-btn i {
+  .main-dashboard .add-view-btn img {
     display: none;
   }
 }
@@ -693,6 +712,7 @@ Page - dashboard
   .dashboard {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (minmax(330px, 1fr))[2];
         grid-template-columns: repeat(2, minmax(330px, 1fr));
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
@@ -714,6 +734,13 @@ Page - dashboard
       flex-wrap: wrap;
 }
 
+.dashboard-card .dashboard-num-sec .text-label {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
 .dashboard-card .dashboard-num-sec div {
   margin-bottom: 1rem;
   padding: 0 0.2rem;
@@ -721,6 +748,12 @@ Page - dashboard
 
 .dashboard-card .dashboard-icon-sec {
   margin-bottom: 2rem;
+}
+
+.dashboard-card .dashboard-icon-sec img {
+  width: 3rem;
+  height: 2rem;
+  padding-left: 0.5rem;
 }
 
 .dashboard-card .dashboard-icon-sec label {
@@ -964,6 +997,7 @@ Page - hashtag
   .col {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
@@ -1059,15 +1093,16 @@ Page - Profile
 /*---------------------------------------------
 Team
 ---------------------------------------------*/
+.team {
+  background: #e6e7ee;
+}
+
 .team__info {
-  position: relative;
-  top: 100px;
-  z-index: -1;
-  padding-bottom: 6rem;
+  padding: 6rem 2rem 3rem 2rem;
 }
 
 .team__info__cards {
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 .team__info__cards img {
@@ -1079,6 +1114,7 @@ Team
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1089,8 +1125,9 @@ Team
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   color: #31344b;
-  text-align: center;
   border-radius: 2%;
+  -webkit-box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+          box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
 }
 
 .team__info__card small {
@@ -1111,10 +1148,12 @@ Team
 
 .team__info__card .card__img {
   background-color: #b594b6;
+  border-radius: 2% 2% 0 0;
 }
 
 .team__info__card .card__img img {
   opacity: 0.6;
+  border-radius: 2% 2% 0 0;
 }
 
 .team__info__card .card__txt {
@@ -1129,9 +1168,9 @@ Team
       justify-content: space-around;
 }
 
-.team__info__card .card__icons a {
-  font-size: 1.5rem;
-  color: #31344b;
+.team__info__card .card__icons img {
+  width: 2rem;
+  height: 2rem;
 }
 
 .team__info__heading {
@@ -1140,8 +1179,11 @@ Team
 }
 
 @media screen and (min-width: 768px) {
+  .team__info {
+    padding: 8rem 2rem 4rem 2rem;
+  }
   .team__info__card {
-    text-align: start;
+    text-align: left;
   }
   .team__grid {
     display: -ms-grid;
@@ -1246,7 +1288,6 @@ Home Page
 }
 
 .numero-home__banner .info {
-  margin: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1390,9 +1431,8 @@ Home Page
   padding-bottom: 0.5rem;
 }
 
-.features i {
-  font-size: 2rem;
-  color: #3f88c5;
+.features img {
+  width: 3rem;
   padding-bottom: 1rem;
 }
 
@@ -1414,7 +1454,7 @@ Home Page
 }
 
 .importance .imp-info {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1455,9 +1495,13 @@ Home Page
 }
 
 @media screen and (min-width: 768px) {
+  .main-index .numero-home__banner .info {
+    margin: 0 1rem;
+  }
   .main-index .grid-col-2 {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -webkit-box-align: center;
         -ms-flex-align: center;

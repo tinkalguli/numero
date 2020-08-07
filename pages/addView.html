@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <title>Add your media</title>
-    <link rel="stylesheet" href="../assets/stylesheets/main.css"/>
+    <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.ico"
+    />
   </head>
   <body>
     <header class="numero-header">
@@ -15,8 +20,8 @@
           <span>umero</span>
         </a>
         <!-- Hamburger Menu -->
-        <input type="checkbox" id="check" />
-        <label class="numero-header__check-btn" for="check">
+        <input type="checkbox" id="hamburger" />
+        <label class="numero-header__check-btn" for="hamburger">
           <span class="numero-header__bar numero-header__bar-1"></span>
           <span class="numero-header__bar numero-header__bar-2"></span>
           <span class="numero-header__bar numero-header__bar-3"></span>
@@ -38,133 +43,207 @@
         <div class="add-view-info">
           <h2>Add your data points in the dashboard</h2>
           <h3>Follow the steps below to add your data sources</h3>
-          <p>Choose the type of data point you would want to add for the respective source.
-            Click 'Add to Dashboard'. Choose the authentication for the source. This will take you to the source website's login page. Authenticate over there and you'll be routed back to this page.</p>
-          <p>Now press the 'Add to dashboard' button to add the data-point to your dashboard.</p>
+          <p>
+            Choose the type of data point you would want to add for the
+            respective source. Click 'Add to Dashboard'. Choose the
+            authentication for the source. This will take you to the source
+            website's login page. Authenticate over there and you'll be routed
+            back to this page.
+          </p>
+          <p>
+            Now press the 'Add to dashboard' button to add the data-point to
+            your dashboard.
+          </p>
         </div>
-
-        <div class="container-1 add-card-wrapper">
+        <div class="container add-card-wrapper">
           <!-- Facebook card -->
           <div class="add-view-card">
+            <!-- Add View Icon -->
             <div class="add-view-icon flex">
               <img src="../assets/images/icons/facebook.svg" alt="Facebook" />
             </div>
+            <!-- Add View choices for the data source -->
             <fieldset class="add-option-wrapper">
               <div class="flex-between">
-                <label for="choice-1">Likes<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Comments<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Likes<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
               </div>
               <div class="flex-between">
-                <label for="choice-1">Friends<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Shares<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Friends<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Shares<input type="checkbox" id="choice-1"
+                /></label>
               </div>
             </fieldset>
-             <div class="add-btn-wraper">
-                <a href="dashboard.html" class="btn">Add to dashboard</a>
-             </div>
+            <!-- Add View Button -->
+            <div class="add-btn-wraper">
+              <a href="dashboard.html" class="btn">Add to dashboard</a>
+            </div>
           </div>
           <!-- Twitter card -->
           <div class="add-view-card">
+            <!-- Add View Icon -->
             <div class="add-view-icon">
               <img src="../assets/images/icons/twitter.svg" alt="Twitter" />
             </div>
+            <!-- Add View choices for the data source -->
             <fieldset class="add-option-wrapper">
               <div class="flex-between">
-                 <label for="choice-1">Likes<input type="checkbox" id="choice-1"></label>
-                 <label for="choice-1">Comments<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Likes<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
               </div>
               <div class="flex-between">
-                 <label for="choice-1">Friends<input type="checkbox" id="choice-1"></label>
-                 <label for="choice-1">Shares<input type="checkbox" id="choice-1"></label>
-               </div>
+                <label for="choice-1"
+                  >Friends<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Shares<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
             </fieldset>
+            <!-- Add View Button -->
             <div class="add-btn-wraper">
               <a href="dashboard.html" class="btn">Add to dashboard</a>
             </div>
           </div>
           <!-- Linkedin card -->
           <div class="add-view-card">
+            <!-- Add View Icon -->
             <div class="add-view-icon flex">
               <img
                 src="../assets/images/icons/linkedin.svg" alt="linkedin logo"/>
             </div>
+            <!-- Add View choices for the data source -->
             <fieldset class="add-option-wrapper">
               <div class="flex-between">
-                <label for="choice-1">Likes<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Comments<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Likes<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
               </div>
               <div class="flex-between">
-                <label for="choice-1">Friends<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Shares<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Friends<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Shares<input type="checkbox" id="choice-1"
+                /></label>
               </div>
             </fieldset>
+            <!-- Add View Button -->
             <div class="add-btn-wraper">
-                <a href="dashboard.html" class="btn">Add to dashboard</a>
+              <a href="dashboard.html" class="btn">Add to dashboard</a>
             </div>
           </div>
           <!-- Instagram card -->
           <div class="add-view-card">
+            <!-- Add View Icon -->
             <div class="add-view-icon flex">
               <img
                 src="../assets/images/icons/instagram.svg " alt="instagram logo"/>
             </div>
+            <!-- Add View choices for the data source -->
             <fieldset class="add-option-wrapper">
               <div class="flex-between">
-                <label for="choice-1">Likes<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Comments<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Likes<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
               </div>
               <div class="flex-between">
-                <label for="choice-1">Friends<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Shares<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Friends<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Shares<input type="checkbox" id="choice-1"
+                /></label>
               </div>
             </fieldset>
+            <!-- Add View Button -->
             <div class="add-btn-wraper">
               <a href="dashboard.html" class="btn">Add to dashboard</a>
             </div>
           </div>
           <!-- Github card -->
           <div class="add-view-card">
+            <!-- Add View Icon -->
             <div class="add-view-icon flex">
               <img
                 src="../assets/images/icons/github.svg" alt="github logo"/>
             </div>
+            <!-- Add View choices for the data source -->
             <fieldset class="add-option-wrapper">
               <div class="flex-between">
-                <label for="choice-1">Likes<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Comments<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Likes<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
               </div>
               <div class="flex-between">
-                <label for="choice-1">Friends<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Shares<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Friends<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Shares<input type="checkbox" id="choice-1"
+                /></label>
               </div>
             </fieldset>
+            <!-- Add View Button -->
             <div class="add-btn-wraper">
               <a href="dashboard.html" class="btn">Add to dashboard</a>
             </div>
           </div>
           <!-- Hashtag card -->
           <div class="add-view-card">
+            <!-- Add View Icon -->
             <div class="add-view-icon flex">
               <img src="../assets/images/icons/hashtag.svg" alt="hastag logo" />
             </div>
+            <!-- Add View choices for the data source -->
             <fieldset class="add-option-wrapper">
               <div class="flex-between">
-                <label for="choice-1">Likes<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Comments<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Likes<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
               </div>
               <div class="flex-between">
-                <label for="choice-1">Friends<input type="checkbox" id="choice-1"></label>
-                <label for="choice-1">Shares<input type="checkbox" id="choice-1"></label>
+                <label for="choice-1"
+                  >Friends<input type="checkbox" id="choice-1"
+                /></label>
+                <label for="choice-1"
+                  >Shares<input type="checkbox" id="choice-1"
+                /></label>
               </div>
             </fieldset>
-
             <!-- This is the button that opens the overlay. Using JS we will create the same effects on all cards -->
+            <!-- Add View Button -->
             <div class="add-btn-wraper">
               <label for="overlay" class="btn">Add to dashboard</label>
             </div>
+            <!--
+  Overlay For Authentication.
+ -->
+            <input type="checkbox" id="overlay" />
 
-            <input type="checkbox" id="overlay">
-            
             <label for="overlay" class="overlay-unchecked">
               <div class="overlay-wrapper">
                   <div class="overlay-list-card">
@@ -193,10 +272,9 @@
                       <a class="btn" href="dashboard.html">Add your account</a>
                     </div>
                   </div>
-                
+                </div>
               </div>
             </label>
-
           </div>
         </div>
       </section>
@@ -204,8 +282,14 @@
     <footer class="numero-footer">
       <nav class="numero-footer__nav">
         <ul class="numero-footer__nav-items flex-between">
-          <li class="numero-footer__nav-item"><a href="/pages/team.html">Team</a></li>
-          <li class="numero-footer__nav-item"><a href="https://github.com/AltCampus/numero" target="_blank">Credits</a></li>
+          <li class="numero-footer__nav-item">
+            <a href="/pages/team.html">Team</a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://github.com/AltCampus/numero" target="_blank"
+              >Credits</a
+            >
+          </li>
           <li class="numero-footer__nav-item">
             <a href="https://twitter.com/" target="_blank">
               <img src="../assets/images/icons/twitter.svg" alt="Twitter" />

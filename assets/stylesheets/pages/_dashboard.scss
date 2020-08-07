@@ -6,18 +6,24 @@ Page - dashboard
   padding: 10rem 0 4rem 0;
   .add-view-btn {
     @media screen and (min-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
-    color: $cl-blue;
     font-size: 2rem;
+    color: $cl-white;
+    background-color: $cl-black;
     position: fixed;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     bottom: 4%;
     right: 5%;
     border-radius: 10px;
-    background: lighten($cl-red, 30%);
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.144),
-      -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.603);
+    box-shadow: 0 0 4px #2a2c40, 0px 0px 4px #383c56;
+
+    i {
+      display: inline-block;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
     span {
       margin-left: 0.5rem;
       display: none;
@@ -44,7 +50,8 @@ Page - dashboard
 .dashboard-card {
   @extend .card-box-shadow;
   border-radius: 1.5rem;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  // padding: 1.5rem 1.5rem;
   margin: 1rem 0;
   color: $cl-black;
   display: block;
@@ -66,9 +73,9 @@ Page - dashboard
     }
     .fa-minus-circle {
       font-size: 1.7rem;
-      color: $cl-red;
+      color: $cl-black;
       &:hover {
-        color: $cl-black;
+        color: $cl-red;
       }
     }
     h3 {
@@ -76,7 +83,7 @@ Page - dashboard
     }
   }
   .num-label {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 0.9;
   }
   i {
@@ -99,7 +106,6 @@ Page - dashboard
 }
 
 .fa-slack-hash {
-  color: $cl-blue;
 }
 
 #facebook-remove,

@@ -2,72 +2,48 @@
 Page - Authentication confirmation
 ---------------------------------------------*/
 .overlay-list-card {
-    text-align: center;
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 7rem 1rem 2rem 1rem;
-    background: $cl-white;
-    border-radius: 2rem;
-    animation: overlay-animate 0.5s ease-in forwards;
-    h3 {
-        padding-bottom: 1rem;
+  text-align: center;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7rem 1rem 2rem 1rem;
+  background: $cl-white;
+  border-radius: 2rem;
+  animation: overlay-animate 0.5s ease-in forwards;
+  h3 {
+    padding-bottom: 1rem;
+  }
+  a {
+    color: $cl-blue;
+  }
+  label {
+    padding: 0.8rem 1.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    @extend .btn-box-shadow;
+    i {
+      font-size: 2rem;
     }
-    a {
-        color: $cl-blue;
+    .fab {
+      color: $cl-blue;
+      padding-right: 1rem;
     }
-    label {
-        padding: 0.8rem 1.5rem;
-        margin:1rem;
-        border-radius: 1.5rem;
-        cursor: pointer;
-        @extend .btn-box-shadow;
-        i {
-            font-size: 2rem;
-        }
-        .fab {
-            color: $cl-blue;
-            padding-right: 1rem;
-        }
-        .fa-check-circle {
-            padding-left: 1rem;
-            display: none;
-        }
+    .fa-check-circle {
+      padding-left: 1rem;
+      display: none;
     }
-    .overlay-btn-wrapper {
-        margin-top: 2rem;
-    }
+  }
+  .overlay-btn-wrapper {
+    margin-top: 2rem;
+  }
   .overlay-btn {
     display: inline-block;
     width: 8rem;
     margin: 0.5rem auto;
     padding: 1rem 1.5rem;
   }
-}
-
-.fa-facebook-square {
-  color: #0674e8;
-}
-
-.fa-instagram-square {
-  background: linear-gradient(45deg, #f0a028, #dd2a7b, #6945cc);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-emphasis-color: transparent;
-}
-
-.fa-linkedin {
-  color: #0076b4;
-}
-
-.fa-github-square {
-  color: #24292e;
-}
-
-.fa-twitter-square {
-  color: #1da1f2;
 }
 
 #overlay {
@@ -98,30 +74,29 @@ Page - Authentication confirmation
   width: 100%;
 }
 
-
 @keyframes overlay-animate {
-    from {
-        top: -100%;
-    }
-    to {
-        top: 0;
-    }
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
 }
 
 #tick-instagram,
 #tick-github,
 #tick-twitter {
-    display: none;
+  display: none;
 }
 
 #tick-instagram:checked ~ .loged-in-instagram > .tick-mark {
- display: block;
+  display: block;
 }
 
 #tick-github:checked ~ .loged-in-github > .tick-mark {
-    display: block;
+  display: block;
 }
 
 #tick-twitter:checked ~ .loged-in-twitter > .tick-mark {
-    display: block;
+  display: block;
 }

@@ -125,3 +125,20 @@ Global
 .text-center {
   text-align: center;
 }
+
+// FontAwesome Styling
+.fa-linkedin,
+.fa-github-square,
+.fa-twitter-square,
+.fa-facebook-square,
+.fa-instagram-square {
+  color: $cl-black;
+}
+
+.fa-instagram-square:hover {
+  background: linear-gradient(45deg, #f0a028, #dd2a7b, #6945cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-emphasis-color: transparent;
+}

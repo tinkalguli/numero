@@ -6,7 +6,7 @@ Page - Add View
   padding: 5rem 0;
   .add-card-wrapper {
     @include grid-repeat(auto-fit, 300px, 1fr);
-              column-gap: 2rem;
+    column-gap: 2rem;
   }
   .btn-hashtag {
     cursor: pointer;
@@ -28,8 +28,9 @@ Page - Add View
     width: 4.5rem;
     height: 4.5rem;
     @extend .icons-neu-effect;
-    svg {
+    img {
       width: 3rem;
+      height: 3rem;
     }
   }
   .add-option-wrapper {
@@ -47,12 +48,22 @@ Page - Add View
       margin: 0 auto;
       padding: 3rem 1.5rem;
       h3 {
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+          padding: 0.4rem 0;
           font-family: $secondary-font;
           font-weight: 400;
           margin: 0 0 1rem 0;
+        }
       }
       p {
-          padding: 0.2rem 0;
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+          padding: 0.3rem 0;
+          line-height: 1.8;
+        }
       }
   }
 }

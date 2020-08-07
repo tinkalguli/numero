@@ -31,8 +31,6 @@ Home Page
   // }
 
   .info {
-    // margin-top: 2rem;
-    margin: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,9 +132,8 @@ Home Page
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
   }
-  i {
-    font-size: 2rem;
-    color: $cl-blue;
+  img {
+    width: 3rem;
     padding-bottom: 1rem;
   }
   .feature {
@@ -155,7 +152,7 @@ Home Page
   }
 
   .imp-info {
-    padding: 0 1rem;
+    padding: 0 2rem;
     @media screen and (min-width: 768px) {
       padding: 0 4rem;
     }
@@ -185,6 +182,9 @@ Home Page
       padding-top: 5rem;
       @media screen and (min-width: 1024px) {
         height: 100vh;
+      }
+      .info {
+        margin: 0 1rem;
       }
     }
 

@@ -15,7 +15,7 @@ Page - Add View
       padding: 1.5rem 2rem;
       margin: 1rem 0;
       border-radius: 1.5rem;
-      @extend .card-box-shadow;
+      @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
       .add-btn-wraper {
           text-align: center;
           cursor: pointer;

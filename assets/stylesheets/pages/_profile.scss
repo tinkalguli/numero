@@ -4,6 +4,9 @@ Page - Profile
 .profile-main {
   padding-top: 10rem;
   background-color: $cl-white;
+  @media screen and (min-width: 1024px){
+    height: 100vh;
+  }
   h1 {
     text-align: center;
     margin: 0 auto 3rem auto;

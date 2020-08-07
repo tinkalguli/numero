@@ -6,6 +6,7 @@ Page - Authentication confirmation
   position: absolute;
   top: -100%;
   left: 50%;
+  z-index: 10;
   transform: translateX(-50%);
   padding: 7rem 1rem 2rem 1rem;
   background: $cl-white;
@@ -22,12 +23,12 @@ Page - Authentication confirmation
     margin: 1rem;
     border-radius: 1.5rem;
     cursor: pointer;
-    @extend .btn-box-shadow;
+    @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
     i {
       font-size: 2rem;
     }
     .fab {
-      color: $cl-blue;
+      color: $cl-black;
       padding-right: 1rem;
     }
     .fa-check-circle {
@@ -37,12 +38,9 @@ Page - Authentication confirmation
   }
   .overlay-btn-wrapper {
     margin-top: 2rem;
-  }
-  .overlay-btn {
-    display: inline-block;
-    width: 8rem;
-    margin: 0.5rem auto;
-    padding: 1rem 1.5rem;
+    a {
+      color: $cl-black;
+    }
   }
 }
 
@@ -56,15 +54,6 @@ Page - Authentication confirmation
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  label {
-    font-size: 5rem;
-    display: block;
-    color: $cl-red;
-    position: fixed;
-    padding: 0 3rem;
-    left: 0;
-    top: 0;
-  }
 }
 
 #overlay:checked ~ .overlay-unchecked > .overlay-wrapper {

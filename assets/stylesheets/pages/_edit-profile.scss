@@ -5,6 +5,9 @@ Page - Edit Profile
 .edit-profile-main {
   background-color: $cl-white;
   padding-top: 10rem;
+  @media screen and (min-width: 1024px){
+    height: 100vh;
+  }
   h1 {
     text-align: center;
     margin: 0 auto 3rem auto;

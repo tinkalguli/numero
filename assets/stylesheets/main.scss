@@ -1,12 +1,11 @@
 /*---------------------------------------------
 Main.scss
 ---------------------------------------------*/
-@import "variables";
-@import "reset";
-@import "global";
-@import "helper-code";
-@import "typography";
-@import "media-queries";
+@import "base/variables";
+@import "base/reset";
+@import "base/helper-code";
+@import "base/global";
+@import "base/typography";
 @import "components/header";
 @import "components/footer";
 @import "pages/addView";

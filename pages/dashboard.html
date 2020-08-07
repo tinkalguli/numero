@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.ico"
+    />
   </head>
   <body>
     <header class="numero-header">
@@ -15,8 +20,8 @@
           <span>umero</span>
         </a>
         <!-- Hamburger Menu -->
-        <input type="checkbox" id="check" />
-        <label class="numero-header__check-btn" for="check">
+        <input type="checkbox" id="hamburger" />
+        <label class="numero-header__check-btn" for="hamburger">
           <span class="numero-header__bar numero-header__bar-1"></span>
           <span class="numero-header__bar numero-header__bar-2"></span>
           <span class="numero-header__bar numero-header__bar-3"></span>
@@ -34,16 +39,18 @@
       </div>
     </header>
 
-    <main class="main-dashboard">
+    <main class="dashboard-main">
       <section class="dashboard-description">
         <h2>Dashboard</h2>
         <p>Track your data</p>
       </section>
-      <section class="dashboard container-1">
-        <!-- Facebook Input -->
+      <section class="dashboard container">
+        <!-- Facebook View -->
+        <!-- This checkbox is used to remove the particular view -->
         <input type="checkbox" id="facebook-remove" />
         <a href="#" class="dashboard-card facebook-dashboard-card">
-          <div class="dashboard-icon-sec flex-end-align">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
             <div class="flex">
               <h3>Facebook</h3>
               <i class="fab fa-facebook-square"></i>
@@ -52,7 +59,8 @@
               ><i class="fas fa-minus-circle"></i
             ></label>
           </div>
-          <div class="dashboard-num-sec flex-end-align">
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
             <div class="flex-end-align">
               <label class="text-label">Likes</label>
               <i class="fas fa-sort-up"></i>
@@ -70,10 +78,12 @@
             </div>
           </div>
         </a>
-        <!-- Instagram Input -->
+        <!-- Instagram View -->
+        <!-- This checkbox is used to remove the particular view -->
         <input type="checkbox" id="instagram-remove" />
         <a href="#" class="dashboard-card instagram-dashboard-card">
-          <div class="dashboard-icon-sec flex-end-align">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
             <div class="flex">
               <h3>Instagram</h3>
               <i class="fab fa-instagram-square"></i>
@@ -82,7 +92,8 @@
               ><i class="fas fa-minus-circle"></i
             ></label>
           </div>
-          <div class="dashboard-num-sec flex-end-align">
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
             <div class="flex-end-align">
               <label class="text-label">Likes</label>
               <i class="fas fa-sort-down"></i>
@@ -100,10 +111,12 @@
             </div>
           </div>
         </a>
-        <!-- Linkedin Input -->
+        <!-- Linkedin View -->
+        <!-- This checkbox is used to remove the particular view -->
         <input type="checkbox" id="linkedin-remove" />
         <a href="#" class="dashboard-card linkedin-dashboard-card">
-          <div class="dashboard-icon-sec flex-end-align">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
             <div class="flex">
               <h3>LinkedIn</h3>
               <i class="fab fa-linkedin"></i>
@@ -112,7 +125,8 @@
               ><i class="fas fa-minus-circle"></i
             ></label>
           </div>
-          <div class="dashboard-num-sec flex-end-align">
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
             <div class="flex-end-align">
               <label class="text-label">Connections</label>
               <i class="fas fa-sort-down"></i>
@@ -120,10 +134,12 @@
             </div>
           </div>
         </a>
-       <!-- Github Input -->
+        <!-- Github View -->
+        <!-- This checkbox is used to remove the particular view -->
         <input type="checkbox" id="github-remove" />
         <a href="#" class="dashboard-card github-dashboard-card">
-          <div class="dashboard-icon-sec flex-end-align">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
             <div class="flex">
               <h3>Github</h3>
               <i class="fab fa-github-square"></i>
@@ -132,7 +148,8 @@
               ><i class="fas fa-minus-circle"></i
             ></label>
           </div>
-          <div class="dashboard-num-sec flex-end-align">
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
             <div class="flex-end-align">
               <label class="text-label">Stars</label>
               <i class="fas fa-sort-down"></i>
@@ -145,13 +162,15 @@
             </div>
           </div>
         </a>
-        <!-- Twitter Input -->
+        <!-- Twitter View -->
+        <!-- This checkbox is used to remove the particular view -->
         <input type="checkbox" id="twitter-remove" />
         <a
           href="view-details.html"
           class="dashboard-card twitter-dashboard-card"
         >
-          <div class="dashboard-icon-sec flex-end-align">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
             <div class="flex">
               <h3>Twitter</h3>
               <i class="fab fa-twitter-square"></i>
@@ -160,7 +179,8 @@
               ><i class="fas fa-minus-circle"></i
             ></label>
           </div>
-          <div class="dashboard-num-sec flex-end-align">
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
             <div class="flex-end-align">
               <label class="text-label">Retweets</label>
               <i class="fas fa-sort-up"></i>
@@ -173,10 +193,12 @@
             </div>
           </div>
         </a>
-        <!-- Hashtag Input -->
+        <!-- Hashtag Input View -->
+        <!-- This checkbox is used to remove the particular view -->
         <input type="checkbox" id="hashtag-remove" />
         <a href="#" class="dashboard-card hashtag-dashboard-card">
-          <div class="dashboard-icon-sec flex-end-align">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
             <div class="flex">
               <h3>#AltCampus</h3>
               <i class="fab fa-slack-hash"></i>
@@ -185,7 +207,8 @@
               ><i class="fas fa-minus-circle"></i
             ></label>
           </div>
-          <div class="dashboard-num-sec flex-end-align">
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
             <div class="flex-end-align">
               <label class="text-label">Facebook</label>
               <i class="fas fa-sort-up"></i>
@@ -203,10 +226,12 @@
             </div>
           </div>
         </a>
-        <!-- Hashtag Altcampus input -->
+        <!-- Hashtag Altcampus View -->
+        <!-- This checkbox is used to remove the particular view -->
         <input type="checkbox" id="hashtag-remove" />
         <a href="#" class="dashboard-card hashtag-dashboard-card">
-          <div class="dashboard-icon-sec flex-end-align">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
             <div class="flex">
               <h3>#CodingMemes</h3>
               <i class="fab fa-slack-hash"></i>
@@ -215,7 +240,8 @@
               ><i class="fas fa-minus-circle"></i
             ></label>
           </div>
-          <div class="dashboard-num-sec flex-end-align">
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
             <div class="flex-end-align">
               <label class="text-label">Facebook</label>
               <i class="fas fa-sort-up"></i>
@@ -233,10 +259,12 @@
             </div>
           </div>
         </a>
-        <!-- Hashtag Dribbble input -->
+        <!-- Dribbble View -->
+        <!-- This checkbox is used to remove the particular view -->
         <input type="checkbox" id="hashtag-remove" />
         <a href="#" class="dashboard-card hashtag-dashboard-card">
-          <div class="dashboard-icon-sec flex-end-align">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
             <div class="flex">
               <h3>Dribbble</h3>
               <i class="fab fa-slack-hash"></i>
@@ -245,7 +273,8 @@
               ><i class="fas fa-minus-circle"></i
             ></label>
           </div>
-          <div class="dashboard-num-sec flex-end-align">
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
             <div class="flex-end-align">
               <label class="text-label">Hearts</label>
               <i class="fas fa-sort-up"></i>
@@ -258,10 +287,12 @@
             </div>
           </div>
         </a>
-        <!-- Hashtag FitBit -->
+        <!-- FitBit View -->
+        <!-- This checkbox is used to remove the particular view -->
         <input type="checkbox" id="hashtag-remove" />
         <a href="#" class="dashboard-card hashtag-dashboard-card">
-          <div class="dashboard-icon-sec flex-end-align">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
             <div class="flex">
               <h3>FitBit</h3>
               <i class="fab fa-slack-hash"></i>
@@ -270,7 +301,8 @@
               ><i class="fas fa-minus-circle"></i
             ></label>
           </div>
-          <div class="dashboard-num-sec flex-end-align">
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
             <div class="flex-end-align">
               <label class="text-label">Steps</label>
               <i class="fas fa-sort-up"></i>
@@ -279,6 +311,7 @@
           </div>
         </a>
       </section>
+      <!-- Button - Add a View -->
       <a href="addView.html" class="add-view-btn flex"
         ><i class="fad fa-plus-circle"></i><span>Add a View</span></a
       >

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.ico"
+    />
     <title>View Details</title>
   </head>
   <body class="view-details__body">
@@ -15,8 +20,8 @@
           <span>umero</span>
         </a>
         <!-- Hamburger Menu -->
-        <input type="checkbox" id="check" />
-        <label class="numero-header__check-btn" for="check">
+        <input type="checkbox" id="hamburger" />
+        <label class="numero-header__check-btn" for="hamburger">
           <span class="numero-header__bar numero-header__bar-1"></span>
           <span class="numero-header__bar numero-header__bar-2"></span>
           <span class="numero-header__bar numero-header__bar-3"></span>
@@ -36,6 +41,7 @@
     <main class="view-details">
       <div class="container">
         <section class="hero flex">
+          <!-- Icon for the view -->
           <figure class="view-details__icon">
             <svg
               viewBox="0 -47 512.00004 512"
@@ -46,9 +52,12 @@
               />
             </svg>
           </figure>
+          <!-- View title -->
           <h2>Twitter Details</h2>
         </section>
+        <!-- All the data charts displaying a user's activity in detail -->
         <section class="view-details__charts">
+          <!-- Area Graph -->
           <div class="view-details__charts__area-graph">
             <h3>Daily Growth in Follower Count</h3>
             <figure>
@@ -169,7 +178,9 @@
               </svg>
             </figure>
           </div>
+          <!-- Pie Charts -->
           <div class="view-details__charts__pie-chart grid">
+            <!-- Pie Chart 01 -->
             <div class="view-details__charts__pie-chart-01">
               <h3>Retweets</h3>
               <figure>
@@ -231,6 +242,7 @@
                 </svg>
               </figure>
             </div>
+            <!-- Pie Chart 02 -->
             <div class="view-details__charts__pie-chart-02">
               <h3>Likes</h3>
               <figure>
@@ -313,6 +325,7 @@
               </figure>
             </div>
           </div>
+          <!-- Bar Graph -->
           <div class="view-details__charts__bar-graph">
             <h3>Comments</h3>
             <figure>
@@ -512,7 +525,11 @@
       <nav class="numero-footer__nav">
         <ul class="numero-footer__nav-items flex-between">
           <li class="numero-footer__nav-item"><a href="team.html">Team</a></li>
-          <li class="numero-footer__nav-item"><a href="https://github.com/AltCampus/numero" target="_blank">Credits</a></li>
+          <li class="numero-footer__nav-item">
+            <a href="https://github.com/AltCampus/numero" target="_blank"
+              >Credits</a
+            >
+          </li>
           <li class="numero-footer__nav-item">
             <a href="https://twitter.com/" target="_blank">
               <img src="../assets/images/twitter.svg" alt="Twitter" />

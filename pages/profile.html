@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.ico"
+    />
     <title>Profile</title>
   </head>
 
@@ -16,8 +21,8 @@
           <span>umero</span>
         </a>
         <!-- Hamburger Menu -->
-        <input type="checkbox" id="check" />
-        <label class="numero-header__check-btn" for="check">
+        <input type="checkbox" id="hamburger" />
+        <label class="numero-header__check-btn" for="hamburger">
           <span class="numero-header__bar numero-header__bar-1"></span>
           <span class="numero-header__bar numero-header__bar-2"></span>
           <span class="numero-header__bar numero-header__bar-3"></span>
@@ -46,16 +51,19 @@
         </figure>
         <!-- Profile Details -->
         <section class="profile__text">
+          <!-- Profile Name -->
           <div class="profile__text__name flex">
             <h4 class="profile__text__name__header">Name</h4>
             <p class="profile__text__name__value">Rosheth Kumar</p>
           </div>
 
+          <!-- Profile Email -->
           <div class="profile__text__email flex">
             <h4 class="profile__text__email__header">Email</h4>
             <p class="profile__text__email__value">roshethkumar@gmail.com</p>
           </div>
 
+          <!-- Profile Password -->
           <div class="profile__text__password flex">
             <h4 class="profile__text__password__header">Password</h4>
             <p class="profile__text__password__value">**************</p>
@@ -63,9 +71,7 @@
         </section>
         <!-- Profile edit button -->
         <section class="profile__actions">
-          <a href="edit-profile.html" class="profile__actions__btn btn"
-            >Edit Details</a
-          >
+          <a href="edit-profile.html" class="btn">Edit Details</a>
         </section>
       </div>
     </main>

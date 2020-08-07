@@ -11,7 +11,7 @@ Page - Authentication confirmation
   padding: 7rem 1rem 2rem 1rem;
   background: $cl-white;
   border-radius: 2rem;
-  animation: overlay-animate 0.5s ease-in forwards;
+  animation: move-to-bottom 0.5s ease-in forwards;
   h3 {
     padding-bottom: 1rem;
   }
@@ -63,21 +63,13 @@ Page - Authentication confirmation
   width: 100%;
 }
 
-@keyframes overlay-animate {
-  from {
-    top: -100%;
-  }
-  to {
-    top: 0;
-  }
-}
-
 #tick-instagram,
 #tick-github,
 #tick-twitter {
   display: none;
 }
 
+// These are for getting the check mark after authentication
 #tick-instagram:checked ~ .loged-in-instagram > .tick-mark {
   display: block;
 }

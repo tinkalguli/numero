@@ -5,7 +5,7 @@ Page - Edit Profile
 .edit-profile-main {
   background-color: $cl-white;
   padding-top: 10rem;
-  @media screen and (min-width: 1024px){
+  @media (min-width: 1024px) {
     height: 100vh;
   }
   h1 {
@@ -39,14 +39,12 @@ Page - Edit Profile
     flex-basis: 100px;
     font-family: $primary-font;
     font-weight: 700;
-    // font-size: 2rem;
   }
 
   &__text__name__input,
   &__text__email__input,
   &__text__password__input {
-    // TODO: create a grey variable
-    color: grey;
+    color: $cl-grey;
   }
 
   &__actions {

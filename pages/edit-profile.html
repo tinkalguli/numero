@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.ico"
+    />
     <title>Edit Profile</title>
   </head>
 
@@ -17,8 +22,8 @@
           <span>umero</span>
         </a>
         <!-- Hamburger Menu -->
-        <input type="checkbox" id="check" />
-        <label class="numero-header__check-btn" for="check">
+        <input type="checkbox" id="hamburger" />
+        <label class="numero-header__check-btn" for="hamburger">
           <span class="numero-header__bar numero-header__bar-1"></span>
           <span class="numero-header__bar numero-header__bar-2"></span>
           <span class="numero-header__bar numero-header__bar-3"></span>
@@ -38,13 +43,16 @@
     <main class="edit-profile-main">
       <h1>Edit profile</h1>
       <div class="edit-profile container grid">
+        <!-- Profile Image without edit button -->
         <figure class="edit-profile__image">
           <img
             src="../assets/images/icons/profile.svg"
             alt="Placeholder profile icon"
           />
         </figure>
+        <!-- Profile text -->
         <section class="edit-profile__text">
+          <!-- Profile name change -->
           <div class="edit-profile__text__name flex">
             <label for="name-input" class="edit-profile__text__name__label"
               >Name</label
@@ -56,8 +64,7 @@
               class="edit-profile__text__name__input"
             />
           </div>
-          <!-- <hr class="edit-profile__text__hr" /> -->
-
+          <!-- Profile email change -->
           <div class="edit-profile__text__email flex">
             <label class="edit-profile__text__email__label">Email</label>
             <input
@@ -67,8 +74,7 @@
               class="edit-profile__text__name__input"
             />
           </div>
-          <!-- <hr class="edit-profile__text__hr" /> -->
-
+          <!-- Profile password change -->
           <div class="edit-profile__text__password flex">
             <label class="edit-profile__text__password__label">Password</label>
             <input
@@ -78,9 +84,8 @@
               class="edit-profile__text__name__input"
             />
           </div>
-          <!-- <hr class="edit-profile__text__hr" /> -->
         </section>
-
+        <!-- Profile Save Button -->
         <form class="edit-profile__actions">
           <a class="btn" href="profile.html">Save Profile</a>
         </form>

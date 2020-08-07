@@ -1,115 +1,111 @@
 /*---------------------------------------------
 Page - dashboard
 ---------------------------------------------*/
-.main-dashboard {
-  background: $cl-white;
-  padding: 10rem 0 4rem 0;
-  .add-view-btn {
-    @media screen and (min-width: 768px) {
-      font-size: 1rem;
-    }
-    font-size: 2rem;
-    color: $cl-white;
-    background-color: $cl-black;
-    position: fixed;
-    padding: 1rem;
-    bottom: 4%;
-    right: 5%;
-    border-radius: 10px;
-    box-shadow: 0 0 4px #2a2c40, 0px 0px 4px #383c56;
-
-    i {
-      display: inline-block;
-      @media screen and (min-width: 768px) {
-        display: none;
-      }
-    }
-    span {
-      margin-left: 0.5rem;
-      display: none;
-      @media screen and (min-width: 768px) {
-        display: inline-block;
-        line-height: 1;
-      }
-    }
-  }
-}
-
-.dashboard-description {
-  text-align: center;
-  padding-bottom: 1.5rem;
-}
 
 .dashboard {
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     @include grid-repeat(2, 330px, 1fr);
     column-gap: 2rem;
   }
-}
 
-.dashboard-card {
-  @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
-  border-radius: 1.5rem;
-  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-  // padding: 1.5rem 1.5rem;
-  margin: 1rem 0;
-  color: $cl-black;
-  display: block;
-  &:hover {
-    @extend .nuemorph-inset;
-    // box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
-    // inset -0.5rem -0.5rem 1rem #ffffffef;
-  }
-  .dashboard-num-sec {
-    flex-wrap: wrap;
-    div {
-      margin-bottom: 1rem;
-      padding: 0 0.2rem;
-    }
-  }
-  .dashboard-icon-sec {
-    margin-bottom: 2rem;
-    label {
-      align-self: flex-start;
-      cursor: pointer;
-    }
-    .fa-minus-circle {
-      font-size: 1.7rem;
-      color: $cl-black;
-      &:hover {
-        color: $cl-red;
+  &-main {
+    background: $cl-white;
+    padding: 10rem 0 4rem 0;
+    .add-view-btn {
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+      }
+      font-size: 2rem;
+      color: $cl-white;
+      background-color: $cl-black;
+      position: fixed;
+      padding: 1rem;
+      bottom: 4%;
+      right: 5%;
+      border-radius: 10px;
+      box-shadow: 0 0 4px #2a2c40, 0px 0px 4px #383c56;
+
+      i {
+        display: inline-block;
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
+      }
+      span {
+        margin-left: 0.5rem;
+        display: none;
+        @media screen and (min-width: 768px) {
+          display: inline-block;
+          line-height: 1;
+        }
       }
     }
-    h3 {
-      line-height: 1.9;
+  }
+
+  &-description {
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+
+  &-card {
+    @include neumorph-offset(1rem, -0.1rem, 0.1rem, 1rem);
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 1rem 0;
+    color: $cl-black;
+    display: block;
+    &:hover {
+      @extend .neumorph-inset;
     }
-  }
-  .num-label {
-    font-size: 2rem;
-    line-height: 0.9;
-  }
-  i {
-    font-size: 2.5rem;
-    display: inline-block;
-    margin-left: 0.5rem;
-  }
-  .fa-sort-up,
-  .fa-sort-down {
-    font-size: 1.5rem;
-  }
-  .fa-sort-down {
-    height: 1.8rem;
-    color: $cl-red;
-  }
-  .fa-sort-up {
-    height: 1.2rem;
-    color: $cl-green;
+    .dboard-number-section {
+      flex-wrap: wrap;
+      div {
+        margin-bottom: 1rem;
+        padding: 0 0.2rem;
+      }
+    }
+    .dboard-icon-section {
+      margin-bottom: 2rem;
+      label {
+        align-self: flex-start;
+        cursor: pointer;
+      }
+      .fa-minus-circle {
+        font-size: 1.7rem;
+        color: $cl-black;
+        &:hover {
+          color: $cl-red;
+        }
+      }
+      h3 {
+        line-height: 1.9;
+      }
+    }
+    .num-label {
+      font-size: 2rem;
+      line-height: 0.9;
+    }
+    i {
+      font-size: 2.5rem;
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+    .fa-sort-up,
+    .fa-sort-down {
+      font-size: 1.5rem;
+    }
+    .fa-sort-down {
+      height: 1.8rem;
+      color: $cl-red;
+    }
+    .fa-sort-up {
+      height: 1.2rem;
+      color: $cl-green;
+    }
   }
 }
 
-// .fa-slack-hash {
-// }
-
+// Styling for removing the views
 #facebook-remove,
 #instagram-remove,
 #linkedin-remove,

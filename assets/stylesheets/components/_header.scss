@@ -10,19 +10,21 @@ Component - Header
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  z-index: 30;
+  z-index: 11;
   a:not(.logo) {
     color: $cl-black;
     &:hover {
       color: $cl-blue;
     }
-    @media screen and (min-width: 768px) {
-      color: $cl-black;
+    &:active {
+      color: $cl-violet;
+    }
+    &:focus {
+      color: $cl-violet;
     }
   }
 
-  #check {
+  #hamburger {
     display: none;
   }
 
@@ -44,7 +46,7 @@ Component - Header
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: 999;
+    z-index: 12;
     cursor: pointer;
   }
 
@@ -55,12 +57,6 @@ Component - Header
     border-radius: 1px;
     background: $cl-black;
     margin: 3px 0;
-  }
-
-  &__navbar li {
-    text-align: center;
-    margin: 5vh 0;
-    font-weight: 700;
   }
 
   &__navbar {
@@ -74,40 +70,37 @@ Component - Header
     border-radius: 10px 0 0 10px;
   }
 
-  #check:checked ~ &__navbar {
+  &__navbar li {
+    text-align: center;
+    margin: 5vh 0;
+    font-weight: 700;
+  }
+
+  #hamburger:checked ~ &__navbar {
     display: block;
     right: 0;
     animation: move-to-right 0.5s ease-in;
-    @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
+    @include neumorph-offset(1rem, -0.1rem, 0.1rem, 1rem);
   }
 
-  @keyframes move-to-right {
-    from {
-      right: -100%;
-    }
-    to {
-      right: 0;
-    }
-  }
-
-  #check:checked ~ &__check-btn > &__bar {
+  #hamburger:checked ~ &__check-btn > &__bar {
     position: absolute;
     right: 0;
   }
 
-  #check:checked ~ &__check-btn > &__bar-1 {
+  #hamburger:checked ~ &__check-btn > &__bar-1 {
     transform: rotate(45deg);
   }
 
-  #check:checked ~ &__check-btn > &__bar-2 {
+  #hamburger:checked ~ &__check-btn > &__bar-2 {
     display: none;
   }
 
-  #check:checked ~ &__check-btn > &__bar-3 {
+  #hamburger:checked ~ &__check-btn > &__bar-3 {
     transform: rotate(135deg);
   }
-
-  @media screen and (min-width: 768px) {
+  // Media Query
+  @media (min-width: 768px) {
     &__check-btn {
       display: none;
     }

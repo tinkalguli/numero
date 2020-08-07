@@ -685,7 +685,7 @@ Page - dashboard
   height: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .main-dashboard .add-view-btn img {
     display: none;
   }
@@ -696,7 +696,7 @@ Page - dashboard
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .main-dashboard .add-view-btn span {
     display: inline-block;
     line-height: 1;
@@ -708,7 +708,7 @@ Page - dashboard
   padding-bottom: 1.5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .dashboard {
     display: -ms-grid;
     display: grid;

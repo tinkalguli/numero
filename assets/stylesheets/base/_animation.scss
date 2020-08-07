@@ -1,0 +1,22 @@
+/*---------------------------------------------
+Animation
+---------------------------------------------*/
+// Used in hamburger menu
+@keyframes move-to-right {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+// Used in Overlay menu
+@keyframes move-to-bottom {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}

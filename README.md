@@ -44,7 +44,6 @@ We use [SemVer](http://semver.org/) for versioning. Currently, the project is in
 [l]: #license "License type"
 
 (The license.md file is being updated)
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgements
 

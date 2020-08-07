@@ -55,14 +55,14 @@ Home Page
     margin: 0 1rem;
     text-align: center;
     border-radius: 1rem;
-    @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
+    @include neumorph-offset(1rem, -0.1rem, 0.1rem, 1rem);
     input {
       border: none;
       margin-bottom: 1rem;
       width: 70%;
       padding: 0.8rem;
       background: none;
-      @extend .nuemorph-inset;
+      @extend .neumorph-inset;
       border-radius: 10px;
       background: $cl-white;
       :focus {
@@ -125,6 +125,10 @@ Home Page
   @media screen and (min-width: 768px) {
     padding: 6rem 0;
   }
+  .feature-container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
   .grid-col-4 {
     @include grid-repeat(auto-fit, 300px, 1fr);
   }
@@ -140,7 +144,7 @@ Home Page
     margin: 2rem;
     padding: 2.5rem;
     border-radius: 1rem;
-    @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
+    @include neumorph-offset(1rem, -0.1rem, 0.1rem, 1rem);
   }
 }
 

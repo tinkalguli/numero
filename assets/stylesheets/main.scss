@@ -1,18 +1,27 @@
 /*---------------------------------------------
-Main.scss
+This website has the following key design decisions:
+
+(a) This website was designed Mobile First. You will find all the media queries will adjust the view accordingly for the larger layouts.
+
+(b) We absolutely adore the neumorphic design style and it makes a lot of sense to choose neumorphic styling for a minimal dashboard app.
+
+(c) Almost all our images and illustrations are SVGs including icons and background images. Where it was possible, we have also included them internally.
+
 ---------------------------------------------*/
+
 @import "base/variables";
 @import "base/reset";
 @import "base/helper-code";
 @import "base/global";
 @import "base/typography";
+@import "base/icon-styles";
+@import "base/animation";
 @import "components/header";
 @import "components/footer";
 @import "pages/addView";
 @import "pages/auth-confirm";
 @import "pages/dashboard";
 @import "pages/edit-profile";
-@import "pages/hashtag";
 @import "pages/profile";
 @import "pages/team";
 @import "pages/view-details";

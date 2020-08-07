@@ -48,7 +48,7 @@ Page - dashboard
 }
 
 .dashboard-card {
-  @extend .card-box-shadow;
+  @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
   border-radius: 1.5rem;
   padding: 1.5rem 1.5rem 0.5rem 1.5rem;
   // padding: 1.5rem 1.5rem;
@@ -56,7 +56,9 @@ Page - dashboard
   color: $cl-black;
   display: block;
   &:hover {
-    @extend .card-hover-effect;
+    @extend .nuemorph-inset;
+    // box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+    // inset -0.5rem -0.5rem 1rem #ffffffef;
   }
   .dashboard-num-sec {
     flex-wrap: wrap;
@@ -105,8 +107,8 @@ Page - dashboard
   }
 }
 
-.fa-slack-hash {
-}
+// .fa-slack-hash {
+// }
 
 #facebook-remove,
 #instagram-remove,

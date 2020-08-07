@@ -3,28 +3,23 @@ Page - Add View
 ---------------------------------------------*/
 .add-view {
   background: $cl-white;
-  padding: 20rem 0;
+  padding: 5rem 0;
   .add-card-wrapper {
-    @media screen and (min-width: 1024px) {
-      @include grid-repeat(2, 300px, 1fr);
-      column-gap: 2rem;
-    }
-    @media screen and (min-width: 768px) {
-      @include grid-repeat(3, 300px, 1fr);
-      column-gap: 2rem;
-    }
+    @include grid-repeat(auto-fit, 300px, 1fr);
+              column-gap: 2rem;
   }
   .btn-hashtag {
     cursor: pointer;
   }
   .add-view-card {
-    padding: 1.5rem 2rem;
-    margin: 1rem 0;
-    border-radius: 1.5rem;
-    @extend .card-box-shadow;
-    .add-btn-wraper {
-      text-align: center;
-    }
+      padding: 1.5rem 2rem;
+      margin: 1rem 0;
+      border-radius: 1.5rem;
+      @extend .card-box-shadow;
+      .add-btn-wraper {
+          text-align: center;
+          cursor: pointer;
+      }
   }
   .add-view-icon {
     position: relative;
@@ -45,5 +40,19 @@ Page - Add View
     input {
       margin-left: 1rem;
     }
+  }
+  .add-view-info {
+      text-align: center;
+      max-width: 45rem;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      h3 {
+          font-family: $secondary-font;
+          font-weight: 400;
+          margin: 0 0 1rem 0;
+      }
+      p {
+          padding: 0.2rem 0;
+      }
   }
 }

@@ -15,7 +15,8 @@ Page - Profile
 }
 
 .profile {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  @include grid-repeat(auto-fit,300px,1fr);
+  align-items: center;
   &__image {
     width: 100px;
     margin: 0 auto 3rem auto;
@@ -24,6 +25,12 @@ Page - Profile
   &__image img {
     width: 100%;
     display: block;
+  }
+
+  &__text {
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
   }
 
   &__text__name > *,

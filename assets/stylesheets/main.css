@@ -14,7 +14,7 @@ This website has the following key design decisions:
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
-@import url("https://pro.fontawesome.com/releases/v5.14.0/css/all.css");
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -121,7 +121,7 @@ Global
           align-items: flex-end;
 }
 
-.neumorph-inset, .btn:hover, .dashboard-card:hover, .edit-profile__text__name__input, .edit-profile__text__email__input, .edit-profile__text__password__input, .numero-home__banner .login-form input {
+.neumorph-inset, .btn:hover, .overlay-list-card label:hover, .dashboard-card:hover, .edit-profile__text__name__input, .edit-profile__text__email__input, .edit-profile__text__password__input, .numero-home__banner .login-form input {
   -webkit-box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
           box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef;
 }
@@ -522,7 +522,7 @@ Page - Add View
 }
 
 .add-view .add-option-wrapper input {
-  margin-left: 1rem;
+  margin: 0 1rem;
 }
 
 .add-view .add-view-info {
@@ -599,16 +599,6 @@ Page - Authentication confirmation
   margin: 0 0.7rem;
 }
 
-.overlay-list-card label .fab {
-  color: #31344b;
-  padding-right: 1rem;
-}
-
-.overlay-list-card label .fa-check-circle {
-  padding-left: 1rem;
-  display: none;
-}
-
 .overlay-list-card .overlay-btn-wrapper {
   margin-top: 2rem;
 }
@@ -640,6 +630,10 @@ Page - Authentication confirmation
 #tick-instagram,
 #tick-github,
 #tick-twitter {
+  display: none;
+}
+
+.tick-mark {
   display: none;
 }
 
@@ -843,8 +837,13 @@ Page - Edit Profile
 }
 
 .edit-profile {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .edit-profile__image {
@@ -855,6 +854,13 @@ Page - Edit Profile
 .edit-profile__image img {
   width: 100%;
   display: block;
+}
+
+.edit-profile__text {
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+          box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
 }
 
 .edit-profile__text__name > *,
@@ -916,8 +922,13 @@ Page - Profile
 }
 
 .profile {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .profile__image {
@@ -928,6 +939,13 @@ Page - Profile
 .profile__image img {
   width: 100%;
   display: block;
+}
+
+.profile__text {
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+          box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
 }
 
 .profile__text__name > *,
@@ -1017,6 +1035,11 @@ Team
 .team__info__card .card__img {
   background-color: #b594b6;
   border-radius: 2% 2% 0 0;
+}
+
+.team__info__card .card__img:hover {
+  background: none;
+  cursor: pointer;
 }
 
 .team__info__card .card__img img {
@@ -1177,16 +1200,7 @@ Home Page
 }
 
 .numero-home__banner .login-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
   padding: 4rem 0;
   margin: 0 1rem;
   text-align: center;
@@ -1197,7 +1211,7 @@ Home Page
 
 .numero-home__banner .login-form input {
   border: none;
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
   width: 70%;
   padding: 0.8rem;
   background: none;
@@ -1207,6 +1221,15 @@ Home Page
 
 .numero-home__banner .login-form input :focus {
   border: none;
+}
+
+.numero-home__banner .login-form .name-input {
+  margin: 0 auto;
+}
+
+.numero-home__banner .login-form .signup-btn-1 {
+  width: 8rem;
+  margin: 1rem auto 0 auto;
 }
 
 .numero-home__banner .login-form ::-webkit-input-placeholder {
@@ -1393,4 +1416,29 @@ Home Page
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+#get-signup {
+  display: none;
+}
+
+.name-input,
+.signup-btn-1 {
+  display: none;
+}
+
+#get-signup:checked ~ .login-form > form > .name-input {
+  display: block;
+}
+
+#get-signup:checked ~ .login-form > form > .login-btn {
+  display: none;
+}
+
+#get-signup:checked ~ .login-form > .signup-part {
+  display: none;
+}
+
+#get-signup:checked ~ .login-form > form > .signup-btn-1 {
+  display: block;
 }

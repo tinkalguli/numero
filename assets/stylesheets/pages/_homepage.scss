@@ -48,9 +48,10 @@ Home Page
   }
 
   .login-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    display: block;
     padding: 4rem 0;
     margin: 0 1rem;
     text-align: center;
@@ -58,7 +59,7 @@ Home Page
     @include neumorph-offset(1rem, -0.1rem, 0.1rem, 1rem);
     input {
       border: none;
-      margin-bottom: 1rem;
+      margin-bottom: 1.3rem;
       width: 70%;
       padding: 0.8rem;
       background: none;
@@ -68,6 +69,15 @@ Home Page
       :focus {
         border: none;
       }
+    }
+
+    .name-input {
+      margin: 0 auto;
+    }
+
+    .signup-btn-1 {
+      width: 8rem;
+      margin: 1rem auto 0 auto;
     }
 
     ::placeholder {
@@ -206,4 +216,29 @@ Home Page
       }
     }
   }
+}
+
+#get-signup {
+  display: none;
+}
+
+.name-input,
+.signup-btn-1 {
+  display: none;
+}
+
+#get-signup:checked ~ .login-form > form > .name-input {
+  display: block;
+}
+
+#get-signup:checked ~ .login-form > form > .login-btn {
+  display: none;
+}
+
+#get-signup:checked ~ .login-form > .signup-part {
+  display: none;
+}
+
+#get-signup:checked ~ .login-form > form > .signup-btn-1 {
+  display: block;
 }

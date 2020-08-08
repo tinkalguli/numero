@@ -43,6 +43,10 @@ Team
       &__img {
         background-color: $cl-violet;
         border-radius: 2% 2% 0 0;
+        &:hover {
+          background: none;
+          cursor: pointer;
+        }
         img {
           opacity: 0.6;
           border-radius: 2% 2% 0 0;

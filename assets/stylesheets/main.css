@@ -575,7 +575,8 @@ Page - Edit Profile
     color: gray;
     border: none;
     border-radius: 0.5rem;
-    padding: 0.5rem 0; }
+    padding: 0.5rem 0;
+    outline: none; }
   .edit-profile__actions {
     margin: 3rem auto; }
   @media all and (min-width: 768px) {

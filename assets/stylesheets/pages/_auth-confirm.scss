@@ -24,18 +24,13 @@ Page - Authentication confirmation
     border-radius: 1.5rem;
     cursor: pointer;
     @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+    &:hover {
+      @extend .neumorph-inset;
+    }
     img {
       width: 2rem;
       height: 2rem;
       margin: 0 0.7rem;
-    }
-    .fab {
-      color: $cl-black;
-      padding-right: 1rem;
-    }
-    .fa-check-circle {
-      padding-left: 1rem;
-      display: none;
     }
   }
   .overlay-btn-wrapper {
@@ -72,6 +67,11 @@ Page - Authentication confirmation
 }
 
 // These are for getting the check mark after authentication
+
+.tick-mark {
+  display: none;
+}
+
 #tick-instagram:checked ~ .loged-in-instagram > .tick-mark {
   display: block;
 }

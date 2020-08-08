@@ -57,26 +57,33 @@
               it, you might end up improving it. We really can't tell.
             </p>
           </section>
+
+          <input type="checkbox" id="get-signup">
           <section class="numero-home__banner__login-form">
             <form>
+              <input class="name-input" type="text" name="name" placeholder="Name" /><br />
               <input type="email" name="Email" placeholder="Email" /><br />
               <input
                 type="password"
                 name="password"
                 placeholder="Password"
               /><br />
-              <a
-                type="submit"
-                href="pages/dashboard.html"
+              <a href="pages/dashboard.html"
                 class="login-btn btn"
-                name="submit"
               >
                 Login
               </a>
+              <a href="pages/dashboard.html" class="signup-btn btn signup-btn-1"
+                    >Sign Up</a
+                >
             </form>
             <div class="signup-part">
               <h4>Don't have an account?</h4>
-              <a href="pages/dashboard.html" class="signup-btn btn">Sign Up</a>
+              <label for="get-signup">
+                <a class="signup-btn btn"
+                  >Sign Up</a
+                >
+              </label>
             </div>
           </section>
         </div>

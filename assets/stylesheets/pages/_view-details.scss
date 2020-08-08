@@ -24,8 +24,8 @@ View Details
   &__icon {
     width: 4.5rem;
     height: 4.5rem;
-    @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
-    svg {
+    @extend .icons-neu-effect;
+    img {
       width: 3rem;
     }
   }

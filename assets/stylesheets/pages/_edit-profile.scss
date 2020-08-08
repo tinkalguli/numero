@@ -45,6 +45,10 @@ Page - Edit Profile
   &__text__email__input,
   &__text__password__input {
     color: $cl-grey;
+    @extend .neumorph-inset;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
   }
 
   &__actions {

@@ -18,10 +18,15 @@ Page - dashboard
       font-size: 2rem;
       color: $cl-white;
       background-color: $cl-black;
-      position: fixed;
+      position: sticky;
       padding: 1rem;
+      display: inline-block;
       bottom: 4%;
-      right: 5%;
+      left: 100%;
+      transform: translateX(-50%);
+      @media (min-width: 768px) {
+        left: 100%;
+      }
       border-radius: 10px;
       box-shadow: 0 0 4px #2a2c40, 0px 0px 4px #383c56;
 

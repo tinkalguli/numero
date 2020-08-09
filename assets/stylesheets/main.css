@@ -430,9 +430,15 @@ Component - Footer
 .numero-footer {
   border-top: 1px solid #bbb;
   text-align: center;
-  padding: 2rem;
+  padding: 5rem 2rem;
   background-color: #e6e7ee;
   color: #31344b;
+}
+
+@media (min-width: 768px) {
+  .numero-footer {
+    padding: 2rem;
+  }
 }
 
 .numero-footer a:not(.logo) {
@@ -672,10 +678,14 @@ Page - dashboard
   font-size: 2rem;
   color: #e6e7ee;
   background-color: #31344b;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   padding: 1rem;
+  display: inline-block;
   bottom: 4%;
-  right: 5%;
+  left: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   border-radius: 10px;
   -webkit-box-shadow: 0 0 4px #2a2c40, 0px 0px 4px #383c56;
           box-shadow: 0 0 4px #2a2c40, 0px 0px 4px #383c56;
@@ -684,6 +694,12 @@ Page - dashboard
 @media screen and (min-width: 768px) {
   .dashboard-main .add-view-btn {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .dashboard-main .add-view-btn {
+    left: 100%;
   }
 }
 

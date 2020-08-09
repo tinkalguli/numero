@@ -803,7 +803,10 @@ Page - dashboard
 #linkedin-remove,
 #github-remove,
 #twitter-remove,
-#hashtag-remove {
+#altcampus-remove,
+#codingmemes-remove,
+#dribbble-remove,
+#fitbit-remove {
   display: none;
 }
 
@@ -812,7 +815,10 @@ Page - dashboard
 #linkedin-remove:checked ~ .linkedin-dashboard-card,
 #github-remove:checked ~ .github-dashboard-card,
 #twitter-remove:checked ~ .twitter-dashboard-card,
-#hashtag-remove:checked ~ .hashtag-dashboard-card {
+#altcampus-remove:checked ~ .altcampus-dashboard-card,
+#codingmemes-remove:checked ~ .codingmemes-dashboard-card,
+#dribbble-remove:checked ~ .dribbble-dashboard-card,
+#fitbit-remove:checked ~ .fitbit-dashboard-card {
   display: none;
 }
 

@@ -681,14 +681,13 @@ Team
     .team__info__card p {
       padding-bottom: 0.5rem; }
     .team__info__card .card__img {
-      background-color: #b594b6;
       border-radius: 2% 2% 0 0; }
-      .team__info__card .card__img:hover {
-        background: none;
-        cursor: pointer; }
       .team__info__card .card__img img {
-        opacity: 0.6;
+        opacity: 0.4;
         border-radius: 2% 2% 0 0; }
+        .team__info__card .card__img img:hover {
+          opacity: 1;
+          transition: 0.2s ease-in; }
     .team__info__card .card__txt {
       padding: 1.5rem; }
     .team__info__card .card__icons {

@@ -52,4 +52,5 @@ We use [SemVer](http://semver.org/) for versioning. Currently, the project is in
 ❤️
 
 - Icon credits: [Flaticon](https://www.flaticon.com/) and [Fontawesome](https://fontawesome.com/) and [Vitaly Gorbachev](https://www.flaticon.com/authors/vitaly-gorbachev)
-<!-- Image credits: [Undraw](https://www.undraw.com) -->
+  <!-- - Neumorphism Learning: [Adam Giebl](neumorphism.io) -->
+  <!-- Image credits: [Undraw](https://www.undraw.com) and add other -->

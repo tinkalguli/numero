@@ -2,7 +2,7 @@
 
 **[STACK][s] | [CONTRIB][c] | [VERSION][v] | [AUTHOR][a] | [LICENSE][l] | [ACKNOWLEDGE][ack]**
 
-## [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+## [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/altcampus/numero/issues)
 
 ... is a dashboard application where the user can store, display and track the data points that matter to them. This can include social media metrices, physical health numbers, financial numbers, etc.
 
@@ -52,3 +52,4 @@ We use [SemVer](http://semver.org/) for versioning. Currently, the project is in
 ❤️
 
 - Icon credits: [Flaticon](https://www.flaticon.com/) and [Fontawesome](https://fontawesome.com/) and [Vitaly Gorbachev](https://www.flaticon.com/authors/vitaly-gorbachev)
+<!-- Image credits: [Undraw](https://www.undraw.com) -->

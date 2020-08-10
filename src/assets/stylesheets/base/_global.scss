@@ -1,0 +1,91 @@
+/*---------------------------------------------
+Global
+---------------------------------------------*/
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
+// FontAwesome
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-end-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+// Inset neumorphic class for site-wide styling purposes
+.neumorph-inset {
+  box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6,
+    inset -0.5rem -0.5rem 1rem #ffffffef;
+}
+
+// Main button class
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+  &:hover {
+    @extend .neumorph-inset;
+  }
+  color: $cl-black;
+}
+
+// Make sure that the style of the icons should be in the parent
+// and parent should have same height and width (icon-width + 1.5rem)
+
+.icons-neu-effect {
+  @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.padding {
+  padding: 4rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 6rem 0;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 8rem 0;
+  }
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

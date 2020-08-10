@@ -1,0 +1,124 @@
+/*---------------------------------------------
+Component - Header
+---------------------------------------------*/
+
+.numero-header {
+  padding: 0.5rem 0;
+  box-shadow: 0px 0px 4px $cl-black;
+  background-color: $cl-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  a:not(.logo) {
+    color: $cl-black;
+    &:hover {
+      color: $cl-blue;
+    }
+    &:active {
+      color: $cl-violet;
+    }
+    &:focus {
+      color: $cl-violet;
+    }
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  &__logo {
+    span {
+      font-size: 2.5rem;
+      color: $cl-black;
+      font-family: $primary-font;
+    }
+    img,
+    span {
+      width: 3rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__check-btn {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  &__bar {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 1px;
+    background: $cl-black;
+    margin: 3px 0;
+  }
+
+  &__navbar {
+    display: none;
+    background: $cl-white;
+    color: $cl-black;
+    position: absolute;
+    top: 13%;
+    right: -100%;
+    width: 70%;
+    border-radius: 10px 0 0 10px;
+  }
+
+  &__navbar li {
+    text-align: center;
+    margin: 5vh 0;
+    font-weight: 700;
+  }
+
+  #hamburger:checked ~ &__navbar {
+    display: block;
+    right: 0;
+    animation: move-to-right 0.5s ease-in;
+    @include neumorph-offset(1rem, -0.1rem, 0.1rem, 1rem);
+  }
+
+  #hamburger:checked ~ &__check-btn > &__bar {
+    position: absolute;
+    right: 0;
+  }
+
+  #hamburger:checked ~ &__check-btn > &__bar-1 {
+    transform: rotate(45deg);
+  }
+
+  #hamburger:checked ~ &__check-btn > &__bar-2 {
+    display: none;
+  }
+
+  #hamburger:checked ~ &__check-btn > &__bar-3 {
+    transform: rotate(135deg);
+  }
+  // Media Query
+  @media (min-width: 768px) {
+    &__check-btn {
+      display: none;
+    }
+
+    &__navbar {
+      display: block;
+      position: static;
+      height: auto;
+      padding-top: 0;
+      background: transparent;
+      width: auto;
+      ul {
+        display: flex;
+      }
+      li {
+        margin: 0 0 0 1rem;
+        width: 6.5rem;
+      }
+    }
+  }
+}

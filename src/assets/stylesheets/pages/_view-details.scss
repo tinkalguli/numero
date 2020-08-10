@@ -1,0 +1,48 @@
+/*---------------------------------------------
+View Details
+---------------------------------------------*/
+
+.view-details__body {
+  background-color: $cl-white;
+}
+
+.view-details {
+  margin-top: 10rem;
+  h3 {
+    margin: 2rem 0;
+  }
+  .hero {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    h2 {
+      flex-basis: 350px;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    @extend .icons-neu-effect;
+    img {
+      width: 3rem;
+    }
+  }
+
+  &__charts__area-graph,
+  &__charts__pie-chart,
+  &__charts__bar-graph {
+    width: 100%;
+    margin: 5rem auto;
+  }
+
+  &__charts__pie-chart {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 70px;
+    text-align: center;
+    @media (min-width: 768px) {
+      width: 80%;
+    }
+  }
+}

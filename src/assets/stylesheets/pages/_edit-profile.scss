@@ -1,0 +1,76 @@
+/*---------------------------------------------
+Page - Edit Profile
+---------------------------------------------*/
+
+.edit-profile-main {
+  background-color: $cl-white;
+  padding-top: 10rem;
+  @media (min-width: 1024px) {
+    height: 100vh;
+  }
+  h1 {
+    text-align: center;
+    margin: 0 auto 3rem auto;
+    padding: 0 2rem;
+  }
+}
+
+.edit-profile {
+  @include grid-repeat(auto-fit,300px,1fr);
+  align-items: center;
+  &__image {
+    width: 100px;
+    margin: 0 auto 3rem auto;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__text {
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
+  }
+
+  &__text__name > *,
+  &__text__email > *,
+  &__text__password > * {
+    flex-basis: 200px;
+    margin: 1rem 0;
+  }
+
+  &__text__name label,
+  &__text__email label,
+  &__text__password label {
+    flex-basis: 100px;
+    font-family: $primary-font;
+    font-weight: 700;
+  }
+
+  &__text__name__input,
+  &__text__email__input,
+  &__text__password__input {
+    color: $cl-grey;
+    @extend .neumorph-inset;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    outline: none;
+  }
+
+  &__actions {
+    margin: 3rem auto;
+  }
+
+  // Media Query
+  @media all and (min-width: 768px) {
+    &__image {
+      width: 250px;
+      img {
+        width: 80%;
+        display: block;
+      }
+    }
+  }
+}

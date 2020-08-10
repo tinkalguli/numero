@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.ico"
+    />
+    <title>Profile</title>
+  </head>
+
+  <body>
+    <header class="numero-header">
+      <div class="container flex-between">
+        <!-- Logo -->
+        <a href="../index.html" class="numero-header__logo">
+          <img src="../assets/images/logo.svg" alt="logo" />
+          <span>umero</span>
+        </a>
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="hamburger" />
+        <label class="numero-header__check-btn" for="hamburger">
+          <span class="numero-header__bar numero-header__bar-1"></span>
+          <span class="numero-header__bar numero-header__bar-2"></span>
+          <span class="numero-header__bar numero-header__bar-3"></span>
+        </label>
+        <!-- Navbar -->
+        <nav class="numero-header__navbar">
+          <ul class="numero-header__navbar__ul">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="addView.html">Add a View</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="../index.html">Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="profile-main">
+      <h1>Profile details</h1>
+      <div class="profile container">
+        <!-- Profile icon -->
+        <figure class="profile__image">
+          <img
+            src="../assets/images/icons/profile.svg"
+            alt="Placeholder profile icon"
+          />
+        </figure>
+        <!-- Profile Details -->
+        <section class="profile__text">
+          <!-- Profile Name -->
+          <div class="profile__text__name flex-between">
+            <h4 class="profile__text__name__header">Name</h4>
+            <p class="profile__text__name__value">Rosheth Kumar</p>
+          </div>
+
+          <!-- Profile Email -->
+          <div class="profile__text__email flex-between">
+            <h4 class="profile__text__email__header">Email</h4>
+            <p class="profile__text__email__value">roshethkumar@gmail.com</p>
+          </div>
+
+          <!-- Profile Password -->
+          <div class="profile__text__password flex-between">
+            <h4 class="profile__text__password__header">Password</h4>
+            <p class="profile__text__password__value">**************</p>
+          </div>
+        </section>
+        <!-- Profile edit button -->
+        <section class="profile__actions">
+          <a href="edit-profile.html" class="btn">Edit Details</a>
+        </section>
+      </div>
+    </main>
+    <footer class="numero-footer">
+      <nav class="numero-footer__nav">
+        <ul class="numero-footer__nav-items flex-between">
+          <li class="numero-footer__nav-item">
+            <a href="team.html">Team</a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://github.com/AltCampus/numero" target="_blank"
+              >Credits</a
+            >
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://twitter.com/" target="_blank">
+              <img src="../assets/images/icons/twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://github.com/AltCampus/numero" target="_blank">
+              <img src="../assets/images/icons/github.svg" alt="Github" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="../assets/images/icons/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="numero-footer__copyright">
+        <small> &copy; numero 2020. All rights reserved.</small>
+      </p>
+    </footer>
+  </body>
+</html>

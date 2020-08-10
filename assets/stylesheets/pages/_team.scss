@@ -41,15 +41,15 @@ Team
     }
     .card {
       &__img {
-        background-color: $cl-violet;
+        // background-color: $cl-violet;
         border-radius: 2% 2% 0 0;
-        &:hover {
-          background: none;
-          cursor: pointer;
-        }
         img {
-          opacity: 0.6;
+          opacity: 0.4;
           border-radius: 2% 2% 0 0;
+          &:hover {
+            opacity: 1;
+            transition: 0.2s ease-in;
+          }
         }
       }
       &__txt {

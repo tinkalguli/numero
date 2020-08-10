@@ -1,4 +1,4 @@
-# ![Teen Anaar Icon](assets/images/logo.svg "Numero icon") Numero
+# ![Numero Icon](build/assets/images/logo.svg "Numero icon") Numero
 
 **[STACK][s] | [CONTRIB][c] | [VERSION][v] | [AUTHOR][a] | [LICENSE][l] | [ACKNOWLEDGE][ack]**
 

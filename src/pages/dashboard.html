@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.ico"
+    />
+  </head>
+  <body>
+    <header class="numero-header">
+      <div class="container flex-between">
+        <!-- Logo -->
+        <a href="../index.html" class="numero-header__logo">
+          <img src="../assets/images/logo.svg" alt="logo" />
+          <span>umero</span>
+        </a>
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="hamburger" />
+        <label class="numero-header__check-btn" for="hamburger">
+          <span class="numero-header__bar numero-header__bar-1"></span>
+          <span class="numero-header__bar numero-header__bar-2"></span>
+          <span class="numero-header__bar numero-header__bar-3"></span>
+        </label>
+        <!-- Nav bar -->
+        <nav class="numero-header__navbar">
+          <ul class="numero-header__navbar__ul">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="addView.html">Add a View</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="../index.html">Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="dashboard-main">
+      <section class="dashboard-description">
+        <h2>Dashboard</h2>
+        <p>Track your data</p>
+      </section>
+      <section class="dashboard container">
+        <!-- Facebook View -->
+        <!-- This checkbox is used to remove the particular view -->
+        <input type="checkbox" id="facebook-remove" />
+        <a href="#" class="dashboard-card facebook-dashboard-card">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
+            <div class="flex">
+              <h3>Facebook</h3>
+              <img src="../assets/images/icons/facebook.svg" alt="Facebook" />
+            </div>
+            <label for="facebook-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">Likes</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">96</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Comments</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">56</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Shares</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">18</label>
+            </div>
+          </div>
+        </a>
+        <!-- Instagram View -->
+        <!-- This checkbox is used to remove the particular view -->
+        <input type="checkbox" id="instagram-remove" />
+        <a href="#" class="dashboard-card instagram-dashboard-card">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
+            <div class="flex">
+              <h3>Instagram</h3>
+              <img src="../assets/images/icons/instagram.svg" alt="Instagram" />
+            </div>
+            <label for="instagram-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">Likes</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">96</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Comments</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">56</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Followers</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">27</label>
+            </div>
+          </div>
+        </a>
+        <!-- Linkedin View -->
+        <!-- This checkbox is used to remove the particular view -->
+        <input type="checkbox" id="linkedin-remove" />
+        <a href="#" class="dashboard-card linkedin-dashboard-card">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
+            <div class="flex">
+              <h3>LinkedIn</h3>
+              <img src="../assets/images/icons/linkedin.svg" alt="Linkedin" />
+            </div>
+            <label for="linkedin-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">Connections</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">27</label>
+            </div>
+          </div>
+        </a>
+        <!-- Github View -->
+        <!-- This checkbox is used to remove the particular view -->
+        <input type="checkbox" id="github-remove" />
+        <a href="#" class="dashboard-card github-dashboard-card">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
+            <div class="flex">
+              <h3>Github</h3>
+              <img src="../assets/images/icons/github.svg" alt="Github" />
+            </div>
+            <label for="github-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">Stars</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">96</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">PRs</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">56</label>
+            </div>
+          </div>
+        </a>
+        <!-- Twitter View -->
+        <!-- This checkbox is used to remove the particular view -->
+        <input type="checkbox" id="twitter-remove" />
+        <a
+          href="view-details.html"
+          class="dashboard-card twitter-dashboard-card"
+        >
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
+            <div class="flex">
+              <h3>Twitter</h3>
+              <img src="../assets/images/icons/twitter.svg" alt="Twitter" />
+            </div>
+            <label for="twitter-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">Retweets</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">18</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Followers</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">27</label>
+            </div>
+          </div>
+        </a>
+        <!-- Hashtag AltCampus View -->
+        <!-- This checkbox is used to remove the particular view -->
+        <input type="checkbox" id="altcampus-remove" />
+        <a href="#" class="dashboard-card altcampus-dashboard-card">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
+            <div class="flex">
+              <h3>#AltCampus</h3>
+              <img src="../assets/images/icons/hashtag.svg" alt="Hashtag" />
+            </div>
+            <label for="altcampus-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">Facebook</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">56</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Twitter</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">18</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Insta</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">27</label>
+            </div>
+          </div>
+        </a>
+        <!-- Hashtag CodingMemes View -->
+        <!-- This checkbox is used to remove the particular view -->
+        <input type="checkbox" id="codingmemes-remove" />
+        <a href="#" class="dashboard-card codingmemes-dashboard-card">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
+            <div class="flex">
+              <h3>#CodingMemes</h3>
+              <img src="../assets/images/icons/hashtag.svg" alt="Hashtag" />
+            </div>
+            <label for="codingmemes-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">Facebook</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">106</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Twitter</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">181</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Insta</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">217</label>
+            </div>
+          </div>
+        </a>
+        <!-- Dribbble View -->
+        <!-- This checkbox is used to remove the particular view -->
+        <input type="checkbox" id="dribbble-remove" />
+        <a href="#" class="dashboard-card dribbble-dashboard-card">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
+            <div class="flex">
+              <h3>Dribbble</h3>
+              <img src="../assets/images/icons/dribbble.svg" alt="dribbble" />
+            </div>
+            <label for="dribbble-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">Hearts</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">16</label>
+            </div>
+            <div class="flex-end-align">
+              <label class="text-label">Comments</label>
+              <i class="fas fa-sort-down"></i>
+              <label class="num-label">8</label>
+            </div>
+          </div>
+        </a>
+        <!-- FitBit View -->
+        <!-- This checkbox is used to remove the particular view -->
+        <input type="checkbox" id="fitbit-remove" />
+        <a href="#" class="dashboard-card fitbit-dashboard-card">
+          <!-- View's icon section -->
+          <div class="dboard-icon-section flex-end-align">
+            <div class="flex">
+              <h3>FitBit</h3>
+              <img src="../assets/images/icons/fitbit.svg" alt="FitBit" />
+            </div>
+            <label for="fitbit-remove"
+              ><i class="fas fa-minus-circle"></i
+            ></label>
+          </div>
+          <!-- View's data section = Lists all the current data-points -->
+          <div class="dboard-number-section flex-end-align">
+            <div class="flex-end-align">
+              <label class="text-label">Steps</label>
+              <i class="fas fa-sort-up"></i>
+              <label class="num-label">2764</label>
+            </div>
+          </div>
+        </a>
+      </section>
+      <!-- Button - Add a View -->
+      <a href="addView.html" class="add-view-btn flex"
+        ><img src="../assets/images/icons/plus.svg" alt="Plus icon" /><span
+          >Add a View</span
+        ></a
+      >
+    </main>
+
+    <footer class="numero-footer">
+      <nav class="numero-footer__nav">
+        <ul class="numero-footer__nav-items flex-between">
+          <li class="numero-footer__nav-item">
+            <a href="team.html">Team</a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://github.com/AltCampus/numero" target="_blank"
+              >Credits</a
+            >
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://twitter.com/" target="_blank">
+              <img src="../assets/images/icons/twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://github.com/AltCampus/numero" target="_blank">
+              <img src="../assets/images/icons/github.svg" alt="Github" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="../assets/images/icons/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="numero-footer__copyright">
+        <small> &copy; numero 2020. All rights reserved.</small>
+      </p>
+    </footer>
+  </body>
+</html>

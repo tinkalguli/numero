@@ -1,0 +1,85 @@
+/*---------------------------------------------
+Page - Authentication confirmation
+---------------------------------------------*/
+.overlay-list-card {
+  text-align: center;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  padding: 7rem 1rem 2rem 1rem;
+  background: $cl-white;
+  border-radius: 2rem;
+  animation: move-to-bottom 0.5s ease-in forwards;
+  h3 {
+    padding-bottom: 1rem;
+  }
+  a {
+    color: $cl-blue;
+  }
+  label {
+    padding: 0.8rem 1.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+    &:hover {
+      @extend .neumorph-inset;
+    }
+    img {
+      width: 2rem;
+      height: 2rem;
+      margin: 0 0.7rem;
+    }
+  }
+  .overlay-btn-wrapper {
+    margin-top: 2rem;
+    a {
+      color: $cl-black;
+    }
+  }
+}
+
+#overlay {
+  display: none;
+}
+
+.overlay-wrapper {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#overlay:checked ~ .overlay-unchecked > .overlay-wrapper {
+  display: block;
+  background: transparentize($cl-blue, 0.8);
+  height: 100%;
+  width: 100%;
+}
+
+#tick-instagram,
+#tick-github,
+#tick-twitter {
+  display: none;
+}
+
+// These are for getting the check mark after authentication
+
+.tick-mark {
+  display: none;
+}
+
+#tick-instagram:checked ~ .loged-in-instagram > .tick-mark {
+  display: block;
+}
+
+#tick-github:checked ~ .loged-in-github > .tick-mark {
+  display: block;
+}
+
+#tick-twitter:checked ~ .loged-in-twitter > .tick-mark {
+  display: block;
+}

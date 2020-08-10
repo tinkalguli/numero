@@ -1,0 +1,65 @@
+/*---------------------------------------------
+Page - Profile
+---------------------------------------------*/
+.profile-main {
+  padding-top: 10rem;
+  background-color: $cl-white;
+  @media (min-width: 1024px) {
+    height: 100vh;
+  }
+  h1 {
+    text-align: center;
+    margin: 0 auto 3rem auto;
+    padding: 0 2rem;
+  }
+}
+
+.profile {
+  @include grid-repeat(auto-fit,300px,1fr);
+  align-items: center;
+  &__image {
+    width: 100px;
+    margin: 0 auto 3rem auto;
+  }
+
+  &__image img {
+    width: 100%;
+    display: block;
+  }
+
+  &__text {
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
+  }
+
+  &__text__name > *,
+  &__text__email > *,
+  &__text__password > * {
+    -ms-flex-preferred-size: 100px;
+    flex-basis: 100px;
+    margin: 1rem 0;
+  }
+
+  &__text__name__value,
+  &__text__email__value,
+  &__text__password__value {
+    color: grey;
+    // Overwrite the flex-basis from above
+    flex-basis: 200px;
+  }
+
+  &__actions {
+    margin: 3rem auto;
+  }
+
+  @media all and (min-width: 768px) {
+    &__image {
+      width: 250px;
+    }
+    &__image img {
+      width: 80%;
+      display: block;
+    }
+  }
+}

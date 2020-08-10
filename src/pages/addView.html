@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>Add your media</title>
+    <link rel="stylesheet" href="../assets/stylesheets/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/images/favicon.ico"
+    />
+  </head>
+  <body>
+    <header class="numero-header">
+      <div class="container flex-between">
+        <!-- Logo -->
+        <a href="../index.html" class="numero-header__logo">
+          <img src="../assets/images/logo.svg" alt="logo" />
+          <span>umero</span>
+        </a>
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="hamburger" />
+        <label class="numero-header__check-btn" for="hamburger">
+          <span class="numero-header__bar numero-header__bar-1"></span>
+          <span class="numero-header__bar numero-header__bar-2"></span>
+          <span class="numero-header__bar numero-header__bar-3"></span>
+        </label>
+        <!-- Nav Bar -->
+        <nav class="numero-header__navbar">
+          <ul class="numero-header__navbar__ul">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="addView.html">Add a View</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="../index.html">Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="add-view">
+        <div class="add-view-info">
+          <h2>Add your data points in the dashboard</h2>
+          <h3>Follow the steps below to add your data sources</h3>
+          <p>
+            Choose the type of data point you would want to add for the
+            respective source. Click 'Add to Dashboard'. Choose the
+            authentication for the source. This will take you to the source
+            website's login page. Authenticate over there and you'll be routed
+            back to this page.
+          </p>
+          <p>
+            Now press the 'Add to dashboard' button to add the data-point to
+            your dashboard.
+          </p>
+        </div>
+        <div class="container add-card-wrapper">
+          <!-- Facebook card -->
+          <div class="add-view-card">
+            <!-- Add View Icon -->
+            <div class="add-view-icon flex">
+              <img src="../assets/images/icons/facebook.svg" alt="Facebook" />
+            </div>
+            <!-- Add View choices for the data source -->
+            <fieldset class="add-option-wrapper">
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Likes</label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Friends</label>
+                <label for="choice-1"
+                  >Shares<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+            </fieldset>
+            <!-- Add View Button -->
+            <div class="add-btn-wraper">
+              <a href="dashboard.html" class="btn">Add to dashboard</a>
+            </div>
+          </div>
+          <!-- Twitter card -->
+          <div class="add-view-card">
+            <!-- Add View Icon -->
+            <div class="add-view-icon">
+              <img src="../assets/images/icons/twitter.svg" alt="Twitter" />
+            </div>
+            <!-- Add View choices for the data source -->
+            <fieldset class="add-option-wrapper">
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Likes</label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Followers</label>
+                <label for="choice-1"
+                  >Retweets<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+            </fieldset>
+            <!-- Add View Button -->
+            <div class="add-btn-wraper">
+              <a href="dashboard.html" class="btn">Add to dashboard</a>
+            </div>
+          </div>
+          <!-- Linkedin card -->
+          <div class="add-view-card">
+            <!-- Add View Icon -->
+            <div class="add-view-icon flex">
+              <img
+                src="../assets/images/icons/linkedin.svg" alt="linkedin logo"/>
+            </div>
+            <!-- Add View choices for the data source -->
+            <fieldset class="add-option-wrapper">
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Likes</label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Connections</label>
+                <label for="choice-1"
+                  >Shares<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+            </fieldset>
+            <!-- Add View Button -->
+            <div class="add-btn-wraper">
+              <a href="dashboard.html" class="btn">Add to dashboard</a>
+            </div>
+          </div>
+          <!-- Instagram card -->
+          <div class="add-view-card">
+            <!-- Add View Icon -->
+            <div class="add-view-icon flex">
+              <img
+                src="../assets/images/icons/instagram.svg " alt="instagram logo"/>
+            </div>
+            <!-- Add View choices for the data source -->
+            <fieldset class="add-option-wrapper">
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Likes</label>
+                <label for="choice-1"
+                  >Comments<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Followers</label>
+                <label for="choice-1"
+                  >Shares<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+            </fieldset>
+            <!-- Add View Button -->
+            <div class="add-btn-wraper">
+              <a href="dashboard.html" class="btn">Add to dashboard</a>
+            </div>
+          </div>
+          <!-- Github card -->
+          <div class="add-view-card">
+            <!-- Add View Icon -->
+            <div class="add-view-icon flex">
+              <img
+                src="../assets/images/icons/github.svg" alt="github logo"/>
+            </div>
+            <!-- Add View choices for the data source -->
+            <fieldset class="add-option-wrapper">
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Stars</label>
+                <label for="choice-1"
+                  >PRs<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Followers</label>
+              </div>
+            </fieldset>
+            <!-- Add View Button -->
+            <div class="add-btn-wraper">
+              <a href="dashboard.html" class="btn">Add to dashboard</a>
+            </div>
+          </div>
+          <!-- Hashtag card -->
+          <div class="add-view-card">
+            <!-- Add View Icon -->
+            <div class="add-view-icon flex">
+              <img src="../assets/images/icons/hashtag.svg" alt="hastag logo" />
+            </div>
+            <!-- Add View choices for the data source -->
+            <fieldset class="add-option-wrapper">
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Facebook</label>
+                <label for="choice-1"
+                  >Instagram<input type="checkbox" id="choice-1"
+                /></label>
+              </div>
+              <div class="flex-between">
+                <label for="choice-1"
+                  ><input type="checkbox" id="choice-1"
+                />Twitter</label>
+              </div>
+            </fieldset>
+            <!-- This is the button that opens the overlay. Using JS we will create the same effects on all cards -->
+            <!-- Add View Button -->
+            <div class="add-btn-wraper">
+              <label for="overlay" class="btn">Add to dashboard</label>
+            </div>
+            <!--
+  Overlay For Authentication.
+ -->
+            <input type="checkbox" id="overlay" />
+
+            <label for="overlay" class="overlay-unchecked">
+              <div class="overlay-wrapper">
+                  <div class="overlay-list-card">
+                    <h3>Log in</h3>
+                    <div class="overlay-list">
+                      <input type="checkbox" id="tick-instagram">
+                      <label for="tick-instagram" class="flex-between loged-in-instagram">
+                        <img src="../assets/images/icons/instagram.svg" alt="Instagram logo" />
+                        <span>Instagram</span>
+                        <img class="tick-mark" src="../assets/images/icons/tick-mark.svg" alt="Tick-mark logo" />
+                      </label>
+                      <input type="checkbox" id="tick-github">
+                      <label for="tick-github" class="flex-between loged-in-github">
+                        <img src="../assets/images/icons/github.svg" alt="Github logo" />
+                        <span>Github</span>
+                        <img class="tick-mark" src="../assets/images/icons/tick-mark.svg" alt="Tick-mark logo" />
+                      </label>
+                      <input type="checkbox" id="tick-twitter">
+                      <label for="tick-twitter" class="flex-between loged-in-twitter">
+                        <img src="../assets/images/icons/twitter.svg" alt="Twitter logo" />
+                        <span>Twitter</span>
+                        <img class="tick-mark" src="../assets/images/icons/tick-mark.svg" alt="Tick-mark logo" />
+                      </label>
+                    </div>
+                    <div class="overlay-btn-wrapper">
+                      <a class="btn" href="dashboard.html">Add your account</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="numero-footer">
+      <nav class="numero-footer__nav">
+        <ul class="numero-footer__nav-items flex-between">
+          <li class="numero-footer__nav-item">
+            <a href="team.html">Team</a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://github.com/AltCampus/numero" target="_blank"
+              >Credits</a
+            >
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://twitter.com/" target="_blank">
+              <img src="../assets/images/icons/twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://github.com/AltCampus/numero" target="_blank">
+              <img src="../assets/images/icons/github.svg" alt="Github" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="../assets/images/icons/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="numero-footer__copyright">
+        <small> &copy; numero 2020. All rights reserved.</small>
+      </p>
+    </footer>
+  </body>
+</html>

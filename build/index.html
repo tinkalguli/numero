@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>Numero</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.ico"
+    />
+  </head>
+  <body class="numero-home">
+    <header class="numero-header">
+      <div class="container flex-between">
+        <!-- Logo -->
+        <a href="./index.html" class="numero-header__logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+          <span>umero</span>
+        </a>
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="hamburger" />
+        <label class="numero-header__check-btn" for="hamburger">
+          <span class="numero-header__bar numero-header__bar-1"></span>
+          <span class="numero-header__bar numero-header__bar-2"></span>
+          <span class="numero-header__bar numero-header__bar-3"></span>
+        </label>
+        <!-- Nav bar -->
+        <nav class="numero-header__navbar">
+          <ul class="numero-header__navbar__ul">
+            <li><a href="pages/dashboard.html">Dashboard</a></li>
+            <li>
+              <a href="https://github.com/AltCampus/numero" target="_blank"
+                >Github</a
+              >
+            </li>
+            <li><a href="pages/team.html">Team</a></li>
+            <li><a href="pages/dashboard.html">Log In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="numero-home__main">
+      <!-- Hero Banner -->
+      <article class="numero-home__banner flex">
+        <div class="container grid-col-2">
+          <section
+            class="numero-home__banner__info order-1 text-center padding-bottom"
+          >
+            <h2 class="title">
+              Track that data <strong class="hard">hard!</strong>
+            </h2>
+            <p class="subtext">Don't let your data slip by unnoticed.</p>
+            <p>
+              If you want to improve it, you have to track it. Or if you track
+              it, you might end up improving it. We really can't tell.
+            </p>
+          </section>
+
+          <input type="checkbox" id="get-signup" />
+          <section class="numero-home__banner__login-form">
+            <form>
+              <input
+                class="name-input"
+                type="text"
+                name="name"
+                placeholder="Name"
+              /><br />
+              <input type="email" name="Email" placeholder="Email" /><br />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+              /><br />
+              <a href="pages/dashboard.html" class="login-btn btn">
+                Login
+              </a>
+              <a href="pages/dashboard.html" class="signup-btn btn signup-btn-1"
+                >Sign Up</a
+              >
+            </form>
+            <div class="signup-part">
+              <h4>Don't have an account?</h4>
+              <label for="get-signup">
+                <a class="signup-btn btn">Sign Up</a>
+              </label>
+            </div>
+          </section>
+        </div>
+      </article>
+      <!-- About Section -->
+      <article class="numero-home__about padding">
+        <div class="grid-col-2 container">
+          <div class="numero-home__about__image padding-bottom">
+            <img src="assets/images/pages/home/data_trends.svg" />
+          </div>
+          <section class="numero-home__about__info text-center">
+            <h2>numero keeps you <strong class="hard">focused</strong>.</h2>
+            <p>
+              Throughout your day, you generate multiple data points using
+              innumerable sources. You can link all of these data sources to
+              numero and focus on what is the important metric that you want to
+              chase!
+            </p>
+          </section>
+        </div>
+      </article>
+      <!-- Features Section -->
+      <article class="numero-home__all-features padding">
+        <div class="feature-container grid-col-4">
+          <section class="numero-home__feature">
+            <img src="assets/images/icons/happy-violet.svg" alt="Freedom" />
+            <h3>numero sets you free!</h3>
+            <p>
+              With numero's cutting-edge technology, you can control the data
+              that you share with an application. Numero puts the control of
+              your datapoints back in your hands.
+            </p>
+          </section>
+          <section class="numero-home__feature">
+            <img
+              src="assets/images/icons/minimize-violet.svg"
+              alt="Minimalism"
+            />
+            <h3>Minimal Dashboard</h3>
+            <p>
+              Minimalism is built in the design of numero. We try to cut every
+              redundant information out of your view.
+            </p>
+          </section>
+          <section class="numero-home__feature">
+            <img
+              src="assets/images/icons/hashtag-violet.svg"
+              alt="hashtag icon"
+            />
+            <h3>Hashtag monitoring</h3>
+            <p>
+              If you desire to track a particular trend, now you don't have to
+              open google trends. You can do it right inside of numero.
+            </p>
+          </section>
+          <section class="numero-home__feature">
+            <img
+              src="assets/images/icons/rocket-violet.svg"
+              alt="rocket icon"
+            />
+            <h3>Free for basic usage</h3>
+            <p>
+              In the beta phase, numero is providing a basic plan that allows
+              you to add up to 10 data sources to your dashboard completely free
+              of charge!
+            </p>
+          </section>
+        </div>
+      </article>
+      <!-- Trust Section -->
+      <article class="numero-home__trust padding">
+        <div class="grid-col-2">
+          <section class="numero-home__trust-info text-center">
+            <h2>You can <strong class="hard">trust</strong> us.🦑</h2>
+            <p>
+              Numero is a privacy-first company. We care about your choices
+              surrounding your information. This is why we don't store any user
+              information in our cloud. The information that we do collect is
+              anonymized and you can opt out of it if you so desire.
+            </p>
+          </section>
+          <div class="numero-home__trust__img">
+            <img
+              src="assets/images/pages/home/social_dashboard_optimized.svg"
+            />
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="numero-footer">
+      <nav class="numero-footer__nav">
+        <ul class="numero-footer__nav-items flex-between">
+          <li class="numero-footer__nav-item">
+            <a href="pages/team.html">Team</a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a target="_blank" href="https://github.com/AltCampus/numero"
+              >Credits</a
+            >
+          </li>
+          <li class="numero-footer__nav-item">
+            <a target="_blank" href="https://twitter.com/">
+              <img src="assets/images/icons/twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a target="_blank" href="https://github.com/AltCampus/numero">
+              <img src="assets/images/icons/github.svg" alt="Github" />
+            </a>
+          </li>
+          <li class="numero-footer__nav-item">
+            <a target="_blank" href="https://www.instragram.com/">
+              <img src="assets/images/icons/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="numero-footer__copyright">
+        <small> &copy; numero 2020. All rights reserved.</small>
+      </p>
+    </footer>
+  </body>
+</html>
